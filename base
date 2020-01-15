@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="../images/pupilpng.png" sizes="1000x1000" />
+  <style>
+
+  </style>
+
+
+
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/css-doodle@0.4.9/css-doodle.min.js"></script>
+
+  <title>「ｒｅ：Ｌｉｖｅ」</title>
+</head>
+<body>
+
+</body>
+</html>
