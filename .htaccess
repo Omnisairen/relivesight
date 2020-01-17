@@ -15,3 +15,9 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
 # ## = undo
+
+<FilesMatch "\.(ttf|otf|eot)$">
+    <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
