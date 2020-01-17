@@ -13,10 +13,10 @@
 }
 @font-face {
     font-family:'myfont3';
-    src:url('../fonts/bluelines.eot');
-    src:url('../fonts/bluelines.eot?#iefix') format('embedded-opentype'),
+    src:url('../fonts/Blue lines.eot');
+    src:url('../fonts/Blue lines.eot?#iefix') format('embedded-opentype'),
             /* url('../includes/fonts/my-font.woff') format('woff'),*/
-            url('../fonts/bluelines.ttf') format('truetype');
+            url('../fonts/Blue lines.ttf') format('truetype');
             /* url('../includes/fonts/my-font.svg#my-font') format('svg');*/
     font-weight:normal;
     font-style:normal;
