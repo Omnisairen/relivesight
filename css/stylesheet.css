@@ -7,9 +7,10 @@
   font-family: myfont2;
   src: url(../fonts/Archistico_Simple.ttf);
 }
+/* WHY WONT BLUELIENS WORK */
 @font-face {
   font-family: myfont3;
-  src: url(../fonts/bluelines.ttf);
+  src: url(../fonts/manbowlines.ttf);
 }
 @font-face {
     font-family:'myfont4';
