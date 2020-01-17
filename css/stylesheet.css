@@ -8,11 +8,11 @@
   src: url(../fonts/Archistico_Simple.ttf);
 }
 @font-face {
-  font-family: myfont4;
-  src: url(../fonts/lines.ttf);
+  font-family: myfont3;
+  src: url(../fonts/manbowlines.ttf);
 }
 @font-face {
-    font-family:'myfont3';
+    font-family:'myfont4';
     src:url('../fonts/Blue lines.eot');
     src:url('../fonts/Blue lines.eot?#iefix') format('embedded-opentype'),
             /* url('../includes/fonts/my-font.woff') format('woff'),*/
