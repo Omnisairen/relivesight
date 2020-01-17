@@ -1,2 +1,2 @@
 # relivesight
-optional
+not optional
