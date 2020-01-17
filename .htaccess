@@ -18,6 +18,6 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 <FilesMatch "\.(ttf|otf|eot)$">
     <IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Origin "https://relivesight.com"
     </IfModule>
 </FilesMatch>
