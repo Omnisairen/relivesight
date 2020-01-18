@@ -10,17 +10,11 @@
 /* WHY WONT BLUELIENS WORK */
 @font-face {
   font-family: myfont3;
-  src: url(../fonts/manbowlines.ttf);
+  src: url(../fonts/BLUELINES.ttf);
 }
 @font-face {
-    font-family:'myfont4';
-    src:url('../fonts/Blue lines.eot');
-    src:url('../fonts/Blue lines.eot?#iefix') format('embedded-opentype'),
-            /* url('../includes/fonts/my-font.woff') format('woff'),*/
-            url('../fonts/Blue lines.ttf') format('truetype');
-            /* url('../includes/fonts/my-font.svg#my-font') format('svg');*/
-    font-weight:normal;
-    font-style:normal;
+  font-family: myfont4;
+  src: url(../fonts/manbowlines.ttf);
 }
 /* (sa2 tails voice) customize your settings here! */
 .rowRowFightThePower{max-width:820px;margin-left:auto;margin-right:auto;padding:30px;border-radius:3px;}
@@ -30,7 +24,8 @@ background-image:url(../images/home/efa.gif);
 body,h1,h2,h3,p{margin-top:0;letter-spacing:.01em;}
 h1{margin-bottom:7px;text-align:center;}
 h2,h3,p{margin-bottom:15px;}
-h1,h2,h3{font-family:'myfont3',courier,monospace;font-weight:normal;line-height:1.4;}
+h1,h2{font-family:'myfont3',courier,monospace;font-weight:normal;line-height:1.4;}
+h3{font-family:'myfont4',courier,monospace;font-weight:normal;line-height:1.4;}
 h1,h3{color:#cc66ff;}
 h2,b,strong,i,em{color:white;}
 body,p{font-family:'myfont2',courier,monospace;font-size:20px;}
