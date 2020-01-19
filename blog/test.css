@@ -20,6 +20,7 @@
   src: url(../fonts/manbowlines.ttf);
 }
 body,p{font-family:'myfont2',courier,monospace;font-size:20px;}
+a, a:active{color:white;text-decoration:none;font-weight:normal;font-family:'myfont4',courier,monospace;}
 div {
   font-family: myFirstFont;
 }
@@ -102,7 +103,7 @@ font-family:Times, "Times New Roman", serif;
 	}
 
 .copy {
-	font-size:11px;
+	font-size:15px;
 
 	}
 
