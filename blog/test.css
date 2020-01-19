@@ -24,7 +24,9 @@ a, a:active{color:white;text-decoration:none;font-weight:normal;font-family:'myf
 div {
   font-family: myFirstFont;
 }
-
+body,a {
+	cursor:url(../images/nav/rsz_hover.png), auto;
+}
 * {
 	margin:0px;
 	padding:0px;
