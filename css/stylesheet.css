@@ -16,6 +16,25 @@
   font-family: myfont4;
   src: url(../fonts/manbowlines.ttf);
 }
+/* width */
+::-webkit-scrollbar {
+		width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+		background: #222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+		background: #111;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+		background: #555;
+}
 /* (sa2 tails voice) customize your settings here! */
 .rowRowFightThePower{max-width:820px;margin-left:auto;margin-right:auto;padding:30px;border-radius:3px;}
 body {
