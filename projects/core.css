@@ -18,7 +18,25 @@
 body{
     background-image:url(../images/sub/11.gif);
 }
+/* width */
+::-webkit-scrollbar {
+		width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+		background: #222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+		background: #111;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+		background: #555;
+}
 #content_head {
     border-image:
     repeating-linear-gradient(
@@ -134,7 +152,7 @@ h3 {
     color: white;
     letter-spacing: 2px;
     animation: flicker 0.2s infinite;
-    font-size: 1.4em;
+    font-size: 1.8em;
     line-height: 1.2em;
 }
 
