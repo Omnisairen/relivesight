@@ -1,20 +1,3 @@
-@font-face {
-  font-family: myfont;
-  src: url(../fonts/FUDGED.ttf);
-}
-@font-face {
-  font-family: myfont2;
-  src: url(../fonts/Archistico_Simple.ttf);
-}
-/* WHY WONT BLUELIENS WORK */
-@font-face {
-  font-family: myfont3;
-  src: url(../fonts/ohmygosh.ttf);
-}
-@font-face {
-  font-family: myfont4;
-  src: url(../fonts/manbowlines.ttf);
-}
 body{
     background-image:url(../images/sub/11.gif);
 }
@@ -58,7 +41,7 @@ div:not(#content) + div#content {
 body {
     background-color: #000;
     color: white;
-    font-family: TimesNewRoman, monospace;
+    font-family: 'Courier New', monospace;
     font-size: 62.5%;
 }
 
@@ -107,7 +90,7 @@ ul, ol {
 
 h1, h2, h3, h4 {
     font-weight: normal;
-    font-family: myfont4, serif;
+font-family: 'Glegoo', serif;
     color: white;
     text-transform: uppercase;
     margin: 0;
@@ -280,7 +263,7 @@ hr {
 }
 
 .label p {
-    font-family: myfont, serif;
+font-family: 'Glegoo', serif;
     letter-spacing: 4px;
     font-size: 3.4em;
     line-height: 0.75em
@@ -310,5 +293,5 @@ hr {
     width: 100%;
     text-align: center;
     margin: -50px 0 0 0;
-    font-family: myfont, serif;
+font-family: 'Glegoo', serif;
 }
