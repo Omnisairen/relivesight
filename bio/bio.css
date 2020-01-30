@@ -8,6 +8,7 @@
   font-family: myfont;
   src: url(../fonts/Fudged.ttf);
 }
+
 * {
   box-sizing: border-box;
 }
@@ -20,7 +21,13 @@ body {
   line-height: 1.2;
 }
 h1 {
-  text-align: center;
+  text-align: left;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+h2 {
+  text-align: left;
   font-size: 4rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
