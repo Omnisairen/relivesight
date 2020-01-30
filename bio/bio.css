@@ -8,7 +8,25 @@
   font-family: myfont;
   src: url(../fonts/Fudged.ttf);
 }
+/* width */
+::-webkit-scrollbar {
+		width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+		background: #222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+		background: #111;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+		background: #555;
+}
 * {
   box-sizing: border-box;
 }
