@@ -37,6 +37,7 @@ body{
 ::-webkit-scrollbar-thumb:hover {
 		background: #555;
 }
+
 #content_head {
     border-image:
     repeating-linear-gradient(
@@ -48,6 +49,7 @@ body{
     ) 20;
 }
 
+
 #content {
     -webkit-box-shadow: 0 8px 4px 1px #9999cc;
     -moz-box-shadow: 0 8px 4px 1px #9999cc;
@@ -55,10 +57,80 @@ body{
     min-height: 320px;
 }
 
+/* Content Two for Return to home page screen */
+#content2 {
+    -webkit-box-shadow: 0 8px 4px 1px #9999cc;
+    -moz-box-shadow: 0 8px 4px 1px #9999cc;
+    box-shadow: 0 0 4px 1px #9999cc;
+    min-height: 200px;
+}
+#content2 img.auditorium
+{
+    float: left;
+    margin: 8px 16px 8px 4px;
+}
+
 div:not(#content) + div#content {
     min-height: 0;
 }
+div:not(#content2) + div#content2 {
+    min-height: 0;
+}
+#content2 img {
+    max-width: 100%;
+    margin: 8px auto;
+    padding: 1px;
+    display: block;
 
+    border: 12px inset #2c2c2c;
+}
+
+#content2 {
+    position: relative;
+    width: 664px;
+    top: -60px;
+    margin: 0 auto 24px;
+    padding: 4px 8px;
+}
+
+#content2 {
+    background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+        ),
+        url('../images/sub/5.jpg');
+
+    border: 3px double #808080;
+
+    -webkit-box-shadow: 0 8px 4px 1px white;
+    -moz-box-shadow: 0 8px 4px 1px white;
+    box-shadow: 0 0 4px 1px white;
+
+    padding: 4px 8px;
+}
+.label2 {
+    -webkit-box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
+    -moz-box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
+    box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
+
+    margin: 16px 0;
+    margin-left: 20%;
+    transform: translateX(-6.5%);
+    padding: 2px 16px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #CAD1D1;
+}
+
+.label2 p {
+    font-family: myfont, serif;
+    letter-spacing: 4px;
+    font-size: 3.4em;
+    line-height: 0.75em
+}
 #content img.auditorium
 {
     float: left;
