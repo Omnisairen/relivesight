@@ -27,11 +27,11 @@ a, a:hover {
 }
 
 a {
-    color: white;
+    color: gray;
 }
 
 a:hover {
-    color: black;
+    color: white;
 }
 /* Track */
 ::-webkit-scrollbar-track {

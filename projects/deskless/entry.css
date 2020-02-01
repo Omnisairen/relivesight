@@ -22,7 +22,17 @@
 ::-webkit-scrollbar {
 		width: 10px;
 }
+a, a:hover {
+    text-decoration: none;
+}
 
+a {
+    color: gray;
+}
+
+a:hover {
+    color: white;
+}
 /* Track */
 ::-webkit-scrollbar-track {
 		background: #222;
