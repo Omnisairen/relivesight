@@ -8,6 +8,19 @@
   font-family: myfont;
   src: url(../fonts/Fudged.ttf);
 }
+.ribbon {
+   position: relative;
+   top: -16px;
+   right: -706px;
+}
+#cqqq {
+    position: relative;
+}
+#cqqq img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 /* width */
 ::-webkit-scrollbar {
 		width: 10px;
