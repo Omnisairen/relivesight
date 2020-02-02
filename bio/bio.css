@@ -9,9 +9,7 @@
   src: url(../fonts/Fudged.ttf);
 }
 .ribbon {
-   position: relative;
-   top: -16px;
-   right: -706px;
+   border: 2px inset #14fdce;
 }
 #cqqq {
     position: relative;
