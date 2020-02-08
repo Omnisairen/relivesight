@@ -135,7 +135,11 @@ p {
   font-family: 'myfont3';
   font-size: 20px;
 }
-
+img {
+-webkit-box-shadow: 0 8px 4px 4px #555555;
+-moz-box-shadow: 0 8px 4px 4px #555555;
+box-shadow: 0 0 4px 4px #555555;
+}
 .top {
   text-align: center;
   padding: 1%;
@@ -143,7 +147,7 @@ p {
 }
 .main{
   text-align: center;
-  padding: 1vw;
+  padding: 3vw;
   margin-top: 1vw;
   border:.2vw solid white;
   border-radius: 1vw;

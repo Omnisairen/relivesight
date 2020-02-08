@@ -29,11 +29,24 @@
   src: url(../fonts/manbowlines.ttf);
 }
 body {
-
-  background-image: url("../images/music/gq.gif");
-
+  /*background-image: url("../images/music/hir.gif");*/
+  background-color: black;
 }
+div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/music/hir.gif');
 
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 h1 {
   color: white;
  margin: 10px;

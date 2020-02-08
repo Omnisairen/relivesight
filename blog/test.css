@@ -116,6 +116,9 @@ font-family:Times, "Times New Roman", serif;
 	}
 
 .logo {
+  -webkit-box-shadow: 0 8px 4px 4px #9999cc;
+  -moz-box-shadow: 0 8px 4px 4px #9999cc;
+  box-shadow: 0 0 4px 4px #9999cc;
 	margin:20px;
 
 

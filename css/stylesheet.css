@@ -65,7 +65,7 @@ a{transition: all 0.4s ease;}
 /* template */
 /* md lg */ @media (min-width: 768px){.img-title{max-width:100%;height:auto;}}
 /* sm */ @media (max-width: 767px){.img-title{max-width:150px;height:auto;}}
-
+/*                                                                       hr.png for mobile */
 .contentLeft{padding:15px !important;background-image:url(../images/home/hair.gif);}
 /* md lg */ @media (min-width: 768px){.contentLeft{min-height:800px;border-radius:0 3px 3px 0;}}
 /* IE6-9 */background-size: 100% auto, cover;background-position:bottom center;background-repeat: no-repeat;}}
