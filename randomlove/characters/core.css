@@ -1,22 +1,22 @@
 @font-face {
   font-family: myfont;
-  src: url(../fonts/FUDGED.ttf);
+  src: url(../../fonts/FUDGED.ttf);
 }
 @font-face {
   font-family: myfont2;
-  src: url(../fonts/Archistico_Simple.ttf);
+  src: url(../../fonts/Archistico_Simple.ttf);
 }
 /* WHY WONT BLUELIENS WORK */
 @font-face {
   font-family: myfont3;
-  src: url(../fonts/ohmygosh.ttf);
+  src: url(../../fonts/ohmygosh.ttf);
 }
 @font-face {
   font-family: myfont4;
-  src: url(../fonts/manbowlines.ttf);
+  src: url(../../fonts/manbowlines.ttf);
 }
 body{
-    background-image:url(../images/randomlove/r.jpg);
+    background-image:url(../../images/randomlove/e.jpg);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -99,7 +99,7 @@ div:not(#content2) + div#content2 {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
         ),
-        url('../images/sub/5.jpg');
+        url('../images/randomlove/characters.jpg');
 
     border: 3px double #808080;
 
@@ -286,9 +286,9 @@ hr {
     width: 635px;
     padding: 4px 8px;
 
-    background: url(../images/sub/1.jpg) repeat;
+    background: url(../../images/randomlove/w.jpg) repeat;
     border: 20px solid;
-    border-image: url(../images/sub/1.gif);
+    border-image: url(../../images/sub/1.gif);
     box-shadow:
         -1px -1px 0 1px #ececec inset,
         -1px -1px 0 1px #ececec,
