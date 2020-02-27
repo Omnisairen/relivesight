@@ -9,7 +9,23 @@
 	<style>
   @charset "UTF-8";
   /* CSS Document */
-
+  @font-face {
+    font-family: myfont;
+    src: url(../fonts/FUDGED.ttf);
+  }
+  @font-face {
+    font-family: myfont2;
+    src: url(../fonts/Archistico_Simple.ttf);
+  }
+  /* WHY WONT BLUELIENS WORK */
+  @font-face {
+    font-family: myfont3;
+    src: url(../fonts/ohmygosh.ttf);
+  }
+  @font-face {
+    font-family: myfont4;
+    src: url(../fonts/manbowlines.ttf);
+  }
   * {
     margin:0px;
     padding:0px;
@@ -21,7 +37,7 @@
     }
 
   body {
-    background-image:url(bg/bg_main2.gif);
+    background-image:url(../images/chat/BWST_7.jpg);
     background-color:black;
     color:white;
     overflow-x: hidden;
@@ -52,6 +68,8 @@
     }
 
   #navbar {
+
+    background-image:url(../images/chat/1.png);
     background-color:black;
     width:800px;
     height:auto;
@@ -66,8 +84,9 @@
 
 
   h1 {
-    font-size:20px;
-    font-family:Times, "Times New Roman", serif;
+    font-family: myfont4;
+    font-size:28px;
+
     font-weight:normal;
     clear:both;
     }
@@ -194,14 +213,14 @@
     }
 
   b {
-    color:#8e717e;
+    color:white;
     font-weight:normal;
 
     }
 
   #footer {
     margin-top:70px;
-    color:#8e717e;
+    color:white;
     border:0px;
     text-align:center;
     letter-spacing:8px;
@@ -375,11 +394,12 @@
     }
 
     #membercounter {
-      color:#980301
+      color:lightgray;
     }
     .members-count,
     .members-list,
     .messages {
+      background-image:url(../images/chat/1.png);
       border: 1px solid #e4e4e4;
       padding: 15px;
       margin-bottom: 15px;
