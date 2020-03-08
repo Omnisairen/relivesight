@@ -16,7 +16,8 @@
   src: url(../fonts/manbowlines.ttf);
 }
 body{
-    background-image:url(../images/randomlove/r.jpg);
+    background-size:auto 100%;
+    background-image:url(../images/art/1.jpg);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -286,7 +287,7 @@ hr {
     width: 635px;
     padding: 4px 8px;
 
-    background: url(../images/sub/1.jpg) repeat;
+    background: url(../images/art/2.jpg) repeat;
     border: 20px solid;
     border-image: url(../images/sub/1.gif);
     box-shadow:
