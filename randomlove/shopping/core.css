@@ -156,11 +156,11 @@ a, a:hover {
 }
 
 a {
-    color: white;
+    color: gray;
 }
 
 a:hover {
-    color: gray;
+    color: white;
 }
 
 p {
