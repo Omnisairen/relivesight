@@ -115,7 +115,7 @@ div:not(#content2) + div#content2 {
     box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
 
     margin: 16px 0;
-    margin-left: 20%;
+    margin-left: 18%;
     transform: translateX(-6.5%);
     padding: 2px 16px;
     display: inline-block;
@@ -370,7 +370,7 @@ hr {
 }
 
 .label p {
-    font-family: myfont, serif;
+    font-family: myfont4, serif;
     letter-spacing: 4px;
     font-size: 3.4em;
     line-height: 0.75em
@@ -400,5 +400,5 @@ hr {
     width: 100%;
     text-align: center;
     margin: -50px 0 0 0;
-    font-family: myfont, serif;
+    font-family: myfont4, serif;
 }
