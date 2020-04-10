@@ -39,7 +39,8 @@ body,a {
 
 body {
 		/*-the background and the main font color*/
-	background-image:url(../images/blog/pattern.gif);
+	background-image:url(../images/vprwve/12.gif);
+	background-size: contain;
 	background-color:black;
 	color:white;
 	}
