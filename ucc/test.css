@@ -22,7 +22,7 @@ body {
 	content: attr(data-text);
 	position: absolute;
 	left: -2px;
-	text-shadow: -5px 0 magenta;
+	text-shadow: -5px 0 rgb(68, 0, 255);
 	background: black;
 	overflow: hidden;
 	top: 0;
@@ -51,7 +51,7 @@ body {
 	content: attr(data-text);
 	position: absolute;
 	left: 2px;
-	text-shadow: -5px 0 lightgreen;
+	text-shadow: -5px 0 rgb(144, 203, 238);
 	background: black;
 	overflow: hidden;
 	top: 0;
