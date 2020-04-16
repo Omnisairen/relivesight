@@ -18,6 +18,30 @@
   font-family: myfont4;
   src: url(../../fonts/manbowlines.ttf);
 }
+
+.label2 {
+  -webkit-box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
+  -moz-box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
+  box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
+
+
+
+  padding: 2px 16px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #CAD1D1;
+}
+
+.label2 p {
+  font-family: myfont4, serif;
+  letter-spacing: 4px;
+  font-size: 2.2em;
+  line-height: 0.75em
+}
+/* Content Two for Return to home page screen */
+
+
 /* width */
 ::-webkit-scrollbar {
 		width: 10px;
