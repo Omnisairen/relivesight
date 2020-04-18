@@ -452,9 +452,6 @@ input[type='checkbox'] {
   padding: .5rem 1rem;
 }
 
-
-@-webkit-keyframes typing { from { width: 0; } }
-
 .typewriter {
 	border-right: .1em solid black;
 	width: 16.5em;
