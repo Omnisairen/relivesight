@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*myfont*/
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/FUDGED.ttf);
+}
+@font-face {
+  font-family: myfont2;
+  src: url(../fonts/Archistico_Simple.ttf);
+}
+/* WHY WONT BLUELIENS WORK */
+@font-face {
+  font-family: myfont3;
+  src: url(../fonts/ohmygosh.ttf);
+}
+@font-face {
+  font-family: myfont4;
+  src: url(../fonts/manbowlines.ttf);
+}
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #111;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+body,p{font-family:'myfont2',courier,monospace;font-size:20px;}
+a, a:active{color:white;text-decoration:none;font-weight:normal;font-family:'myfont4',courier,monospace;}
+div {
+  font-family: myFirstFont;
+}
+body,a {
+	/*cursor:url(../images/nav/rsz_hover.png), auto;*/
+}
+* {
+	margin-right:20px;
+	margin-left:20px;
+	padding:0px;
+	letter-spacing:8px;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+	/*-moz-osx-font-smoothing: grayscale;*/
+
+	}
+
+body {
+		/*-the background and the main font color*/
+	/*background-image:url(../images/society/2.gif);*/
+	background-image:url(../images/society/2.gif);
+	
+	background-size: contain;
+	background-color:black;
+	color:white;
+	}
+h1, h2 {
+	text-shadow: 4px 4px 3px rgb(24, 24, 24);
+	color:rgb(194, 194, 194)	
+}
+p {
+	color:rgb(226, 226, 226)
+}
+.nav a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right:30px;
+  display: block;
+  position: relative;
+      float: relative;
+    width: 50px;
+    height: 40px;
+    margin: 50px;
+    
+  
+
+}
+.nav li {
+  display: block;
+  position: relative;
+  
+  
+}
+.nav h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right:10px;
+  display: left;
+  position; left;
+  
+}
+  
+
+  .nav1 a {
+    background-color: #00000;
+    height: auto;
+    width: 150px;
+    float: center;
+    padding: 20px;
+    font-family: 'Courier New', serif;
+    font-size: 12px;
+    color: #000000;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  
+  .card {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 20%;
+  min-width: 200px;
+
+   
+ }
+ 
+    .card2 {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 10%;
+  min-width: 100px;
+
+   
+ }
+ 
+   .card3 {
+  display: block;
+  position: relative;
+  align: top;
+  width: 10%;
+  min-width: 10px;
+
+   
+ }
+
+ 
+ .leftcol {
+    width:500px;
+    height:auto;
+    display:block;
+    float:left;
+    padding-bottom:150px;
+ }
+ 
+ .centercol {
+   width:600px;
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+   padding-bottom:150px;
+   text-align:center;
+ }
+ 
+ .comicsnav {
+display:inline;
+ }
+
+ .outer {
+    position:relative;
+    width: 900px;
+    height: 300px;
+}
+.overlay {                      
+	display: none;  
+}
+
+.outer .overlay { 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	background-image:url(../images/society/e.gif);
+	transform:translate(0%,  0%);
+    opacity: 0.2;
+	top: 0;
+	
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color:white;
+}
