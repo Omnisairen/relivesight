@@ -370,7 +370,7 @@ hr {
 #HCB_comment_box .hcb-wrapper{clear:both;}
 #HCB_comment_box input.text{display:block;width:95%;}
 #HCB_comment_box input.submit{border-top:1px solid rgb(92, 92, 92);border-left:1px solid rgb(92, 92, 92);border-bottom:1px solid rgb(92, 92, 92);border-right:1px solid rgb(92, 92, 92);background-color:rgb(122, 122, 122);color:#000;font-weight:bold;cursor:pointer;}
-#HCB_comment_box div.comment{color:rgb(92, 92, 92); background: rgba(0, 0, 0, 0.5); border:3px double rgb(92, 92, 92) ; margin:5px; padding:2px;}
+#HCB_comment_box div.comment{color:white; background: rgba(0, 0, 0, 0.5); border:3px double white ; margin:5px; padding:2px;}
 #HCB_comment_box .comment .likes{color: rgb(134, 134, 134);}
 #HCB_comment_box .hcb-link{color:rgb(199, 199, 199);text-decoration:none;} 
 
