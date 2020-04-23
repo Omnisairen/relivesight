@@ -46,19 +46,56 @@
                 <p>♪ Solder ♪</p>
                 <p>♪ Soldering Iron ♪</p>
                 <p>♪ Wire Cutter ♪</p>
-
+                <p>♪ Wire Crimper? ♪</p>
                 
                 <br><h1>Instructions</h1><br>
                 
-                <p>My instructions are vague and unclear, until i polish them up please follow: <a href="https://geekhack.org/index.php?topic=87689.0" target="_blank">this</a> lovely guide!</p><br>
-                
-                
-                <p>Using the diagram of the wiring and the pro micro pinout (check the firmware tutorial <a href="https://relivesight.com/reference/firmware" target="_blank">here</a>), begin to wire the key switches, keep in mind the diodes go on the rows, from the pro micro to the switches, and with the side of the diode with the bar closer to the micro. also if you are looking directly at the bottom of a switch, you solder the rows to the right side and the columns up and down </p>
+                <p>My instructions <strike>are vague and unclear, until i polish them up please</strike> are now complete, but for someone else's instructions, follow: <a href="https://geekhack.org/index.php?topic=87689.0" target="_blank">this</a> lovely guide!</p><br>
+                <p>also note: don't follow this guide if you want a pretty handwire, mine just work~ thats it!
+                </p><br>
+                <p>> First, put in your switches! im assuming you already have a case of some kind if you are following a handwiring guide.
+                  if not, what are you doing here? go find a project log silly
+                </p>
+                <br><p><img src="../../images/reference/handwire/0.jpeg" width="600px"></p><br>
+                <br><p><img src="../../images/reference/handwire/1.jpeg" width="600px"></p><br>
+                <p>> Next, you'll need to prepare your diodes, some people prepare all of theirs in advance, i do one at a time!
+                all i do is bend it in a circle with my finger, and then cut off the extra with wire cutter, and then bend the other side towards the left or right depending on what side of my keyboard i am working on,
+                dont worry if that doesn't make sense, just put it the way that needs to connect. also make sure to make the circle on the side that doesn't have the band, otherwise it wont work. there is a small gray band on the left side of 
+                my diode, like shown in the pictures:  
+                </p>
+                <br><p><img src="../../images/reference/handwire/2.jpeg" width="200px"><img src="../../images/reference/handwire/3.jpeg" width="200px"><img src="../../images/reference/handwire/4.jpeg" width="200px"><img src="../../images/reference/handwire/5.jpeg" width="200px"></p><br>
+<p>> Now, just put the diode on the one of the pins of the switch, this will be for the rows. to my knowledge it doesn't matter which one, but i always but it on the left side (looking from the bottom).
+  so solder the diode to the switch, and then i bend the first sticking out ending upwards. next repeat this process but then solder the sticking out end to the sticking out end of the first diode.
+  you could use a wire to connect them all, but that would take longer and the columns will be wired anyway so its okay. though i do show part of a wire attachement because this case has a large gap, as shown:
+</p>
+<br><p><img src="../../images/reference/handwire/7.jpeg" width="400px"><br><img src="../../images/reference/handwire/6.jpeg" width="600px"><br><img src="../../images/reference/handwire/8.jpeg" width="600px"></p><br>
+<p>> Next, the rows! i always thought this step would be the hardest one but it always seems to go very well for me and take very little time. you need to approximate alot in this step (you could measure it but please that would take so long)
+  so approximate the length of the column, better to have extra than too little, and use the tool (i think its called a wire crimper? its pictured in the left most picture) to
+make sections of wire open, at about lengths of each keyswitch apart, better to be longer than shorter cuz you can bend it! picturesss:</p>
+<br><p><img src="../../images/reference/handwire/111.jpeg" width="240px"><img src="../../images/reference/handwire/9.jpeg" width="240px"><img src="../../images/reference/handwire/10.jpeg" width="240px"></p><br>
+<br><p><img src="../../images/reference/handwire/11.jpeg" width="350px"><img src="../../images/reference/handwire/12.jpeg" width="350px"></p><br>
+<br><p><img src="../../images/reference/handwire/14.jpeg" width="700px"></p><br>
+<p>All that is left is the microcontroller, in this case a teensy, but as long as you follow the proper pins from the firmware tutorial, you'll be fine.
+  just solder wires to the microcontroller, with estimated lengths, then attach the rows and columns as decided in the firmware, pics (including example pin arrangement):
+</p>
+<br><p><img src="../../images/reference/handwire/222.png" width="410px"><img src="../../images/reference/handwire/15.jpeg" width="240px"></p><br>
+<br><p><img src="../../images/reference/handwire/16.jpeg" width="700px"></p><br>
+<br><p><img src="../../images/reference/handwire/17.jpeg" width="700px"></p><br>
+<br><p><img src="../../images/reference/handwire/18.jpeg" width="700px"></p><br>
+<p>> That's all! Hopefully this helped somebody, please leave a note in the guestbook or contact me with any questions, ill add any details people need. unfortunately i did not have the screws needed for this case, and i had some caps i wanted to get rid of, so i called it fail and probably wont ever use it, but the final product is there:
+</p><br><p><img src="../../images/reference/handwire/00000.jpeg" width="700px"></p><br>
+
+
+
+
+
+               <!-- <h1>Old</h1>
+                <p>this was the first excuse of a guide i wrote up real quick but i didnt want to delete it lol</p>
+                <br><p>Using the diagram of the wiring and the pro micro pinout (check the firmware tutorial <a href="https://relivesight.com/reference/firmware" target="_blank">here</a>), begin to wire the key switches, keep in mind the diodes go on the rows, from the pro micro to the switches, and with the side of the diode with the bar closer to the micro. also if you are looking directly at the bottom of a switch, you solder the rows to the right side and the columns up and down </p>
                 <br><p>i also usually flash the micro before i solder, just a preference so now to <a href="https://relivesight.com/reference/flashing" target="_blank">flashing</a><br><br>
                   sike actually you got to put the diodes differently, with the line away from the key switch like before but connected past the diode</p>
-                  <p>(sorry if this is bad ill try and make diagrams to back this up soon)</p>
-                  <br><p><img src="../../images/reference/handwire/2.jpg" width="400px"></p><br>
-                <br><p><img src="../../images/reference/handwire/1.png" width="400px"></p><br>
+                  <p>(sorry if this is bad ill try and make diagrams to back this up soon) note from the future: no diagrams lol</p>
+                  <br><p><img src="../../images/reference/handwire/2.jpg" width="400px"></p><br>-->
         </div>
       </div>
     </div>
