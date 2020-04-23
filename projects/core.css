@@ -108,8 +108,8 @@ div:not(#content2) + div#content2 {
 #content2 {
     background:
         linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.87),
+        rgba(0, 0, 0, 0.87)
         ),
         url('../images/sub/5.jpg');
 
@@ -276,8 +276,8 @@ hr {
 #content, #content_mag {
     background:
         linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.87),
+        rgba(0, 0, 0, 0.87)
         ),
         url('../images/sub/5.jpg');
 
