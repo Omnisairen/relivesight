@@ -55,6 +55,7 @@ a, a:hover {
 
 a {
     color: gray;
+    font-size: .8em;
 }
 
 a:hover {
