@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「ｒｅ：Ｌｉｖｅ」</title>
+    <link rel="icon" type="image/png" href="../../images/home/pupilpng.png" sizes="1000x1000" />
+    <link href="entry.css" rel="stylesheet" type="text/css" media="all">
+    
+    <style>
+    body {
+      background: url(uhhh.png) top left repeat;
+      background-size: 76.4%;
+    }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123647555-2');
+</script>
+
+<link rel="stylesheet" href="../../highlight/styles/atelier-cave-dark.css">
+<script src="../../highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  </head>
+  <body>
+ <div id="page">
+    <div id="content_container">
+
+      <div id="content">
+
+        <div class="main">
+                <br><h2>GGLDCS</h2><br>
+                <div id="content2">
+                  <div class="label2">
+                      <p><a href="https://relivesight.com/code">Return Back A Page</a></p>
+                  </div>
+              </div><br><br>
+                
+                <h1>G.G.L.D.C.S.</h1><br>
+                <p> it stands for Goo G Le Docs Cuzthat Swhereidecidetohostmyimagesfromnowon</p>
+                <br><p>okay okay so i talked briefly about my image hosting strategy in yesterdays daily log, but it was long and laborious
+                  so i needed to find a way to automate it. the solution? thisssss, so it took a few trys of different things and by no means is this a great solution,
+                  but ehhhhh it works for me sorry im no pro
+                </p><br>
+                <p>So the steps for what I did:
+                  <br>- Open the google drive and select the folder</a>
+                  <br>- Run this python program:
+                </p><br>
+                  <pre><code class='python'>import pyautogui, sys, time
+from pynput.mouse import Button, Controller
+
+
+mouse = Controller()
+
+pyautogui.moveTo(1800, 370)
+mouse.press(Button.left)
+pyautogui.moveTo(428, 680, 2)
+
+
+
+for x in range(1,5):
+    mouse.scroll(0, -50)
+    pyautogui.moveTo(440, 680, 1)
+    time.sleep(2)
+    pyautogui.moveTo(428, 680, 1)
+
+
+mouse.release(Button.left)  
+                     </code>
+                     </pre>
+                     <p>what this program does is selects all the imgs in the folder so i can grab the links,
+                       but i still needed to do magic trick to get the links into useable for html, as they are both a big blob of text
+                      and full of wrong info, here's the code to sort it out</p><br>
+                      <pre><code class='python'>stroodle = input('paste here: ')
+
+stroodletoodle = stroodle.replace('/view?usp=sharing,%20https://drive.google.com/file/d/','"style="width: 664px;"/>\n<img src="https://drive.google.com/uc?export=view&id=')
+print('<img src=https:/drive.google.com/uc?export=view&id='+stroodletoodle +'"style="width: 664px;"/>') 
+                                             </code>
+                                             </pre>
+                                             <p>and then the outputted stuff from that goes right into code! works for me. thats this simple inneficient program that helps me upload images for my website.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

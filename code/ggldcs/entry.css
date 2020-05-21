@@ -174,7 +174,7 @@ box-shadow: 0 0 4px 4px #555555;
   margin-top: .01vw;
 }
 .main{
-  text-align: center;
+  text-align: left;
   padding: 3vw;
   margin-top: 1vw;
   border:.2vw solid white;
@@ -183,8 +183,12 @@ box-shadow: 0 0 4px 4px #555555;
   background-color: black;
   background-size: 26vw;
 }
-.main p{
+.main a{
   text-align: center;
+}
+
+.main p{
+  text-align: left;
   color: white;
 }
 
