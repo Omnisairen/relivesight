@@ -44,7 +44,11 @@ a {
 	cursor:url(../images/nav/rsz_hoverreal.png), auto;
 }
 body{
-background-image:url(../images/home/efa.gif);
+background-image:url(../images/home/111.jpg);
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 /* IE6-9 background-size: 50px auto, cover;*/background-attachment:fixed;color:#fff5e0;margin:0;line-height:1.7;}
 body,h1,h2,h3,p{margin-top:0;letter-spacing:.01em;}
 h1{margin-bottom:7px;text-align:center;}
