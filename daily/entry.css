@@ -11,6 +11,10 @@
   src: url(../fonts/Archistico_Simple.ttf);
 }
 @font-face {
+  font-family: myfont33;
+  src: url(../fonts/komi.ttf);
+}
+@font-face {
   font-family: myfont3;
   src: url(../fonts/nasalization-rg.ttf);
 }
@@ -18,7 +22,131 @@
   font-family: myfont4;
   src: url(../fonts/manbowlines.ttf);
 }
+@font-face {
+  font-family: myfont333;
+  src: url(../fonts/lekton.ttf);
+}
 
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+.glowtest {
+  color: #fff;
+  text-align: left;
+  -webkit-animation: glowtest 1s ease-in-out infinite alternate;
+  -moz-animation: glowtest 1s ease-in-out infinite alternate;
+  animation: glowtest 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowtest {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+  }
+}
+
+
+.glowr {
+  color: #fff;
+  text-align: right;
+  -webkit-animation: glowr 1s ease-in-out infinite alternate;
+  -moz-animation: glowr 1s ease-in-out infinite alternate;
+  animation: glowr 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowr {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 7px #e60073, 0 0 10px #e60073, 0 0 17px #e60073, 0 0 15px #e60073, 0 0 17px #e60073;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 7px #ff4da6, 0 0 10px #ff4da6, 0 0 17px #ff4da6, 0 0 15px #ff4da6, 0 0 17px #ff4da6, 0 0 20px #ff4da6;
+  }
+}
+
+
+.glowl {
+  color: #fff;
+  text-align: left;
+  -webkit-animation: glowr 1s ease-in-out infinite alternate;
+  -moz-animation: glowr 1s ease-in-out infinite alternate;
+  animation: glowr 1s ease-in-out infinite alternate;
+}
+
+.glowc {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glowr 1s ease-in-out infinite alternate;
+  -moz-animation: glowr 1s ease-in-out infinite alternate;
+  animation: glowr 1s ease-in-out infinite alternate;
+}
+
+
+/*for border of box*/
+.glowb {
+  border-radius: 4vw;
+  color: #fff;
+  -webkit-animation: glowb 1s ease-in-out infinite alternate;
+  -moz-animation: glowb 1s ease-in-out infinite alternate;
+  animation: glowb 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowb {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 7px #e60073, 0 0 10px #e60073, 0 0 17px #e60073, 0 0 15px #e60073, 0 0 17px #e60073;
+  }
+  to {
+    box-shadow: 0 0 10px #fff, 0 0 7px #ff4da6, 0 0 10px #ff4da6, 0 0 17px #ff4da6, 0 0 15px #ff4da6, 0 0 17px #ff4da6, 0 0 20px #ff4da6;
+  }
+}
+
+
+
+
+
+
+.bruh {
+  text-align: center;
+  position: relative;
+  font-family: myfont3;
+
+  font-size: 1em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255,255,255,0);
+}
+@keyframes animate
+{
+   0%
+   {
+       background-position: -500%;
+   }
+   100%
+   {
+       background-position: 500%;
+   }
+}
 .label2 {
   -webkit-box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
   -moz-box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
@@ -84,7 +212,7 @@ h2 {
 }
 
 * { margin: 0; padding: 0; }
-#page{display:table;overflow:hidden;margin:0px auto;}
+#page{display:table;margin:0px auto;}
 *:first-child+html #page {position:relative;}/*ie7*/
 * html #page{position:relative;}/*ie6*/
 
@@ -150,7 +278,7 @@ html {
 }
 
 h1 {
-  font-family: 'myfont4';
+  font-family: 'myfont333';
   color:white;
   font-size: 30px;
 }
@@ -166,11 +294,26 @@ p {
   font-size: 20px;
   color:white;
 }
-img {
+/*img {
 -webkit-box-shadow: 0 0px 3px 3px #555555;
 -moz-box-shadow: 0 0px 3px 3px #555555;
 box-shadow: 0 0 3px 3px #353535;
 border-radius: 1vw;
+}*/
+img {
+  border-radius: 1vw;
+  -webkit-animation: glowb 1s ease-in-out infinite alternate;
+  -moz-animation: glowb 1s ease-in-out infinite alternate;
+  animation: glowb 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowb {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 7px #e60073, 0 0 10px #e60073, 0 0 17px #e60073, 0 0 15px #e60073, 0 0 17px #e60073;
+  }
+  to {
+    box-shadow: 0 0 10px #fff, 0 0 7px #ff4da6, 0 0 10px #ff4da6, 0 0 17px #ff4da6, 0 0 15px #ff4da6, 0 0 17px #ff4da6, 0 0 20px #ff4da6;
+  }
 }
 .top {
   text-align: center;
@@ -187,10 +330,24 @@ border-radius: 1vw;
   background-color: black;
   background-size: 26vw;
 }
-.main p{
+
+.main p {
   text-align: left;
   color: white;
 }
+.left {
+  text-align: left;
+  color: white;
+}
+.right {
+  text-align: right;
+  color: white;
+}
+.center {
+  text-align: center;
+  color: white;
+}
+
 .main2{
   text-align: center;
   padding: 3vw;
@@ -202,7 +359,6 @@ border-radius: 1vw;
   background-size: 26vw;
 }
 .main2 p{
-  text-align: center;
   color: white;
 }
 
