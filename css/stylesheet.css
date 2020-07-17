@@ -44,7 +44,7 @@ a {
 	cursor:url(../images/nav/rsz_hoverreal.png), auto;
 }
 body{
-background-image:url(../images/home/111.jpg);
+background-image:url(../images/home/111.webp);
 -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -70,7 +70,7 @@ a{transition: all 0.4s ease;}
 /* md lg */ @media (min-width: 768px){.img-title{max-width:100%;height:auto;}}
 /* sm */ @media (max-width: 767px){.img-title{max-width:150px;height:auto;}}
 /*                                                                       hr.png for mobile */
-.contentLeft{padding:15px !important;background-image:url(../images/home/rr.jpg);}
+.contentLeft{padding:15px !important;background-image:url(../images/home/rr.webp);}
 /* md lg */ @media (min-width: 768px){.contentLeft{min-height:800px;border-radius:0 3px 3px 0;}}
 /* IE6-9 */background-size: 100% auto, cover;background-position:bottom center;background-repeat: no-repeat;}}
 /* sm */ @media (max-width: 767px){.contentLeft{border-radius:3px 3px 0 0;background:#3B2631;}}
