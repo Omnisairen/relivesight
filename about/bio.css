@@ -82,6 +82,7 @@ color:#fff;
   font-family: 'Abril Fatface', serif;
   margin-bottom: 0;
   display:inline-block;
+  text-shadow: 4px 4px 4px #2c2c2c;
 }
 .blog-card h3 a{  
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  
