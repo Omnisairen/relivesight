@@ -110,7 +110,6 @@ html,body{height:100%;}
 
 html{
   background:url(../../images/entries/4.jpg);
- 
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -122,7 +121,7 @@ html{
 
 
 body {
-  background-color: black;
+ 
   color: black;
   background-size: 16vw, 16vw, 4vw;
   z-index: 1;
@@ -175,7 +174,7 @@ box-shadow: 0 0 4px 4px #555555;
   margin-top: .01vw;
 }
 .main{
-  text-align: left;
+  text-align: center;
   padding: 3vw;
   margin-top: 1vw;
   border:.2vw solid white;
@@ -184,12 +183,8 @@ box-shadow: 0 0 4px 4px #555555;
   background-color: black;
   background-size: 26vw;
 }
-.main a{
-  text-align: center;
-}
-
 .main p{
-  text-align: left;
+  text-align: center;
   color: white;
 }
 

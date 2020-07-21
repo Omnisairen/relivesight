@@ -81,8 +81,10 @@ mouse.release(Button.left)
                       and full of wrong info, here's the code to sort it out</p><br>
                       <pre><code class='python'>stroodle = input('paste here: ')
 
-stroodletoodle = stroodle.replace('/view?usp=sharing,%20https://drive.google.com/file/d/','"style="width: 664px;"/>\n<img src="https://drive.google.com/uc?export=view&id=')
-print('<img src=https:/drive.google.com/uc?export=view&id='+stroodletoodle +'"style="width: 664px;"/>') 
+stroodletoodle = stroodle.replace('/view?usp=sharing,%20https://drive.google.com/file/d/',
+'"style="width: 664px;"/>\n《img src="https://drive.google.com/uc?export=view&id=')
+print('《img src=https:/drive.google.com/uc?export=view&id='
++stroodletoodle +'"style="width: 664px;"/》') 
                                              </code>
                                              </pre>
                                              <p>and then the outputted stuff from that goes right into code! works for me. thats this simple inneficient program that helps me upload images for my website.</p>
