@@ -4,20 +4,20 @@
 /*myfont*/
 @font-face {
   font-family: myfont;
-  src: url(../fonts/FUDGED.ttf);
+  src: url(../../fonts/FUDGED.ttf);
 }
 @font-face {
   font-family: myfont2;
-  src: url(../fonts/Archistico_Simple.ttf);
+  src: url(../../fonts/Archistico_Simple.ttf);
 }
 /* WHY WONT BLUELIENS WORK */
 @font-face {
   font-family: myfont3;
-  src: url(../fonts/ohmygosh.ttf);
+  src: url(../../fonts/ohmygosh.ttf);
 }
 @font-face {
   font-family: myfont4;
-  src: url(../fonts/manbowlines.ttf);
+  src: url(../../fonts/manbowlines.ttf);
 }
 body,p{font-family:'myfont2',courier,monospace;font-size:20px;}
 a, a:active{color:white;text-decoration:none;font-weight:normal;font-family:'myfont4',courier,monospace;}
@@ -25,7 +25,7 @@ div {
   font-family: myFirstFont;
 }
 body,a {
-	cursor:url(../images/nav/rsz_hover.png), auto;
+	cursor:url(../../images/nav/rsz_hover.png), auto;
 }
 * {
 	margin:0px;
@@ -39,7 +39,7 @@ body,a {
 
 body {
 		/*-the background and the main font color*/
-	background-image:url(../images/vprwve/12.gif);
+	background-image:url(../../images/vprwve/12.gif);
 	background-size: contain;
 	background-color:black;
 	color:white;
@@ -70,7 +70,7 @@ a:active {
 */
 #navbar {
 	/*top bar*/
-	background-image:url(../images/blog/hsB.gif);
+	background-image:url(../../images/blog/hsB.gif);
 	/*background-color:black;*/
 	width:800px;
 	height:auto;
@@ -169,7 +169,7 @@ hr {
 .article {
 		/*eac article body*/
 	width:800px;
-	background-image:url(../images/blog/hsB.gif);
+	background-image:url(../../images/blog/hsB.gif);
 	background-color:black;
 	height:auto;
 	margin-left:auto;
