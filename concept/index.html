@@ -1,10 +1,29 @@
-
 <!DOCTYPE html>
-
 <html>
+
 <head>
-  <link rel="icon" type="image/png" href="../images/home/pupilpng.png" sizes="1000x1000" />
-    
+	<meta charset="UTF-8">
+    <title>「ｒｅ：Ｌｉｖｅ」</title>
+    <link href="core.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/png" href="../images/home/pupilpng.png" sizes="1000x1000" />
+
+    <script language="JavaScript" type="text/javascript">
+    /*<![CDATA[*/
+    var ImgAry=['../img/monitors-lg.gif','../img/monitors-lg-back.gif','../img/monitors-lg-email.gif', '../img/monitors-lg-guest.gif'];
+    var MapAry=[];
+
+    for (var zxc0=0; zxc0<ImgAry.length; zxc0++)
+    {
+        MapAry[zxc0] = new Image();
+        MapAry[zxc0].src = ImgAry[zxc0];
+    }
+
+    function Swap(id, nu)
+    {
+        document.getElementById(id).src = MapAry[nu].src;
+    }
+    /*]]>*/
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
 <script>
@@ -14,248 +33,77 @@
 
   gtag('config', 'UA-123647555-2');
 </script>
-
-  <style>
-  @import url(https://fonts.googleapis.com/css?family=Nunito);
-
-  * {
-  	margin:0px;
-  	padding:0px;
-  	letter-spacing:8px;
-  	font-smooth: never;
-  	-webkit-font-smoothing: none;
-  	/*-moz-osx-font-smoothing: grayscale;*/
-
-  	}
-
-  h1 {
-    color: rgba(240,240,240, .8);
-  	font-family:Times, "Times New Roman", serif;
-  	font-weight:normal;
-  	clear:both;
-    font-size:200%;
-    text-decoration: underline;
-  	}
-  h2 {
-  	font-family:Times, "Times New Roman", serif;
-  	font-weight:normal;
-  	clear:both;
-    font-size:200%;
-  	}
-  p {
-
-  	font-size:20px;
-  	font-family:Times, "Times New Roman", serif;
-  	font-weight:normal;
-  	clear:both;
-    font-size: 140%;
-    line-height: 150%;
-    color: #999;
-  	}
-
-.single {
-  text-decoration: line-through;
-}
-
-  /* width */
-  ::-webkit-scrollbar {
-      width: 10px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-      background: #222;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-      background: #111;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-  }
-
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  margin:0;
-  padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: Nunito;
-}
-
-
-
-.slide {
-  position: relative;
-  padding: 25vh 10%;
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-	transform-style: inherit;
-}
-
-img {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 320px;
-  height: 240px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
-
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-}
-
-.title {
-  width: 50%;
-  padding: 2%;
-  border-radius: 5px;
-  background: rgba(1,1,1, 1);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-.blackbg {
-  border-radius: 0px;
-  background: rgba(1,1,1, 1);
-  box-shadow: 0 0 0px rgba(0, 0, 0, .7);
-}
-
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;
-}
-
-.header {
-  text-align: center;
-  font-size: 175%;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
-}
-
-#title {
-  /* https://i.gifer.com/81CA.gif*/
-  /*https://images.pexels.com/photos/695644/pexels-photo-695644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260*/
-  /*https://payload285.cargocollective.com/1/9/312056/8000203/crystallight.gif*/
-  background-image: url("https://payload285.cargocollective.com/1/9/312056/8000203/crystallight.gif");
-  z-index:2;
-}
-
-#title h1 {
- transform: translateZ(.25px) scale(.75);
- transform-origin: 50% 100%;
-}
-
-#title h2 {
-  transform: translateZ(.25px) scale(.75);
-  transform-origin: 50% 100%;
-
-}
-
-#slide1:before {
-  background-image: url("https://i.gyazo.com/96da0046066d7aa3875ea349e06893b0.jpg");
-  transform: translateZ(-1px) scale(2);
-}
-
-#slide2 {
-  background-image: url("https://i.gyazo.com/39fec81b10f57ef315a7f09480b73ef2.png");
-  z-index:2;
-}
-
-#slide3:before {
-  background-image: url("https://images4.alphacoders.com/282/28246.png");
-  transform: translateZ(-1px) scale(2);
-}
-
-#slide4 {
-  /*http://getwallpapers.com/wallpaper/full/9/8/2/871784-yandere-simulator-wallpapers-2732x1536-notebook.jpg*/
-  background-image: url("https://www.thisiscolossal.com/wp-content/uploads/2016/04/MOON2.gif");
-  z-index:2;
-}
-  </style>
-
-
-
-  <script src="./script.js"></script>
-
-
-  <title>「ｒｅ：Ｌｉｖｅ」</title>
 </head>
+
 <body>
-  <div id="title" class="slide header">
-    <h2>【﻿ 𝔴 𝔢  𝔞 𝔯 𝔢  𝔞 𝔩 𝔩  𝔞 𝔩 𝔦 𝔳 𝔢 】</h2>
-  </div>
+  <div><p></p><p></p><p></p></div>
 
-  <div id="slide1" class="slide">
-    <div class="title">
-      <h1>░▒▓█ █▓▒░</h1>
-      <p>---------</p>
-      <P><strike>we are all crumbling</strike></p>
-      <p>---------</p>
-    </div>
-  </div>
+    <div id="wrap">
 
-  <div id="slide2" class="slide">
-    <div class="title">
-      <h1>𝕙𝕒𝕓𝕚𝕥𝕦𝕖</h1>
-      <p>𝟙</p>
-      <p>𝟙</p>
-      <p>𝟙</p>
-      <p>𝟘 𝕥𝕙𝕚𝕤 𝕨𝕒𝕤 _𝕟𝕔𝕖 𝕗𝕦𝕝𝕝</p>
-      <p>𝟙</p>
-    </div>
-    <!--img src="http://www.toca-ch.com/data/walls/33/22255955.jpg">
-    <img src="https://data.whicdn.com/images/62812321/large.jpg">-->
-    <img src="https://pa1.narvii.com/6900/43326c62850934e0fa2d6fd26def2d118f4cc383r1-498-374_hq.gif">
-    <img src="http://78.media.tumblr.com/2a809bbc22ea4bce6e84cc9c54930c9b/tumblr_mpjrmqCoXe1sroq5qo1_500.gif">
-  </div>
+        <div id="content_head">
+            <h1>Concept</h1>
+        </div>
 
-  <div id="slide3" class="slide">
-    <div class="title">
-      <h1>𝕗𝕝𝕠𝕨𝕖𝕣</h1>
-      <p>𝓮𝓿𝓮𝓻𝔂𝓽𝓱𝓲𝓷𝓰 𝔀𝓲𝓵𝓵 𝓻𝓮𝓽𝓾𝓻𝓷</p>
-      <p class="single">(not shown)</p>
-    </div>
-  </div>
 
-  <div id="slide4" class="slide header">
-    <div class="blackbg">
-      <h2>// ｐｒｏｃｅｓｓｉｎｇ... //</h2>
+        <div id="content">
+            <p>
+               Pages that have been pushed down into the conceptual abyss end up here. Pages i still like but have long since overstayed there due on the homepage.
+            </p>
+        </div>
+				<div id="content2">
+								<div class="label2">
+										<p><a href="https://relivesight.com/">Return to Home Page</a></p>
+								</div>
+						</div>
+
+
+
+
+
+                        <div id="ccontent">
+                            <img class="auditorium" src="https://drive.google.com/uc?export=view&id=1EQC4h6Cp1bXrxlWFnkOTEgS1-64xNFl_" style="width: 160px;"/>
+                            <br><br><h3>Old Blog</h3>            <ol class="playlist_info">
+                                <li>the old aesthetic blog <</li><br>
+                            </ol>
+                            <a href="/concept/blog/" class="label3">CLICK TO SEE</a>
+
+                    </div>
+
+
+                    <div id="ccontent">
+                        <img class="auditorium" src="https://drive.google.com/uc?export=view&id=1p5fi_wLBYjC328ko_E6x9BVx8rM5X9zL" style="width: 160px;"/>
+                        <br><br><h3>Chat Room</h3>            <ol class="playlist_info">
+                            <li>it still functions entirely <</li><br>
+                        </ol>
+                        <a href="/concept/chat/" class="label3">CLICK TO SEE</a>
+
+                </div>
+
+
+                <div id="ccontent">
+                    <img class="auditorium" src="https://drive.google.com/uc?export=view&id=1hW82KzaqqNOIUALcwlwEfr7bm6fBDE7d" style="width: 160px;"/>
+                    <br><br><h3>Concept</h3>            <ol class="playlist_info">
+                        <li>page from the old site <</li><br>
+                    </ol>
+                    <a href="/concept/concept/" class="label3">CLICK TO SEE</a>
+
+            </div>
+
+
+            <div id="ccontent">
+                <img class="auditorium" src="https://drive.google.com/uc?export=view&id=1zoTtJcTVzLrQYqYjhrOAelM3KPvNTqK-" style="width: 160px;"/>
+                <br><br><h3>Coming Soon</h3>            <ol class="playlist_info">
+                    <li>the coming soon page <</li><br>
+                </ol>
+                <a href="/concept/ucc/" class="label3">CLICK TO SEE</a>
+
+        </div>
+
+
+        <div id="site_entry">
+            <p>[ <a href="#">Back to Top</a> ]</p>
+        </div>
     </div>
-  </div>
 </body>
+
 </html>
