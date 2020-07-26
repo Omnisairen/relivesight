@@ -16,7 +16,7 @@
   src: url(../fonts/manbowlines.ttf);
 }
 body{
-    background-image:url(../images/randomlove/r.jpg);
+    background-image:url(../images/code/3.JPG);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -44,24 +44,24 @@ body{
         135deg,
         #000,
         #000 10px,
-        #9999cc 10px,
-        #9999cc 20px
+        white 10px,
+        white 20px
     ) 20;
 }
 
 
 #content {
-    -webkit-box-shadow: 0 8px 4px 1px #9999cc;
-    -moz-box-shadow: 0 8px 4px 1px #9999cc;
-    box-shadow: 0 0 4px 1px #9999cc;
+    -webkit-box-shadow: 0 8px 4px 1px white;
+    -moz-box-shadow: 0 8px 4px 1px white;
+    box-shadow: 0 0 4px 1px white;
     min-height: 320px;
 }
 
 /* Content Two for Return to home page screen */
 #content2 {
-    -webkit-box-shadow: 0 8px 4px 1px #9999cc;
-    -moz-box-shadow: 0 8px 4px 1px #9999cc;
-    box-shadow: 0 0 4px 1px #9999cc;
+    -webkit-box-shadow: 0 8px 4px 1px white;
+    -moz-box-shadow: 0 8px 4px 1px white;
+    box-shadow: 0 0 4px 1px white;
     min-height: 200px;
 }
 #content2 img.auditorium
@@ -99,7 +99,7 @@ div:not(#content2) + div#content2 {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
         ),
-        url('../images/sub/5.jpg');
+        url('../images/sub/22B.jpg');
 
     border: 3px double #808080;
 
@@ -114,9 +114,8 @@ div:not(#content2) + div#content2 {
     -moz-box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
     box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
 
-    margin: 16px 0;
-    margin-left: 20%;
-    transform: translateX(-6.5%);
+
+
     padding: 2px 16px;
 
     text-align: center;
@@ -161,7 +160,7 @@ a {
 }
 
 a:hover {
-    color: black;
+    color: gray;
 }
 
 p {
@@ -170,7 +169,7 @@ p {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.6em;
   line-height: 1.6em;
 }
 
@@ -272,7 +271,7 @@ hr {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
         ),
-        url('../images/sub/5.jpg');
+        url('../images/sub/22B.jpg');
 
     border: 3px double #808080;
 
@@ -287,7 +286,7 @@ hr {
     width: 635px;
     padding: 4px 8px;
 
-    background: url(../images/sub/1.jpg) repeat;
+    background: url(../images/code/4.JPG) repeat;
     border: 20px solid;
     border-image: url(../images/sub/1.gif);
     box-shadow:
@@ -354,20 +353,22 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .label {
     -webkit-box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
     -moz-box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
     box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
 
-    margin: 20px 0;
-    margin-left: 60%;
-    transform: translateX(-80%);
-    padding: 2px 15px;
+    margin: 16px 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 16px;
+    display: inline-block;
     text-align: center;
     text-transform: uppercase;
+
     color: #CAD1D1;
 }
+
 
 .label3 {
     -webkit-box-shadow: 0 8px 10px -6px rgba(235,235,235,0.5);
@@ -410,6 +411,94 @@ hr {
 #site_entry {
     width: 100%;
     text-align: center;
-    margin: -45px 0 0 0;
+    margin: -15px 0 0 0;
     font-family: myfont, serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+#ccontent {
+    -webkit-box-shadow: 0 8px 4px 1px white;
+    -moz-box-shadow: 0 8px 4px 1px white;
+    box-shadow: 0 0 4px 1px white;
+    min-height: 120px;
+}
+*/
+#ccontent img {
+    max-width: 100%;
+    margin: 8px auto;
+    padding: 1px;
+    display: block;
+
+    border: 12px inset #2c2c2c;
+}
+
+/*position for the thing not margin,*/
+#ccontent, #ccontent_head, #ccontent_mag {
+    position: relative;
+    width: 664px;
+    top: -60px;
+    margin: 0 auto 24px;
+    padding: 4px 8px;
+}
+
+/*the actual color stuff*/
+#ccontent, #ccontent_mag {
+    background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+        ),
+        url('../images/sub/22B.jpg');
+
+    border: 3px double #808080;
+
+    -webkit-box-shadow: 0 8px 4px 1px white;
+    -moz-box-shadow: 0 8px 4px 1px white;
+    box-shadow: 0 0 4px 1px white;
+
+    padding: 4px 8px;
+}
+
+
+/*notneeded
+#ccontent .inline {
+    text-align: center;
+}
+
+#ccontent .inline img {
+    display: inline;
+}
+
+*/
+
+/*notenededed
+#ccontent table {
+    margin: 8px 4px;
+    border-collapse: collapse;
+}
+*/
+#ccontent img.auditorium
+{
+    float: left;
+    margin: 8px 16px 8px 4px;
+}
+
+
+
+/*height*/
+#ccontent {
+    -webkit-box-shadow: 0 8px 4px 1px white;
+    -moz-box-shadow: 0 8px 4px 1px white;
+    box-shadow: 0 0 4px 1px white;
+    min-height: 200px;
 }
