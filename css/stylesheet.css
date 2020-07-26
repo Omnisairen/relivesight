@@ -75,7 +75,7 @@ a{transition: all 0.4s ease;}
 /* md lg */ @media (min-width: 768px){.contentLeft{min-height:800px;border-radius:0 3px 3px 0;}}
 /* IE6-9 */background-size: 100% auto, cover;background-position:bottom center;background-repeat: no-repeat;}}
 /* sm */ @media (max-width: 767px){.contentLeft{border-radius:3px 3px 0 0;background:#3B2631;}}
-.contentRight{padding:25px !important;background-image:url(../images/home/tenor.gif);}
+.contentRight{padding:25px !important;background-image:url(../images/home/tenor.png);}
 /* md lg */ @media (min-width: 768px){.contentRight{min-height:800px;border-radius:0 3px 3px 0;}}
 /* sm */ @media (max-width: 767px){.contentRight{border-radius:0 0 3px 3px;}}
 .imgPixel img{image-rendering: pixelated;image-rendering: -moz-crisp-edges;image-rendering: crisp-edges;}
