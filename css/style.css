@@ -1,6 +1,6 @@
 body {
   background-color: #272727;
-  background-image: url(img/1.gif);
+  background-image: url(../images/img/1.gif);
   background-size: 10px;
   color: rgb(255, 145, 178);
   font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
