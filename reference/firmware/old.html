@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「ｒｅ：Ｌｉｖｅ」</title>
+    <link rel="icon" type="image/png" href="../../images/home/pupilpng.png" sizes="1000x1000" />
+    <link href="entry.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+    body {
+      background: url(uhhh.png) top left repeat;
+      background-size: 76.4%;
+    }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123647555-2');
+</script>
+
+  </head>
+  <body>
+  <div id="page">
+    <div id="content_container">
+
+      <div id="content">
+
+        <div class="main">
+                <br><h2>Firmware</h2><br>
+                <div id="content2">
+                  <div class="label2">
+                      <p><a href="https://relivesight.com/reference">Return Back A Page</a></p>
+                  </div>
+              </div><br><br>
+                
+                <h1>Programming the Layout</h1><br>
+                <p>> Head over to <a href="http://www.keyboard-layout-editor.com/" target="_blank">the keyboard layout editor</a> and create your layout using the add key function.
+                  if you are using a keyboard layout that already exists, use the preset dropdown and edit it as you see fit.
+                  there's no need to decide key binds yet, but i always put in placeholders just to be sure.
+                  finally copy the text in raw data.</p>
+                <br><p><img src="../../images/reference/firmware/2.png" width="610px"></p><br>
+                <p>Next head to <a href="https://kbfirmware.com/" target="_blank">kbdfirmware</a> and paste the data and hit upload
+                  now move to keymap and you can choose the exact bind and layers you want, etc.
+                  (this example is just a few keys i need and what you will see)</p>
+                  <br><p><img src="../../images/reference/firmware/3.png" width="610px"></p><br>
+                  <p>Move to the pins section and choose the rows and columns, follow this diagram and only choose digital pins (if using pro micro) but it doesn't matter which ones of the digital pins you pick</p>
+                    <br><p><img src="../../images/reference/firmware/4.png" width="610px"></p><br>
+                    <p>the ones with p's are digital, and you just follow the letters after them</p>
+                    <br><p><img src="../../images/reference/firmware/5.png" width="610px"></p><br>
+                    <p>example:</p>
+                    <br><p><img src="../../images/reference/firmware/6.png" width="610px"></p><br>
+                    <p>Then just name your layout (optional: and hit save configuration to save the .json file)
+                      then compile> and download the .hex file.
+                      
+                      The wiring section will show you where to wire everything up</p>
+                      <p>Where the numbers are is where you wire the Arduino with what pins you chose.
+
+                        on to <a href="https://relivesight.com/reference/handwire" target="_blank">handwire tutorial</a></p>
+                        <p>(this is a top view, so you will have to invert it when you solder it from the bottom)</p>
+                        <br><p><img src="../../images/reference/firmware/7.png" width="610px"></p><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
