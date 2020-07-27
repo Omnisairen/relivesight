@@ -1,82 +1,80 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
+  
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/text-page.css" rel="stylesheet" type="text/css" media="all">
     <title>「ｒｅ：Ｌｉｖｅ」</title>
     <link rel="icon" type="image/png" href="../../images/home/pupilpng.png" sizes="1000x1000" />
-    <link href="entry.css" rel="stylesheet" type="text/css" media="all">
-    <style>
-    body {
-      background: url(uhhh.png) top left repeat;
-      background-size: 76.4%;
-    }
-    </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-123647555-2');
+    </script>
+  </head><body>
+    <h2>Handwired Numpad</h2>
+    <p>—「0X://Explanation」<br>
+    My first true handwire - a log
+    </p>
+      <p><a id="back" href="https://relivesight.com/projects/">back a page</a></p>
 
-  gtag('config', 'UA-123647555-2');
-</script>
-  </head>
-  <body>
-  <div id="page">
-    <div id="content_container">
-      <div id="content">
-        <div class="main">
-                <br><h2>HANWIRED NUMPAD </h2><br><br>
-                <img src="../../images/projects/numpad/1.jpg" width="400px"><br><br>
-                <h1>Beginnings</h1><br>
-                <p>i've been building keyboards for months and months at this point (hopefully i have done write ups ex post facto) and i wanted
-                to fully handwire, 3d print, and program my own keyboards. i had been reading up on what to do and buying tools to achieve this goal
-                but instead pursued frivelous 'projects' and dallied about. i eventually got tired of this and on one of my days off of work, decided
-                after school, i would 3d print, handwire, and program a keypad in a single day. this is the knowledge, hardware, and process that went into that.
-                documenting this is hopefully interesting or helpful to you if you want to follow along yourself. </p>
+   
+      <img src="../../images/projects/numpad/1.jpg" width="400px">
+      <h1>Beginnings</h1>
+      <p>i've been building keyboards for months and months at this point (hopefully i have done write ups ex post facto) and i wanted
+      to fully handwire, 3d print, and program my own keyboards. i had been reading up on what to do and buying tools to achieve this goal
+      but instead pursued frivelous 'projects' and dallied about. i eventually got tired of this and on one of my days off of work, decided
+      after school, i would 3d print, handwire, and program a keypad in a single day. this is the knowledge, hardware, and process that went into that.
+      documenting this is hopefully interesting or helpful to you if you want to follow along yourself. </p>
 
-                <br><h1>Hardware</h1><br>
-                <!--
-                <img src="../../images/projects/numpad/2.jpg" width="70%">
-                <img src="../../images/projects/numpad/3.jpg" width="70%">  -->
-                <p>things you will knead (links from where i bought included):</p>
-                <p><a href="" target="_blank">> arduino pro micro (or any teensy variant) <</a></p>
-                <p><a href="" target="_blank">> key switches (gateron silver) <</a></p>
-                <p><a href="" target="_blank">> 3d printer (creality cr-10s <</a></p>
-                <p><a href="" target="_blank">> printer filament (white) <</a></p>
-                <p><a href="" target="_blank"> > sa keycaps < </a></p>
-                <p><a href="" target="_blank"> > solder < </a></p>
-                <p><a href="" target="_blank"> > soldering iron < </a></p>
-                <p><a href="" target="_blank"> > wire < </a></p>
-                <p><a href="" target="_blank"> > diodes < </a></p>
+      <h1>Hardware</h1>
+      <!--
+      <img src="../../images/projects/numpad/2.jpg" width="70%">
+      <img src="../../images/projects/numpad/3.jpg" width="70%">  -->
+      <p>things you will knead (links from where i bought included):</p>
+      <p><a href="" target="_blank">> arduino pro micro (or any teensy variant) <</a></p>
+      <p><a href="" target="_blank">> key switches (gateron silver) <</a></p>
+      <p><a href="" target="_blank">> 3d printer (creality cr-10s <</a></p>
+      <p><a href="" target="_blank">> printer filament (white) <</a></p>
+      <p><a href="" target="_blank"> > sa keycaps < </a></p>
+      <p><a href="" target="_blank"> > solder < </a></p>
+      <p><a href="" target="_blank"> > soldering iron < </a></p>
+      <p><a href="" target="_blank"> > wire < </a></p>
+      <p><a href="" target="_blank"> > diodes < </a></p>
 
 
-                <br><h1>Process</h1><br>
-                <p>first up is creating the layout and hex file to flash the board, i have made a guide as to not repeat myself every handwire project: </p>
-                <p><a href="/projects/uc" target="_blank"> > keyboard layout creator < </a></p>
-                <p>i think it is always best to start by programming the pro micro first (as i have made some massive mistakes regarding the issue of not adhering to this)
-                so thats what i did. follow this guide i have made previously:</p>
-                <p><a href="/projects/uc" target="_blank"> > programming arduino pro micro < </a></p>
-                <p>next your gunna need a 3d model. i acquired a 3d model from here, but making your own is very possible: </p>
-                <p><a href="https://cults3d.com/en/3d-model/gadget/mechanical-keyboard-sick-pad" target="_blank"> > sick-pad < </a></p>
-                <br><p><img src="../../images/projects/numpad/4.jpg" width="400px"></p><br>
-                <p>now to the easy stuff, i placed the keycaps in the slots, facing the correct way</p>
-                <br><p><img src="../../images/projects/numpad/5.jpg" width="400px"></p><br>
-                <p>and soldered the diodes, following the layout i generated earlier (to ensure precision).</p>
-                <br><p><img src="../../images/projects/numpad/3.jpg" width="400px"></p><br>
-                <p>
-                then i soldered the wires in place,</p>
-                <br><p><img src="../../images/projects/numpad/2.jpg" width="400px"></p><br>
-                <p>and finally i soldered the wires directly to the arduino.</p><br>
-                <p>since this project did not have an essential position for the arduino's port i didnt have to worry about that. i added keycaps and tested
-                it to make sure everything worked. this project was completed in a hurry after a day off a school and albeit ugly it was a success.</p>
-                <br><p><img src="../../images/projects/numpad/1.jpg" width="400px"></p><br>
-                <p>ta daaa</p>
-        </div>
-      </div>
-    </div>
-  </div>
+      <h1>Process</h1>
+      <p>first up is creating the layout and hex file to flash the board, i have made a guide as to not repeat myself every handwire project: </p>
+      <p><a href="/projects/uc" target="_blank"> > keyboard layout creator < </a></p>
+      <p>i think it is always best to start by programming the pro micro first (as i have made some massive mistakes regarding the issue of not adhering to this)
+      so thats what i did. follow this guide i have made previously:</p>
+      <p><a href="/projects/uc" target="_blank"> > programming arduino pro micro < </a></p>
+      <p>next your gunna need a 3d model. i acquired a 3d model from here, but making your own is very possible: </p>
+      <p><a href="https://cults3d.com/en/3d-model/gadget/mechanical-keyboard-sick-pad" target="_blank"> > sick-pad < </a></p>
+      <p><img src="../../images/projects/numpad/4.jpg" width="400px"></p>
+      <p>now to the easy stuff, i placed the keycaps in the slots, facing the correct way</p>
+      <p><img src="../../images/projects/numpad/5.jpg" width="400px"></p>
+      <p>and soldered the diodes, following the layout i generated earlier (to ensure precision).</p>
+      <p><img src="../../images/projects/numpad/3.jpg" width="400px"></p>
+      <p>
+      then i soldered the wires in place,</p>
+      <p><img src="../../images/projects/numpad/2.jpg" width="400px"></p>
+      <p>and finally i soldered the wires directly to the arduino.</p>
+      <p>since this project did not have an essential position for the arduino's port i didnt have to worry about that. i added keycaps and tested
+      it to make sure everything worked. this project was completed in a hurry after a day off a school and albeit ugly it was a success.</p>
+      <p><img src="../../images/projects/numpad/1.jpg" width="400px"></p>
+      <p>ta daaa</p>
+
+
+<br>
+   <p><a id="back" href="https://relivesight.com/projects/">back a page</a></p>
+   <p>┈ ren ​♡</p>
+
+
   </body>
+
 </html>

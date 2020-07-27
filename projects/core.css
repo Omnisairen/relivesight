@@ -122,7 +122,7 @@ div:not(#content2) + div#content2 {
 .label2 {
     margin: 6px 0;
     margin-left: 18%;
-    transform: translateX(-6.5%);
+    transform: translateX(-5.2%);
     padding: 2px 16px;
     display: inline-block;
     text-align: center;
