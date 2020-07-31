@@ -8,7 +8,9 @@ body {
   text-shadow: -0.04em 0 0.5px rgba(255, 176, 219, 0.9);
   font-size: 1.08em;
 }
-
+h1 {
+  text-shadow: -0.06em 0 0.5px rgba(255, 176, 219, 0.9);
+}
 h2 {
   text-shadow: -0.06em 0 0.5px rgba(255, 176, 219, 0.9);
 }
