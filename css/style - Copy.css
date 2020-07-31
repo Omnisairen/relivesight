@@ -5,12 +5,10 @@ body {
   color: rgb(255, 145, 178);
   font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
   animation: fade-in 2s;
-  text-shadow: -0.04em 0 0.5px rgba(255, 176, 219, 0.9);
-  font-size: 1.08em;
+  text-shadow: -0.09em 0 0.5px rgba(255, 176, 219, 0.9);
 }
-
 h2 {
-  text-shadow: -0.06em 0 0.5px rgba(255, 176, 219, 0.9);
+  text-shadow: -0.09em 0 0.5px rgba(255, 176, 219, 0.9);
 }
 a:visited, a:link, a:active {
   color: rgb(95, 173, 224);
