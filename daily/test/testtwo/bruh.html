@@ -1,4 +1,27 @@
-<html><body>
+<html>
+  <head><style>
+    .collapsible {
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+    </style></head><body>
 <h1 style="margin-bottom:30px;">RE:LIVE</h1>
       <img src="images/nav/navig-main.png" class="naviBanners">
       <a href="/bio" class="navi"><img src="images/nav/flow.png">bio</a>
@@ -8,6 +31,10 @@
     
       <img src="images/nav/navi-rite.png" class="naviBanners" style="margin-top:20px;">
         <a href="/projects" class="navi"><img src="images/nav/flow.png">projects</a>
+        <button type="button" class="collapsible">Open Collapsible</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
         <a href="/randomlove" class="navi"><img src="images/nav/flow.png">random love</a>
         <a href="/studylogs" class="navi"><img src="images/nav/flow.png">studylogs</a>
         <a href="/anime" class="navi"><img src="images/nav/flow.png">ani-me</a>
