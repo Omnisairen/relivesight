@@ -10,6 +10,11 @@ body {
 h2 {
   text-shadow: -0.09em 0 0.5px rgba(255, 176, 219, 0.9);
 }
+
+a {
+  white-space: nowrap;
+} 
+
 a:visited, a:link, a:active {
   color: rgb(95, 173, 224);
   text-decoration: none;
@@ -124,11 +129,11 @@ h2 {
     display: none;
   }
 }
-.contentLeft{padding:15px !important;background-image:url(../images/home/rr.webp);}
+.contentLeft{padding:15px !important;}
 /* md lg */ @media (min-width: 900px){.contentLeft{min-height:800px;border-radius:0 3px 3px 0;}}
 /* IE6-9 */background-size: 100% auto, cover;background-position:bottom center;background-repeat: no-repeat;}}
-/* sm */ @media (max-width: 800px){.contentLeft{border-radius:3px 3px 0 0;background:#3B2631;}}
-.contentRight{padding:25px !important;background-image:url(../../..images/home/tenor.png);}
+/* sm */ @media (max-width: 800px){.contentLeft{border-radius:3px 3px 0 0;}}
+.contentRight{padding:25px !important;}
 /* md lg */ @media (min-width: 900px){.contentRight{min-height:800px;border-left: 1px solid;border-radius:0 3px 3px 0;}}
 /* sm */ @media (max-width: 800px){.contentRight{border-radius:0 0 3px 3px;}}
 .rowRowFightThePower{max-width:1000px;margin-left:auto;margin-right:auto;padding:15px;border-radius:3px;}
