@@ -1,6 +1,6 @@
 body {
   background-color: #272727;
-  background-image: url(../img/1.gif);
+  background-image: url(../../img/1.gif);
   background-size: 10px;
   color: rgb(255, 145, 178);
   font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
@@ -125,10 +125,10 @@ h2 {
 /* md lg */ @media (min-width: 900px){.contentLeft{min-height:800px;border-radius:0 3px 3px 0;}}
 /* IE6-9 */background-size: 100% auto, cover;background-position:bottom center;background-repeat: no-repeat;}}
 /* sm */ @media (max-width: 800px){.contentLeft{border-radius:3px 3px 0 0;background:#3B2631;}}
-.contentRight{padding:25px !important;background-image:url(../images/home/tenor.png);}
+.contentRight{padding:25px !important;background-image:url(../../..images/home/tenor.png);}
 /* md lg */ @media (min-width: 900px){.contentRight{min-height:800px;border-left: 1px solid;border-radius:0 3px 3px 0;}}
 /* sm */ @media (max-width: 800px){.contentRight{border-radius:0 0 3px 3px;}}
-.rowRowFightThePower{max-width:1000px;margin-left:auto;margin-right:auto;padding:30px;border-radius:3px;}
+.rowRowFightThePower{max-width:1000px;margin-left:auto;margin-right:auto;padding:15px;border-radius:3px;}
 .imgPixel img{image-rendering: pixelated;image-rendering: -moz-crisp-edges;image-rendering: crisp-edges;}
 .clearfix{clear:both;display:block;}
 
