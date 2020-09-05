@@ -1,6 +1,6 @@
 body {
   background-color: #272727;
-  background-image: url(../../img/1.gif);
+  background-image: url(img/1.gif);
   background-size: 10px;
   color: rgb(255, 145, 178);
   font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
@@ -118,7 +118,7 @@ h2 {
 
 @media (max-aspect-ratio: 7/8) {
   body {
-    background-image: url(../img/d1.png);
+    background-image: url(img/d1.png);
     background-size: 8px;
   }
   .zine-images {
