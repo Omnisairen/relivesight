@@ -3,8 +3,8 @@
   
 <head>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="text-page.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/text-page.css" rel="stylesheet" type="text/css" media="all">
     <title>「ｒｅ：Ｌｉｖｅ」</title>
     <link rel="icon" type="image/png" href="../images/home/pupilpng.png" sizes="1000x1000" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
@@ -15,7 +15,23 @@
     
       gtag('config', 'UA-123647555-2');
     </script>
-  </head><body>
+ <script src="../re/w3.js"></script>
+</head><body>
+
+  <div class="row rowRowFightThePower">
+
+    <div class="harry">   
+    <div class="col-sm-12 col-md-4 contentLeft">     
+    <div w3-include-html="https://relivesight.com/re/side.html"></div>
+    <script>
+      w3.includeHTML();
+      </script>
+        </div>
+      </div>  
+    
+        <div class="col-sm-12 col-md-15 contentRight">
+
+
     <h2>☆TONS☆OF☆FUN☆WEBSITES☆</h2>
     <p>—「0X://Explanation」<br>
       Plenty of fun, useful, and otherwise interesting websites to check out at your own leisure. Hopefully this becomes a useful, plentiful resource, but i imagine it'll mostly remain the empty cabinets of what was on my mind when it was conceived.
@@ -121,49 +137,8 @@
 
   <br>
 
-<!--
-    <h1>2019-08-07</h1>
-    <p>Copy-editing has begun for lainzine 6, but we are still accepting submissions for the release until Tuesday (at the earliest). If you'd like to help out, we're using <a href="https://keybase.io/team/lainzine">Keybase</a> to discuss new submissions and peer-review.</p>
-    <p>Last night, the mailing list was first updated as well.</p>
-    <ul>
-      <li>You're Hashing It Wrong</li>
-      <li>I Am Your Virtual Host</li>
-      <li>Extracting Visual Novel Resources</li>
-      <li>How To Collect Garbage</li>
-      <li>Mass Surveillance in Russia</li>
-      <li>Lean and Mean: Devuan Linux Setup</li>
-      <li>DESTINY 吉凶</li>
-      <li>PHYSICAL SECURITY, or how to save your ass (and soothe your paranoia) after screwing up on the wired</li>
-      <li>potential VPN attacks</li>
-    </ul>
-   <p>Submissions for future releases are now open. You can submit articles <a href="&#109;&#97;&#105;&#x6C;&#116;&#x6F;:&#108;&#97;&#105;&#x6E;z&#105;&#110;&#x65;&#64;&#112;&#114;&#111;&#x74;&#111;&#x6E;m&#97;&#105;&#x6C;&#46;&#x63;&#111;&#x6D;">to our email</a>. We will be moving from a volume-based release cycle to a continuous release schedule, where articles will be released at the same frequency they are submitted, as webpages on the site. Every 5-10 articles, we will curate a zine of articles and release a PDF, as well as sell a physical copy. This is to keep the lainzine on a regular release schedule, and prevent bottlenecks caused by all of our content being in huge PDFs, while also keeping in mind the preferences of readers who liked the PDFs. Once lainzine 6 is released, expect to see a big PDF of lainzine 5 content, and potentially an anthology of lainzines 4, 5, and 6 as well.</p> 
-    Junk
-    
-    <h1>2019-07-26</h1>   
-    
-    <p>Auntie's <a href="all-releases/lainzine05/java.pdf">first full typeset</a> has been uploaded!🎉🎉🎉🎉🎉 <br/>Along with some really nice looking cover pages for several LZ5 pieces, courtesy of President Reagan.</p>
-    <p>Additionally, we're hosting <a href="HFTW.pdf">Hello From The Wired</a> for posterity. We are currently up to 8 text releases for lainzine 6, and are waiting on 2 more to come in, but we haven't run out of room yet! we can definitely accept 1-2 more pieces for this release, and you are always welcome to submit for inclusion in future releases. In the meanwhile, check out our new friends at <a href="surfaces.html">surfaces</a> magazine, a prose-and-poetry publication that seems to like us, and also <a href="https://cyberspaceantifa.noblogs.org/">another site</a> with some very important content up this month.</p>
-    
-    <p>Finally, the newsletter mailing list has been created. I will be adding everyone who emailed me about it shortly, but you can also just <a href="https://lists.riseup.net/www/subscribe/lainzine">subscribe</a>.</p>
-    Junk
-    
-    <h1>2019-01-07</h1>
-    
-    <p>Please welcome Auntie, the newest member of our team! He will be supporting President Reagan in the typesetting and page layout.</p>
-    <p>More updates: From the survey results you are still sending in (:o), we've decided to create a mailing list! email <a href="&#109;&#97;&#105;&#x6C;&#116;&#x6F;:&#108;&#97;&#105;&#x6E;z&#105;&#110;&#x65;&#64;&#112;&#114;&#111;&#x74;&#111;&#x6E;m&#97;&#105;&#x6C;&#46;&#x63;&#111;&#x6D;">&#108;&#97;&#105;&#x6E;z&#105;&#110;&#x65;&#64;&#112;&#114;&#111;&#x74;&#111;&#x6E;m&#97;&#105;&#x6C;&#46;&#x63;&#111;&#x6D;</a> to be added, and we will try to get everyone who already contacted us about it, too. We are thinking about RSS and a Matrix bridge for our current IRC room (#lainzine on freenode) as well, the current issue is that we don't have a dedicated server for these things - neocities does not provide any sort of server-side programming that would make an RSS feed easy to update and not involve typing in XML stuff by hand.</p>
-    <p>We are still working on lainzine 5, and expect to release a PDF in February. Thank you so much for being patient, and in the meanwhile, be sure to check out Auntie's typeset of Nyx Land's <a href="https://my.mixtape.moe/dnvasq.pdf">Cyber-Nihilist Manifesto</a>. "The typesetting kind of surpasses the text itself lmao" - Nyx Land, twitter.</p>
-    <p>Also be sure to check out <a href="https://blackfogzine.org/">Black Fog Zine</a>, a newly-released last year weird art online magazine that started the same place we did.</p>
-    <p>Moving forward is trying to print physical releases: we've reached out to find local printers in Europe (Corsica), but thru survey results we are also interested in printing services in Australia, the United States, and Brazil, among others. We are looking for local services to have as little overhead as possible, so those interested in buying copies can pay as little as possible. We are also thinking about making merchandise in-house, such as clothes and stickers. Stay tuned for details!</p>
-    <p>Finally, lainzine 6 currently has 5 article submissions and 16 pieces of original artwork (submitted by 2 artists) so far, as well as 1-3 additional works we may include depending on how much more content is sent. Submissions are absolutely still open, so if you have anything you want to submit, or for us to review, or even to start writing something, now would be a perfect time to do that. Thank you again for enjoying our work all these years.</p>
-    Junk
-    
-    <h1>2018-09-23</h1>
-
-    <p>Polling encouraged us to bold the titles of every article on <a href="all-releases/lainzine05/index.html">volume 5</a> that was finished in the PDF. We are still polling, and would really like it if people took the <a href="https://www.surveymonkey.com/r/X5NP3RT">9-question survey about our content</a>. Other results so far have been that you all like the technical howtos but would like to see more art and "abstract," philosophical sort of content and commentary. We are looking into the problem somebody is having with qutebrowser, and @ the lain who asked for my phone number it is [redacted]. </p>
-    <p>Liberapay has finally fixed their team donation feature, meaning that you no longer have to donate to individual team members and can <a href="https://liberapay.com/lainzine">instead donate to the whole project's collective fund</a>. Thank you all for the support so far!</p>
-    Junk
-    -->
-    
+  </div>
+</div>  
   </body>
 
 </html>

@@ -1,0 +1,23 @@
+ <script src="../../re/w3.js"></script>
+  </head><body>
+
+    <div class="row rowRowFightThePower">
+
+      <div class="harry">   
+      <div class="col-sm-12 col-md-4 contentLeft">     
+      <div w3-include-html="https://relivesight.com/re/side.html"></div>
+      <script>
+        w3.includeHTML();
+        </script>
+          </div>
+        </div>  
+      
+          <div class="col-sm-12 col-md-15 contentRight">
+
+
+
+
+
+
+          </div>
+        </div>  
