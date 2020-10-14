@@ -22,20 +22,20 @@
 @font-face { font-family: "ebit"; src: url('https://dl.dropboxusercontent.com/s/n9ry4w2f8tl60t3/8bitoperator.ttf'); }
 @font-face {
   font-family: myfont;
-  src: url(../fonts/FUDGED.ttf);
+  src: url(../../fonts/FUDGED.ttf);
 }
 @font-face {
   font-family: myfont2;
-  src: url(../fonts/Archistico_Simple.ttf);
+  src: url(../../fonts/Archistico_Simple.ttf);
 }
 /* WHY WONT BLUELIENS WORK */
 @font-face {
   font-family: myfont3;
-  src: url(../fonts/ohmygosh.ttf);
+  src: url(../../fonts/ohmygosh.ttf);
 }
 @font-face {
   font-family: myfont4;
-  src: url(../fonts/manbowlines.ttf);
+  src: url(../../fonts/manbowlines.ttf);
 }
 body {
   /*background-image: url("../images/music/hir.gif");*/
@@ -48,7 +48,7 @@ div::after {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: url('../images/music/hir.gif');
+  background-image: url('../../images/music/hir.gif');
 
   opacity: 0.2;
   top: 0;
@@ -71,13 +71,6 @@ p.clear {
 
 h2#testimonials {
   color: #fffae3;
-}
-
-div#all {
-   display: block;
-  height: 100%;
-
-
 }
 
 
@@ -361,12 +354,23 @@ div#all {
 		background: #555;
 }
 
+div#all {
+   display: block;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
 </style>
   </head>
   <body>
 <center><h1 style="font-family: myfont2;font-size:44px;text-shadow: -1px 0 #000000, 0 1px #000, 1px 0 #000, 0 -1px #000;">re:Live / Music</h1>
   <h1 style="font-family: ebit;font-size:14px;text-shadow: -1px 0 #000000, 0 1px #000, 1px 0 #000, 0 -1px #000;">here's some music i like (in no particular order):</h1>
-  <div id="all">
+  <div id="all" class="container">
 
   <div class="view view-first">
     <img src="../../images/albulm/eve1.jpg">
