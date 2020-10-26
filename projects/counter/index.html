@@ -125,7 +125,7 @@ def print_response(response):
         for metricHeader, value in zip(metricHeaders, values.get('values')):
           #print(metricHeader.get('name') + ':f', value)
           count = count + int(value)
-  print(str(count + 6000) + " views")
+  print(str(count) + " views")
 
 def main():
   analytics = initialize_analyticsreporting()
