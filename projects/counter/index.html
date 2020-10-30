@@ -34,7 +34,7 @@
             <h2>Pageview Counter</h2>
             <p>—「0X://Explanation」<br>
               i saw someone with a youtube subsriber counter display and decided i wanted one as well, but i don't have many subs, so instead i will do something i have alot of:
-              pageviews! we are coming up on 50k so its a perfect time to build the counter <3
+              pageviews! <strike>we are coming up on 50k so its a perfect time to build the counter <3</strike> we passed 50k before i could finish, thanks <3 and also cmon >:c
 							
             </p>
               <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
@@ -136,6 +136,35 @@ if __name__ == '__main__':
   main()</code></pre>
                              
 <p>this code just prints it to the console,, now to get it running on the node mcu v3,,, and over wifi,,,, and displayed on the led matrix,,,,,</p>
+
+
+
+<h1>Log 2: The Agony</h1>
+<p>everything is here!, but alas it cannot be that simple. programming the software doesn't seem that hard right? well we'll see...
+  i won't bore you with the details, but i wasted time searching for what i need and setlled on micropython for the nodemcuv3, my naive self pressed forward assuming
+  i could get this setup in an afternoon.
+</p>
+   <p>ok so i went on over to the <a type="_blank" href="https://docs.micropython.org/en/latest/esp8266/tutorial/intro.html">micropython docs</a> and began following the tutorial.
+    sure a bit foreign, but nothing too out of my comfot zone right? (see next)
+   </p>
+     <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/counter/1.png" width="500px">                
+<p>well that can't be good. (awhile later): well turns out the repl just displays jargin if the baud rate is wrong (and sometimes even when its right), but nothing a few
+  resets couldn't fix. lets just configure webrepl now! (see next)
+</p>
+<img src="https://vibrant-hodgkin-c6365a.netlify.app/project/counter/2.png" width="500px">  
+<p>ah, joyous.</p>
+<p>reflashed the board with a more modern .bin file, still nothing. to reddit we go! <a type="_blank" href="https://www.reddit.com/r/esp8266/comments/jidk6y/help_with_webrepl_in_micropython/">my question</a>
+was answered by the lovely <a type="_blank" href="https://www.reddit.com/user/ImpressiveVersion9/">u/ImpressiveVersion9</a>, and to my suprise, their solution worked (even tho i couldve sworn i had already tried it).
+nonetheless if finally connected:</p>
+<img src="https://vibrant-hodgkin-c6365a.netlify.app/project/counter/5.png" width="300px">  
+<p>as delightful as this may seem, the next occurence soured the mood quite a bit. my python script can't run on the nodemcu v3. not entirely sure why, but
+  i'll come up with something else. and i did! (kinda). i wrote a flask python server that outputs the view count as html (because i was able to write an html grabber in micropython). i could then
+  host this on some random pc/microcomputer in my room somewhere, but theres one caveat. i cant get the localhost to be available over lan (despite my incessant (and correct) use if my device ip). 
+  so that is where i'm currently stuck, ill keep trying other methods till i get this server hosted.
+</p>
+<p>p.s. i also discovered the <a type="_blank" href="https://github.com/mcauser/micropython-max7219">max7219 library</a> by mcauser which allowed me to program
+the displays (enough to show 1,2,3,4,5,6,7,8, but not much else yet. wish me luck (bonus: they are extremely bright):</p>
+<img src="https://vibrant-hodgkin-c6365a.netlify.app/project/counter/2.jpeg" width="300px">  
 <br>
    <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
    <p>┈ ren ​♡</p>
