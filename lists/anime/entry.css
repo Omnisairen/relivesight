@@ -157,12 +157,14 @@ h1 {
   font-family: 'myfont4';
   color:white;
   font-size: 30px;
+  text-align: center;
 }
 
 
 p {
   font-family: 'myfont3';
   font-size: 20px;
+  text-align: center;
 }
 img {
 -webkit-box-shadow: 0 8px 4px 4px #555555;
