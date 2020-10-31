@@ -9,7 +9,7 @@
   src: url(../fonts/Fudged.ttf);
 }
 .ribbon {
-   border: 2px inset #cc00ff;
+   border: 2px inset #ff00dd;
 }
 #cqqq {
     position: relative;
@@ -43,7 +43,7 @@
 }
 body {
   background: #383838;
-  color: #cc00ff;
+  color: #ff00dd;
   font-family: 'VT323';
   font-size: 24px;
   -webkit-font-smoothing: none;
@@ -66,14 +66,14 @@ p {
 }
 a,
 a:visited {
-  border-bottom: 0.2rem solid #cc00ff;
-  color: #cc00ff;
+  border-bottom: 0.2rem solid #ff00dd;
+  color: #ff00dd;
   text-decoration: none;
 }
 a:active,
 a:focus,
 a:hover {
-  background-color: #cc00ff;
+  background-color: #ff00dd;
   color: #1e0318;
 }
 .piece {
@@ -86,7 +86,6 @@ a:hover {
 .noclick {
   pointer-events: none;
 }
-/**
 .frame {
   background-color: transparent;
   border-radius: 2rem;
@@ -105,7 +104,6 @@ a:hover {
   width: 96%;
   pointer-events: none;
 }
-**/
 .emblem {
   display: none;
   position: absolute;
@@ -130,7 +128,7 @@ a:hover {
   position: absolute;
   padding: 3rem 2rem;
   pointer-events: auto;
-  text-shadow: 0rem 0.2rem 1rem #650c7b;
+  text-shadow: 0rem 0.2rem 1rem #c414b5;
   z-index: -1;
 }
 @-webkit-keyframes crt-output {
@@ -159,7 +157,7 @@ a:hover {
 .glow {
   -webkit-animation: crt-glow 60s infinite;
           animation: crt-glow 60s infinite;
-  background: radial-gradient(circle at center, #a91bd4 0%, rgba(159, 27, 212, 0.88) 58%, rgba(192, 21, 235, 0.57) 80%, rgba(79, 19, 94, 0.27) 93%, rgba(21, 10, 23, 0) 100%);
+  background: radial-gradient(circle at center, #1b65d4 0%, rgba(27, 107, 212, 0.88) 58%, rgba(21, 107, 235, 0.57) 80%, rgba(19, 54, 94, 0.27) 93%, rgba(10, 13, 23, 0) 100%);
   opacity: 0.15;
   pointer-events: none;
   position: fixed;
@@ -181,11 +179,11 @@ a:hover {
   }
 }
 ::-moz-selection {
-  background-color: #cc00ff;
+  background-color: #ff00dd;
   color: #1e0318;
 }
 ::selection {
-  background-color: #cc00ff;
+  background-color: #ff00dd;
   color: #1e0318;
 }
 @font-face {
