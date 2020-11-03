@@ -33,14 +33,15 @@
 
             <h2>Pageview Counter</h2>
             <p>—「0X://Explanation」<br>
-              i saw someone with a youtube subsriber counter display and decided i wanted one as well, but i don't have many subs, so instead i will do something i have alot of:
-              pageviews! <strike>we are coming up on 50k so its a perfect time to build the counter <3</strike> we passed 50k before i could finish, thanks <3 and also cmon >:c
+              i saw someone with a youtube subscriber counter display and decided i wanted one as well, but i don't have many subs, so instead i will do something i have alot of:
+              pageviews! <strike>we are coming up on 50k so its a perfect time to build the counter <3</strike> we passed 50k before i could finish, thanks <3 but also cmon >:c
+                (at the final moment working on the project it was: 51823)
 							
             </p>
-              <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
+              <p><a id="back" href="https://relivesight.com/projects/">back a page</a></p>
         
-              <img src="" width="500px">
-        
+
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/counter/4.jpeg" width="500px">
             
               <h1>Log 1: Purcha$e$</h1>
              <p>suprisingly i dont have any led matrix displays and node mcu v3's on hand (though i do have the ESP XXXX units, i just dont know how to use them), so i
@@ -165,8 +166,162 @@ nonetheless if finally connected:</p>
 <p>p.s. i also discovered the <a type="_blank" href="https://github.com/mcauser/micropython-max7219">max7219 library</a> by mcauser which allowed me to program
 the displays (enough to show 1,2,3,4,5,6,7,8, but not much else yet. wish me luck (bonus: they are extremely bright):</p>
 <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/counter/2.jpeg" width="300px">  
+
+<h1>Log 3: Part Four</h1>
+<p> i think i forgot to mention what i printed for the case: but the files i used are
+  <a type="_blank" href="https://www.thingiverse.com/thing:2811071">this</a> and 
+  <a type="_blank" href="https://www.thingiverse.com/thing:4209940">this</a>.
+  other than that i did all* the rest of the programming, which was quite a hassle.
+</p>
+   <p>basically i had to make a local webserver that runs the python script cuz it didnt run properly on the esp8266, so i did that.
+     then using <a type="_blank" href="https://github.com/micropython/micropython-lib/blob/master/urequests/urequests.py">urequests</a>
+     i was able to fetch the html on the local web server and pull the data i need from it it!
+   </p>
+     <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/counter/7.5.png" width="500px">                
+<p>so here's the final version of the main.py file running on the esp8266, with probably some unnecessary bits, since its just
+  an amalgamation of code:</p>
+
+
+<pre><code class='python'>
+  # on MicroPython for ESP8266 & MAX7219 LED display
+  # by Alan Wang, Taiwan
+  import network, urequests, utime, ntptime
+  from machine import Pin, SPI, Timer, reset
+  
+  # the new grab function thingy
+  import urequests
+  
+  # the time loop
+  import time
+  
+  # MAX7219 driver: https://github.com/mcauser/micropython-max7219
+  # Note: this driver is designed for 4-in-1 MAX7219 modules.
+  # VCC: 3.3V or 5V
+  # GND: GND
+  # DIN: MOSI (D7)
+  # CS:  D8
+  # CLK: SCK (D5)
+  from max7219 import Matrix8x8
+  
+  
+  # ----------------------------------------
+  
+  # WiFi AP ssid and password
+  SSID = "█████ ██████"
+  PW   = "██████████"
+  
+
+  # config parameters
+  TIMEZONE_HOUR_OFFSET = 8      # timezone hour offset
+  MAX7219_NUM          = 4      # Number of MAX7219 LED modules
+  MAX7219_BRIGHTNESS   = 11     # MAX7219 brightness (0-15)
+  MAX7219_INVERT       = False  # Invert MAX7219 display
+  MAX7219_SCROLL_DELAY = 30     # MAX7219 display scrolling speed (ms)
+  CLOCK_TIMER_DELAY    = 900000 # clock update delay (ms)
+  API_TIMER_DELAY      = 300000 # API query delay (ms)
+  
+  
+  DISPLAY_TIMER_DELAY  = (len(fmt) + MAX7219_NUM) * 8 * MAX7219_SCROLL_DELAY + 2000
+  
+  
+  print("--- the thingy --")
+  
+  data           = dict()
+  data_available = False
+  timer_api      = Timer(-1)
+  timer_clock    = Timer(-1)
+  timer_display  = Timer(-1)
+  led            = Pin(2, Pin.OUT, value=1)
+  
+  # setup MAX7219
+  spi = SPI(1, baudrate=10000000, polarity=0, phase=0)
+  display = Matrix8x8(spi, Pin(15), 8)
+  
+  
+  
+  # connect to WiFi
+  print("Connecting to WiFi...")
+  wifi = network.WLAN(network.STA_IF)
+  wifi.active(True)
+  wifi.connect(SSID, PW)
+  while not wifi.isconnected():
+      pass
+  print("Connected.")
+  
+  # decorator for checking WiFi status
+  def wifi_check_decorator(func):
+      def wrapper(*args, **kwargs):
+          if not wifi.isconnected():
+              # stop timers
+              timer_api.deinit()
+              timer_clock.deinit()
+              timer_display.deinit()
+              # reboot
+              reset()
+          else:
+              # run decorated functions
+              led.value(0)
+              func(*args, **kwargs)
+              led.value(1)
+      return wrapper
+  
+  
+  
+  
+  global dsp
+  dsp = ""
+  
+  starttime = time.time()
+  
+  
+  while True:
+      try:
+          # the new request grab
+          response = urequests.get("http://192.168.0.40:4996/")
+          alltext = response.text
+          alltext = alltext.replace('█████████', '')
+          alltext = alltext.replace('████████████', '')
+          alltext = alltext.replace('███████████', '')
+          alltext = alltext.replace('█████████', '')
+          alltext = alltext.replace(' ███████', '')
+          alltext = alltext.replace('████████', '')
+          alltext = alltext.replace('████████████', '')
+          alltext = alltext.replace('██████████', '')
+  
+          bruh = int(alltext)
+  
+          if bruh > 99999:
+              global dsp
+              dsp = '00'+str(bruh)
+          elif bruh > 999999:
+              global dsp
+              dsp = '0'+str(bruh)
+          else:
+              global dsp
+              dsp = '000'+str(bruh)
+  
+          display.fill(0)
+          display.text("        ",0,0,1)
+          display.text(dsp,0,0,1)
+          display.brightness(4)
+          display.show()
+          time.sleep(60.0 - ((time.time() - starttime) % 60.0))
+      except:
+          time.sleep(60.0 - ((time.time() - starttime) % 60.0))</code></pre>
+
+<p>now just solder it up and make sure it works: </p>
+
+<img src="https://vibrant-hodgkin-c6365a.netlify.app/project/counter/3.jpeg" width="400px"> 
+<p>sweet it works! ill keep it on my windowsil:</p> 
+<img src="https://vibrant-hodgkin-c6365a.netlify.app/project/counter/4.jpeg" width="400px">
+
+<p>and its all done! it updates every minute, and honestly it seems like it wasnt much of a hassle, but 
+  thats just the result of my brain removing the trauma of me troubleshooting this thing. definitely recommend this to
+  learn about new things, i learned alot!
+</p>
+
 <br>
-   <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
+   <p><a id="back" href="https://relivesight.com/projects/">back a page</a></p>
    <p>┈ ren ​♡</p>
 
 
