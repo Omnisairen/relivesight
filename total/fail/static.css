@@ -1,0 +1,40 @@
+html{
+  background:url(https://vibrant-hodgkin-c6365a.netlify.app/total/3.gif);
+  background-size: 40px;
+  
+}
+img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+a, a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: white;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
