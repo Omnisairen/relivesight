@@ -44,8 +44,8 @@ a {
 	cursor:url(../images/nav/rsz_hoverreal.png), auto;
 }
 body{
-/*background-color: #7f4a99;*/
-background-color: #525252;
+/*background-color: #7f4a99; #525252*/
+background-color: #171e64;
 /* IE6-9 background-size: 50px auto, cover;*/background-attachment:fixed;color:#fff5e0;margin:0;line-height:1.7;}
 body,h1,h2,h3,p{margin-top:0;letter-spacing:.01em;}
 h1{margin-bottom:7px;text-align:center;}
