@@ -19,6 +19,7 @@
   src: url(../../fonts/manbowlines.ttf);
 }
 
+
 /* Content Two for Return to home page screen */
 
 .label2 {
@@ -39,7 +40,7 @@
 .label2 p {
   font-family: myfont4, serif;
   letter-spacing: 4px;
-  font-size: 2.2em;
+  font-size: 2.4em;
   line-height: 0.75em
 }
 /* Content Two for Return to home page screen */
@@ -54,6 +55,7 @@ a, a:hover {
 
 a {
     color: gray;
+    font-size: .8em;
 }
 
 a:hover {
@@ -107,10 +109,7 @@ html,body{height:100%;}
 }
 
 html{
-  background-color: whitesmoke;
-  background-image:url(../../images/img/3.gif);
-  text-shadow: -0.00em 0 0.2px rgba(255, 176, 219, 0.9);
-
+  background:url(../../images/entries/4.jpg);
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -122,8 +121,8 @@ html{
 
 
 body {
-  background-color: black;
-  color: white;
+ 
+  color: black;
   background-size: 16vw, 16vw, 4vw;
   z-index: 1;
 }
@@ -157,14 +156,12 @@ h1 {
   font-family: 'myfont4';
   color:white;
   font-size: 30px;
-  text-align: center;
 }
 
 
 p {
   font-family: 'myfont3';
   font-size: 20px;
-  text-align: center;
 }
 img {
 -webkit-box-shadow: 0 8px 4px 4px #555555;
@@ -182,7 +179,7 @@ box-shadow: 0 0 4px 4px #555555;
   margin-top: 1vw;
   border:.2vw solid white;
   border-radius: 1vw;
-  background: url(../../images/sub/2.jpg) repeat;
+  background: url(../../images/sub/2.png) repeat;
   background-color: black;
   background-size: 26vw;
 }
@@ -455,6 +452,9 @@ input[type='checkbox'] {
   border-bottom-right-radius: .2vw;
   padding: .5rem 1rem;
 }
+
+
+@-webkit-keyframes typing { from { width: 0; } }
 
 .typewriter {
 	border-right: .1em solid black;

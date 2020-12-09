@@ -1,13 +1,85 @@
 
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>「ｒｅ：Ｌｉｖｅ」</title>
-    <link rel="icon" type="image/png" href="../images/home/pupilpng.png" sizes="1000x1000" />
-     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Merriweather' rel='stylesheet' type='text/css'>
-     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="icon" type="image/png" href="../../images/home/pupilpng.png" sizes="1000x1000" />
+    <link href="entry.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+    body {
+      background: url(uhhh.png) top left repeat;
+      background-size: 76.4%;
+    }
+    </style>
+     <style type="text/css">
+      table.tableizer-table {
+        
+        font-size: 12px;
+        border: 1px solid white; 
+        font-family: Arial, Helvetica, sans-serif;
+      } 
+      .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid white;
+        background-color: #141414; 
+      }
+      .tableizer-table th {
+        text-align: center;
+        background-color: #061b30; 
+        color: white;
+        font-weight: bold;
+      }
+      .wat {
+        background-color: #067a6f !important;
+      }
+      .cmp {
+        background-color: #1c7207 !important;
+      }
+      .pas {
+        background-color: #a1720b !important;
+      }
+      .drp {
+        background-color: #920707 !important;
+      }
+      .fav {
+        background-color: #5a066b !important;
+      }
+      .a9 {
+        background-color: #8f69d1 !important;
+      }
+      .a8 {
+        background-color: #804BDC !important;
+      }
+      .a7 {
+        background-color: #6B2DD7 !important;
+      }
+      .a6 {
+        background-color: #5722b4 !important;
+      }
+      .a5 {
+        background-color: #4a1d97 !important;
+      }
+      .a4 {
+        background-color: #431A88 !important;
+      }
+      .a3 {
+        background-color: #36156E !important;
+      }
+      .a2 {
+        background-color: #291055 !important;
+      }
+      .a1 {
+        background-color: #1F0D3F !important;
+      }
+      .a0 {
+        background-color: #110622 !important;
+      }
+      
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -16,690 +88,94 @@
 
   gtag('config', 'UA-123647555-2');
 </script>
-  <style>
-@font-face { font-family: "ebit"; src: url('https://dl.dropboxusercontent.com/s/n9ry4w2f8tl60t3/8bitoperator.ttf'); }
-@font-face {
-  font-family: myfont;
-  src: url(../../fonts/FUDGED.ttf);
-}
-@font-face {
-  font-family: myfont2;
-  src: url(../../fonts/Archistico_Simple.ttf);
-}
-/* WHY WONT BLUELIENS WORK */
-@font-face {
-  font-family: myfont3;
-  src: url(../../fonts/ohmygosh.ttf);
-}
-@font-face {
-  font-family: myfont4;
-  src: url(../../fonts/manbowlines.ttf);
-}
-body {
-  /*background-image: url("../images/music/hir.gif");*/
-  background-color: black;
-}
-div::after {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-image: url('../../images/music/hir.gif');
-
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-h1 {
-  color: white;
- margin: 10px;
-}
-
-p.clear {
-  clear: both;
-}
-
-#hover {
-  color: rgba(188, 175, 204, 0.9);
-}
-
-h2#testimonials {
-  color: #fffae3;
-}
-
-
-/* generic css */
-
-.view {
-  margin: 10px;
-  float: left;
-  border: 0px solid #000;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  -webkit-box-shadow: 0 8px 4px 2px #999999;
-  -moz-box-shadow: 0 8px 4px 2px #999999;
-  box-shadow: 0 0 4px 2px #999999;
-  cursor: default;
-  background: #fff url() no-repeat center center
-}
-
-.view .mask,
-.view .content {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0
-}
-
-.view img {
-  display: block;
-  position: relative;
-
-
-}
-
-.view h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  font-family: Raleway, serif;
-  padding: 5px;
-  /*background: rgba(0, 0, 0, 0.8);*/
-  margin: 10px 0 0 0
-}
-
-.view p {
-  font-family: ebit;
-  font-style: italic;
-  font-size: 10px;
-  position: relative;
-  color: #fff;
-  padding: 0px 20px 0px;
-  text-align: center
-}
-
-.view a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  background: #000;
-  color: #fff;
-  font-family: ebit;
-  font-size: 10px;
-  text-transform: uppercase;
-  box-shadow: 0 0 1px #ffffff
-}
-
-.view a.info:hover {
-  box-shadow: 0 0 5px #000
-}
-
-
-/*1*/
-
-.view-first img {
-  /*1*/
-  transition: all 0.2s linear;
-  width: 200px;
-  height: 200px;
-}
-
-.view-first .mask {
-  opacity: 0;
-  background-color: rgba(12, 19, 27, 0.8);
-  transition: all 0.4s ease-in-out;
-}
-
-.view-first h2 {
-  transform: translateY(0px);
-  opacity: 0;
-  font-family: ebit;
-    font-size: 14px;
-  transition: all 0.2s ease-in-out;
-}
-
-.view-first p {
-  transform: translateY(0px);
-  opacity: 0;
-  transition: all 0.2s linear;
-}
-
-.view-first a.info {
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-}
-
-
-/* */
-
-.view-first:hover img {
-  transform: scale(1);
-}
-
-.view-first:hover .mask {
-  opacity: 1;
-}
-
-.view-first:hover h2,
-.view-first:hover p,
-.view-first:hover a.info {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.view-first:hover p {
-  transition-delay: 0.1s;
-}
-
-.view-first:hover a.info {
-  transition-delay: 0.2s;
-}
-
-
-/*2*/
-
-.view-second img {
-  transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-}
-
-.view-second .mask {
-  background-color: rgba(12, 19, 27, 0.6);
-  width: 200px;
-  padding: 105px;
-  height: 200px;
-  opacity: 0;
-  transform: translate(265px, 145px) rotate(45deg);
-  -webkit-transform: translate(265px, 145px) rotate(45deg);
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-}
-
-.view-second h2 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  font-family: Raleway, serif;
-  background: transparent;
-  margin: 20px 40px 0px 40px;
-  -webkit-transform: translate(200px, -200px);
-  transform: translate(200px, -200px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.view-second p {
-  transform: translate(-200px, 200px);
-  -webkit-transform: translate(200px, -200px);
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-}
-
-.view-second a.info {
-  transform: translate(0px, 100px);
-  -webkit-transform: translate(0px, 100px);
-  transition: all 0.2s 0.1s ease-in-out;
-  -webkit-transition: all 0.2s 0.1s ease-in-out;
-}
-
-
-/* */
-
-.view-second:hover .mask {
-  opacity: 1;
-  transform: translate(-80px, -125px) rotate(45deg);
-  -webkit-transform: translate(-80px, -125px) rotate(45deg);
-}
-
-.view-second:hover h2 {
-  transform: translate(0px, 0px);
-  -webkit-transform: translate(0px, 0px);
-  transition-delay: 0.3s;
-  -webkit-transition-delay: 0.3s;
-}
-
-.view-second:hover p {
-  transform: translate(0px, 0px);
-  -webkit-transform: translate(0px, 0px);
-  transition-delay: 0.4s;
-  -webkit-transition-delay: 0.4s;
-}
-
-.view-second:hover a.info {
-  transform: translate(0px, 0px);
-  -webkit-transform: translate(0px, 0px);
-  transition-delay: 0.5s;
-  -webkit-transition-delay: 0.5s;
-}
-
-
-/*3*/
-
-.view-tenth img {
-  transform: scaleY(1);
-  transition: all .7s ease-in-out;
-}
-
-.view-tenth .mask {
-  background-color: rgba(255, 231, 179, 0.3);
-  transition: all 0.5s linear;
-  opacity: 0;
-}
-
-.view-tenth h2 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  background: transparent;
-  margin: 20px 40px 0px 40px;
-  transform: scale(0);
-  color: #333;
-  transition: all 0.5s linear;
-  opacity: 0;
-}
-
-.view-tenth p {
-  color: #333;
-  opacity: 0;
-  transform: scale(0);
-  transition: all 0.5s linear;
-  padding-
-}
-
-.view-tenth a.info {
-  opacity: 0;
-  transform: scale(0);
-  transition: all 0.5s linear;
-}
-
-.view-tenth:hover img {
-  -webkit-transform: scale(10);
-  transform: scale(10);
-  opacity: 0;
-}
-
-.view-tenth:hover .mask {
-  opacity: 1;
-}
-
-.view-tenth:hover h2,
-.view-tenth:hover p,
-.view-tenth:hover a.info {
-  transform: scale(1);
-  opacity: 1;
-}
-::-webkit-scrollbar {
-		width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-		background: #222;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-		background: #111;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-		background: #555;
-}
-
-div#all {
-   display: block;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-</style>
   </head>
   <body>
-<center><h1 style="font-family: myfont2;font-size:44px;text-shadow: -1px 0 #000000, 0 1px #000, 1px 0 #000, 0 -1px #000;">re:Live / Music</h1>
-  <h1 style="font-family: ebit;font-size:14px;text-shadow: -1px 0 #000000, 0 1px #000, 1px 0 #000, 0 -1px #000;">here's some music i like (in no particular order):</h1>
-  <div id="all" class="container">
+  <div id="page">
+    <div id="content_container">
 
-  <div class="view view-first">
-    <img src="../../images/albulm/eve1.jpg">
-    <div class="mask">
-      <h2>Eve - Bunka (2017)</h2>
-      <p>Favorite songs: Dramaturgy, Okini Mesu Mama, Nonsense Bunkaku</p>
+      <div id="content">
 
+          
+
+        <br><br><center>
+        <h1>Music List</h1><br>
+<!--
+        <p>Key:</p>
+        <table class="tableizer-table">
+          <thead><tr>
+            
+            <tr><td>Info:</td><td class="cmp">Completed</td><td class="pas">Paused</td><td class="drp">Dropped</td><td class="wat">Watching</td><td class="fav">Favorites</td></tr>
+          </tbody></table>
+        -->
+
+        <p>Albums:</p>
+        <table class="tableizer-table">
+          <thead><tr><td>Artist</td><td>Album</td><td>Year</td><td>Count</td><td>Favorite Songs</td></tr></thead><tbody>
+            <tr><td>Lemon Demon</td><td>Spirit Phone</td><td>2016</td><td>27</td><td>Life Time Achievement Award, Touch-Tone Telephone, Cabinet Man, Ancient Aliens</td></tr>       
+            <tr><td>Cö Shu Nie</td><td>Aurora</td><td>2017</td><td>5</td><td>Asphyxia, Defection, Character</td></tr>       
+            <tr><td>Eve</td><td>Bunka</td><td>2017</td><td>10</td><td>Dramaturgy, Okini Mesu Mama, Nonsense Bunkaku</td></tr>       
+            <tr><td>My Chemical Romance</td><td>Three Cheers For Sweet Revenge</td><td>2004</td><td>13</td><td>You Know What They Do To Guys Like Us In Prison, Hang 'Em High</td></tr>       
+            <tr><td>Twenty One Pilots</td><td>Vessel</td><td>2013</td><td>12</td><td>Holding On To You, Migraine, Ode To Sleep, Car Radio, Guns for Hands</td></tr>       
+            <tr><td>Tally Hall</td><td>Marvin's Marvelous Mechanical Museum</td><td>2005</td><td>17</td><td>Greener, Taken for a Ride, The Bidding, Just Apathy, Two Wuv, Haiku, Hidden In The Sand</td></tr>       
+            <tr><td>Dirt Poor Robins</td><td>The Raven Locks Act 3</td><td>2017</td><td>12</td><td>Great Vacation, Welcome To Lady Hell, Behold the Grave</td></tr>       
+            <tr><td>Boards of Canada</td><td>Geogaddi</td><td>2002</td><td>23</td><td>Beware the Friendly Stranger, Gyroscope, Julie and Candy, The Devil Is In The Details</td></tr>       
+            <tr><td>The Hush Sound</td><td>Like Vines</td><td>2006</td><td>12</td><td>We Intertwined, A Dark Congregation, Lions Roar, Don't Wake Me Up, Wine Red</td></tr>       
+            <tr><td>Mother Mother</td><td>Touch Up</td><td>2007</td><td>13</td><td>Oh Ana, Love and Truth, Verbatim, and Tic Toc</td></tr>       
+            <tr><td>Cosmo Sheldrake</td><td>The Much Much How How and I (Deluxe Edition)</td><td>2019</td><td>28</td><td>Linger Longer, Come Along</td></tr>       
+            <tr><td>I DONT KNOW HOW BUT THEY FOUND ME</td><td>1981 Extended Play</td><td>2018</td><td>6</td><td>Choke, Bleed Magic, Absinthe</td></tr>       
+            <tr><td>Blue Kid</td><td>Upright, Love</td><td>2012</td><td>11</td><td>Can You Keep Up, The Dismemberment Song, Black Sheep</td></tr>       
+            <tr><td>Sasakure.uk</td><td>UNIQTRAP</td><td>2017</td><td>9</td><td>Start Menu (Undefined Remix), Hopes and Dreams (Alterego Remix)</td></tr>       
+            <tr><td>Dave Days</td><td>Boy You'll Forget</td><td>2013</td><td>11</td><td>Boy You'll Forget, East To West (Bonus Track)</td></tr>       
+            <tr><td>Radwimps</td><td>Your Name.</td><td>2016</td><td>27</td><td>Zen Zen Zense (Movie Version), Sparkle (Movie Version), Nandemonaiya (Movie Edit)</td></tr>       
+            <tr><td>Death Cab For Cutie</td><td>Plans</td><td>2005</td><td>11</td><td>Soul Meets Body, I Will Follow You Into The Dark, Crooked Teeth</td></tr>       
+            <tr><td>Coyote Theory</td><td>Color</td><td>2011</td><td>5</td><td>This Side Of Paradise, The Ruse & The Caper</td></tr>       
+            <tr><td>EDEN</td><td>i think you think to much of me</td><td>2016</td><td>7</td><td>sex (catching feelings), drugs, rock + roll, XO, Circles</td></tr>       
+            <tr><td>Snow Patrol</td><td>Eyes Open</td><td>2005</td><td>11</td><td>Chasing Cars, Open Your Eyes, Shut Your Eyes</td></tr>       
+            <tr><td>The Brobecks</td><td>Violent Things</td><td>2009</td><td>13</td><td>Goodnight Socialite, Better Than Me, Second Boys Will Be First Choice, Small Cuts, I Will Tonight, Visitation Of The Ghost</td></tr>       
+            <tr><td>Akira Yamaoka</td><td>SILENT HILL2 (Original Soundtrack)</td><td>2001</td><td>30</td><td>Theme Of Laura, The Darknness That Lurks In Our Mind, Laura Plays THe Piano</td></tr>       
+            <tr><td>Joe Iconis</td><td>Be More Chill (Original Broadway Cast Recording)</td><td>2015</td><td>24</td><td>More Than Survive, A Guy That I'd Kinda Be Into, Loser Geek Whatever, Michael In The Bathroom, The Pants Song, Voices In My Head</td></tr>       
+            <tr><td>Asian Kung-Fu Generation</td><td>Hōkai Amplifier</td><td>2002</td><td>6</td><td>Haruka Kanata, Ao No Uta</td></tr>       
+            <tr><td>The 1975</td><td>Notes On A Conditional Form</td><td>2020</td><td>22</td><td>People, Nothing Revealed / Everything Denied, If You're Too Shy (Let Me Know)</td></tr>       
+            <tr><td>Half Alive</td><td>Now, Not Yet</td><td>2019</td><td>12</td><td>Runaway, Arrow, Still Feel, Pure Gold</td></tr>       
+            <tr><td>Half Alive</td><td>3</td><td>2017</td><td>3</td><td>The Fall, Tip Toes</td></tr>       
+            <tr><td>Twenty Online Pilots</td><td>Twenty Online Pilots</td><td>2009</td><td>14</td><td>Implicit Demand for Proof, Fall Away, The Pantaloon, Air Catcher, Trapdoor, Isle of Flightless Birds</td></tr>       
+            <tr><td>DM Dokuro</td><td>UNDERTALE: The Underground Radio</td><td>2016</td><td>14</td><td>g a r d e n, SAVE, Reality Check Through The Skull, COMMON CORE</td></tr>       
+            <tr><td>Jin</td><td>Mekacuity Records</td><td>2013</td><td>24</td><td>Children Record (Re Ver.), Outer Science, Lost Time Memory</td></tr>       
+            <tr><td>Cavetown</td><td>Cavetown</td><td>2015</td><td>8</td><td>Untitled V.2, Devil Town</td></tr>       
+            <tr><td>REOL</td><td>∑</td><td>2016</td><td>13</td><td>YoiYoi Kokon, -FINAL SIGMA-</td></tr>       
+            <tr><td>vivid undress</td><td>vivid undress Digital Selection</td><td>2018</td><td>9</td><td>SAYONARA DILEMMA, WATASHI MENHERA NANKAJA NAIMON, IKITE IKITE</td></tr>       
+            <tr><td>Mother Mother</td><td>O My Heart</td><td>2008</td><td>12</td><td>O My Heart, Wrecking Ball, Arms Tonite</td></tr>       
+            <!--<tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+            <tr><td> </td><td> </td><td> </td><td> </td><td> </td></tr>       
+
+-->
+
+        </tbody></table>
+
+
+
+      </center> 
     </div>
   </div>
-
-
-  <div class="view view-first">
-    <img src="../../images/albulm/coshunie1.jpg">
-    <div class="mask">
-      <h2>Cö Shu Nie - Aurora (2017)</h2>
-      <p>Favorite songs: Asphyxia, Defection, Character</p>
-
-    </div>
-  </div>
-
-  <div class="view view-first">
-    <img src="../../images/albulm/asas.jpg">
-    <div class="mask">
-      <h2>Lemon Demon - Spirit Phone (2016)</h2>
-      <p>Favorite songs: Life Time Achievement Award, Touch-Tone Telephone, Cabinet Man, As Your Father I Expressly Forbid It</p>
-
-    </div>
-  </div>
-
-
-  <div class="view view-first">
-    <img src="../../images/albulm/aa.jpg">
-    <div class="mask">
-      <h2>My Chemical Romance - Three Cheers For Sweet Revenge (2004)</h2>
-      <p>Favorite songs: You Know What They Do To Guys Like Us In Prison, Hang 'Em High</p>
-
-    </div>
-  </div>
-
-
-
-  <div class="view view-first">
-    <img src="../../images/albulm/a.jpg">
-    <div class="mask">
-      <h2>Twenty One Pilots - Vessel (2013)</h2>
-      <p>Favorite songs: Holding On To You, Migraine, Ode To Sleep, Car Radio, Guns for Hands</p>
-
-    </div>
-  </div>
-
-
-    <div class="view view-first">
-      <img src="../../images/albulm/1.jpg">
-      <div class="mask">
-        <h2>Tally Hall - Marvin's Marvelous Mechanical Museum (2005)</h2>
-        <p>Favorite songs: Greener, Taken for a Ride, The Bidding, Just Apathy, Two Wuv, Haiku, Hidden In The Sand</p>
-
-      </div>
-    </div>
-
-    <div class="view view-first">
-      <img src="../../images/albulm/dpr.jpg">
-      <div class="mask">
-        <h2>Dirt Poor Robins - The Raven Locks Act 3 (2017)</h2>
-        <p>Favorite songs: Great Vacation, Welcome To Lady Hell</p>
-
-      </div>
-    </div>
-
-    <div class="view view-first">
-      <img src="../../images/albulm/ggg.jpg">
-      <div class="mask">
-        <h2>Boards of Canada - Geogaddi (2002)</h2>
-        <p>Favorite songs: Beware the Friendly Stranger, Gyroscope, Julie and Candy, The Devil Is in the details </p>
-
-      </div>
-    </div>
-
-    <div class="view view-first">
-      <img src="../../images/albulm/lll.jpg">
-      <div class="mask">
-        <h2>The Hush Sound - Like Vines (2006)</h2>
-        <p>Favorite songs: We Intertwined, A Dark Congregation, Lions Roar, Don't Wake Me Up, Wine Red</p>
-
-      </div>
-    </div>
-
-    <div class="view view-first">
-      <img src="../../images/albulm/mmtu.jpg">
-      <div class="mask">
-        <h2>Mother Mother - Touch Up (2007)</h2>
-        <p>Favorite songs: Oh Ana, Love and Truth, Verbatim, and Tic Toc</p>
-
-      </div>
-    </div>
-
-    <div class="view view-first">
-      <img src="../../images/albulm/csm.jpg">
-      <div class="mask">
-        <h2>Cosmo Sheldrake - The Much Much How How and I (Deluxe Edition) (2019)</h2>
-        <p>Favorite songs: Linger Longer, Come Along</p>
-
-      </div>
-    </div>
-
-    <div class="view view-first">
-      <img src="../../images/albulm/idk.jpg">
-      <div class="mask">
-        <h2>I DONT KNOW HOW BUT THEY FOUND ME - 1981 Extended Play (2018)</h2>
-        <p>Favorite songs: Choke, Bleed Magic, Absinthe</p>
-
-      </div>
-    </div>
-
-    <div class="view view-first">
-      <img src="../../images/albulm/upl.jpg">
-      <div class="mask">
-        <h2>Blue Kid - Upright, Love (2012)</h2>
-        <p>Favorite songs: Can You Keep Up, The Dismemberment Song, Black Sheep</p>
-
-      </div>
-    </div>
-
-
-
-      <div class="view view-first">
-        <img src="../../images/albulm/f.jpg">
-        <div class="mask">
-          <h2>Sasakure.uk - UNIQTRAP (2017)</h2>
-          <p>Favorite songs: Start Menu (Undefined Remix), Hopes and Dreams (Alterego Remix)</p>
-
-        </div>
-      </div>
-
-      <div class="view view-first">
-        <img src="../../images/albulm/ss.jpg">
-        <div class="mask">
-          <h2>Dave Days - Boy You'll Forget (2013)</h2>
-          <p>Favorite songs: Boy You'll Forget, East To West (Bonus Track)</p>
-
-        </div>
-      </div>
-
-      <div class="view view-first">
-        <img src="../../images/albulm/gf.jpg">
-        <div class="mask">
-          <h2>Radwimps - Kimi No Na Wa OST (2016)</h2>
-          <p>Favorite songs: Zen Zen Zense (Movie Version), Sparkle (Movie Version), Nandemonaiya (Movie Edit)</p>
-
-        </div>
-      </div>
-
-      <div class="view view-first">
-        <img src="../../images/albulm/qq.png">
-        <div class="mask">
-          <h2>Death Cab For Cutie - Plans (2005)</h2>
-          <p>Favorite songs: Soul Meets Body, I Will Follow You Into The Dark, Crooked Teeth</p>
-
-        </div>
-      </div>
-
-      <div class="view view-first">
-        <img src="../../images/albulm/aaa.jpg">
-        <div class="mask">
-          <h2>Coyote Theory - Color (2011)</h2>
-          <p>Favorite songs: This Side Of Paradise, The Ruse & The Caper</p>
-
-        </div>
-      </div>
-
-
-      <div class="view view-first">
-        <img src="../../images/albulm/fd.jpg">
-        <div class="mask">
-          <h2>Eden - I Think You Think To Much Of Me (2016)</h2>
-          <p>Favorite songs: Sex, Drugs, Rock + Roll, XO, Circle</p>
-
-        </div>
-      </div>
-
-      <div class="view view-first">
-        <img src="../../images/albulm/fdfd.jpg">
-        <div class="mask">
-          <h2>Snow Patrol - Eyes Open (2005)</h2>
-          <p>Favorite songs: Chasing Cars, Open Your Eyes, Shut Your Eyes</p>
-
-        </div>
-      </div>
-
-      <div class="view view-first">
-        <img src="../../images/albulm/vv.jpg">
-        <div class="mask">
-          <h2>The Brobecks - Violent Things (2009)</h2>
-          <p>Favorite songs: Goodnight Socialite, Better Than Me, Second Boys Will Be First Choice, Small Cuts, I Will Tonight, Visitation Of The Ghost</p>
-
-        </div>
-      </div>
-
-      <div class="view view-first">
-        <img src="../../images/albulm/2.png">
-        <div class="mask">
-          <h2>Akira Yamaoka - Silent Hill 2 OST (2001)</h2>
-          <p>Favorite songs: Theme Of Laura, The Darknness That Lurks In Our Mind, Laura Plays THe Piano</p>
-
-        </div>
-      </div>
-
-      <div class="view view-first">
-        <img src="../../images/albulm/qw.jpg">
-        <div class="mask">
-          <h2>Joe Iconis - Be More Chill (2015)</h2>
-          <p>Favorite songs: More Than Survive, The Squip Song, A Guy That I'd Kinda Be Into, Loser Geek Whatever, Michael In The Bathroom, The Pants Song, Voices In My Head</p>
-
-        </div>
-      </div>
-
-
-      <div class="view view-first">
-        <img src="../../images/albulm/fff.jpg">
-        <div class="mask">
-          <h2>Asian Kung-Fu Generation - Hōkai Amplifier (2002)</h2>
-          <p>Favorite songs: Haruka Kanata, Ao No Uta</p>
-
-        </div>
-      </div>
-
-
-
-      <div class="view view-first">
-        <img src="../../images/albulm/ppl.jpeg">
-        <div class="mask">
-          <h2>The 1975 - Notes on a Conditional Form (2020)</h2>
-          <p>Favorite song: People</p>
-
-        </div>
-      </div>
-
-
-      <div class="view view-first">
-        <img src="../../images/albulm/nny.jpg">
-        <div class="mask">
-          <h2>Half Alive - Now, Not Yet (2019)</h2>
-          <p>Favorite songs: Runaway, Arrow, Still Feel, Pure Gold</p>
-
-        </div>
-      </div>
-
-
-      <div class="view view-first">
-        <img src="../../images/albulm/ww.jpg">
-        <div class="mask">
-          <h2>煮ル果実 - ヲズワルド (2020)</h2>
-          <p>Favorite song: ヲズワルド</p>
-
-        </div>
-      </div>
-
-      <div class="view view-first">
-        <img src="../../images/albulm/3.jpg">
-        <div class="mask">
-          <h2>Half Alive - 3 (2017)</h2>
-          <p>Favorite songs: The Fall, Tip Toes </p>
-
-        </div>
-      </div>
-
-      <div class="view view-first">
-        <img src="../../images/albulm/st.jpg">
-        <div class="mask">
-          <h2>Twenty One Pilots - Twenty Online Pilots (2009)</h2>
-          <p>Favorite songs: Implicit Demand for Proof, Fall Away, The Pantaloon, Air Catcher, Trapdoor, Isle of Flightless Birds</p>
-
-        </div>
-      </div>
-
-
-
-
-            <div class="view view-first">
-              <img src="../../images/albulm/z.jpg">
-              <div class="mask">
-                <h2>DM Dokuro - UNDERTALE: The Underground Radio (2016)</h2>
-                <p>Favorite songs: g a r d e n, SAVE, Reality Check Through The Skull, COMMON CORE</p>
-
-              </div>
-            </div>
-
-            <div class="view view-first">
-              <img src="../../images/albulm/x.jpg">
-              <div class="mask">
-                <h2>Jin - Mekacuity Records (2013)</h2>
-                <p>Favorite songs: Children Record (Re Ver.), Outer Science, Lost Time Memory</p>
-
-              </div>
-            </div>
-
-            <div class="view view-first">
-              <img src="../../images/albulm/v.jpg">
-              <div class="mask">
-                <h2>Cavetown - Cavetown (2015)</h2>
-                <p>Favorite songs: Untitled V.2, Devil Town</p>
-
-              </div>
-            </div>
-
-            <div class="view view-first">
-              <img src="../../images/albulm/q.png">
-              <div class="mask">
-                <h2>REOL - Sigma (2016)</h2>
-                <p>Favorite songs: YoiYoi Kokon, -FINAL SIGMA-</p>
-
-              </div>
-            </div>
-
-            <div class="view view-first">
-              <img src="../../images/albulm/s.jpg">
-              <div class="mask">
-                <h2>Vivid Undress - Vivid Undress (2018)</h2>
-                <p>Favorite songs: SAYONARA DILEMMA, WATASHI MENHERA NANKAJA NAIMON, IKITE IKITE</p>
-
-              </div>
-            </div>
-
-
-
-
-
-
-  </div>
-
-
-</center>
   </body>
 </html>
