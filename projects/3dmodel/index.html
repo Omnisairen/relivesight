@@ -52,7 +52,8 @@
 
 
                 <h1>Log 2: Keyboard Case Repair</h1>
-                <p>i need to re-model a keyboard case, so a perfect opportunity to learn more about modelling. its probably a bad idea but im hoping i can just import it into
+                <p>i need to re-model a keyboard case, so a perfect opportunity to learn more about modelling. (yes we are going
+                  to ignore how the last log ended, ill get back to it eventually) its probably a bad idea but im hoping i can just import it into
                   fusion and just wing it and edit it, we'll see how that goes...
                 </p>
                 <p>flash forward awhile and i learned how to import stls as meshes and convert them into BRep objects (by disabling the timeline), this allows me to edit them as i so desire
@@ -91,6 +92,31 @@
                 <p>wow this is gunna involve more design that i thought, we'll see what i do next</p>
 
 
+                <h1>Log 5: Progress, but Despair Ahead</h1>
+                <p>continuing from the last log, i'm gunna work on the dactyl manuform (spoiler: it doesnt end well). i'm gunna start by relying on the 
+                  only tool i know how to use, {extrude}, so i'll extrude all the faces on the bottom to make the plate:
+                </p>
+                <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/3dmodl/5.png" width="500px">
+                <p>you would think there is just a "fill" button to click, but if there is i don't know where it is so i manually extruded the insides until it was full:</p>
+                <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/3dmodl/6.png" width="500px">
+                <p>now to add the space for the threaded inserts, just make some circle sketches and extrude them: </p>
+                <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/3dmodl/7.png" width="500px">
+                <p>intersect those into the plate and: </p>
+                <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/3dmodl/8.png" width="500px">
+                <p>okay this is looking really good (spoiler: i overlooked something critical), so lets add the teensy mount: </p>
+                <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/3dmodl/9.png" width="500px">
+                <p>wow that was easy, now to cut that with the main body... wait it doesnt work. turns out that the main body is a
+                  "surface body" which means it is not solid and has non-manifold geometry, fixing it manually would take ages cuz of how many sides there are, so
+                i tried using blender to fix it:
+                </p>
+                <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/3dmodl/12.png" width="500px">
+                <p>welp.., for the record i did try a million things and none of them worked, so instead of spending forever trying to repair this, im going to start over
+                  and make sure the two halves are manifold before i start, because all the work i did was proper. bonus blender pic:
+                </p>
+                <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/3dmodl/14.png" width="500px">
+                <p>i believe this showcases what i learned well enough and since im just going to redo it,
+                  how bout heading back to the  <a href="https://relivesight.com/ongoing/3dmodel">merged dactyl page</a>?
+                </p>
 <br>
    <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
    <p>┈ ren ​♡</p>

@@ -49,7 +49,49 @@
              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/1.png" width="500px">
              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/2.png" width="500px">
 
-                  
+             <h1>Log 2: Anddddd, We're Back!</h1>
+             <p>assuming you definitely read the progess i made on the  <a href="https://relivesight.com/ongoing/3dmodel">3d modelling learning page</a>
+            we are redoing all the work that happened there, but this time with manifold geometry. so first things first, i gotta figure out how to make the generated dactyl's manifold.
+          after some testing, it looks like after each half is generated they are able to be printed, but importing them into blender shows they are full of non-manifold issues,
+        and using "clean up" does not work... not entirely sure how to proceed.</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/3.png" width="500px">
+            <p>okay i imported them into fusion, and it turns out if i don't intersect into them weirdly they will stay as
+              regular bodies. example: i can intersect in to solid portions:
+            </p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/4.png" width="500px">
+            <p>but not into broken geometry: </p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/5.png" width="500px">
+            <p>so im going to design a bride between them, and alter specific points as i receive errors, here is the bridge:</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/6.0.png" width="500px">
+            <p>but if i try to connect it all at once i get an error: </p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/7.png" width="500px">
+            <p>so instead i piece by piece added the bridge, shortening individual parts to not intersect with non-manifold geometry, and it worked!
+              they are all one solid body:
+            </p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/9.png" width="500px">
+            <p>now just extruded the bottom for the plate and filled it in:</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/10.png" width="500px">
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/11.png" width="500px">
+            <p>now i am getting excitingly close to being done, but before i add details, i am going to do a test print for tolerances and thickness:</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/12.png" width="500px">
+            <p>while that test prints, i added the teensy port: </p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/13.png" width="500px">
+            <p>test print complete, the threaded insert fits into 4mm holes as i estimated and a 4mm width on the cylindrical ring offers the best stability.
+              though my estimates were exactly right, it is always good to test print!</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/1.jpeg" width="500px">
+
+            <p>now i can add the holes to the case and to the plate: </p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/15.png" width="500px">
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/16.png" width="500px">
+
+            <p>and that is it! woah that was fast, itll take a couple days to print both sides, so even if it goes error free,
+              i won't be back here for 4 days, but don't fret, i will work on other projects in the meantime~ ill start by printing 
+              the plate to make sure it fits on my printer (it's gunna be tight,,,)┈
+            </p>
+            <p>preview (it fits):</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/mergeddactyl/17.png" width="500px">
+
+
 <br>
    <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
    <p>┈ ren ​♡</p>
