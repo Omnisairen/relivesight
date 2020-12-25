@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta charset="UTF-8">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/text-page.css" rel="stylesheet" type="text/css" media="all">
+    <title>「ｒｅ：Ｌｉｖｅ」</title>
+    <link rel="icon" type="image/png" href="../../images/home/pupilpng.png" sizes="1000x1000" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-123647555-2');
+    </script>
+    <script src="../../re/w3.js"></script>
+  </head><body>
+
+    <div class="row rowRowFightThePower">
+
+      <div class="harry">   
+      <div class="col-sm-12 col-md-4 contentLeft">     
+      <div w3-include-html="https://relivesight.com/re/side.html"></div>
+      <script>
+        w3.includeHTML();
+        </script>
+          </div>
+        </div>  
+      
+          <div class="col-sm-12 col-md-15 contentRight">
+
+            <h2>PortaVoltex</h2>
+            <p>—「0X://Explanation」<br>
+              a portable controller to play k-shoot mania/sound voltex type games, inspired by the pocket voltex, but made by someone not as smart┈
+              well it might not be as loud or clunky as a regular one at least...
+							
+            </p>
+              <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
+        
+              <img src="" width="500px">
+        
+            
+              <h1>Log 1: Preparations</h1>
+             <p>i have a general plan for what this is gunna look like, but im not entirely about the firmware, since i'd have to make it myself,
+               rather than using qmk or someone's arduino script. as far as i know a teensy lc is the only way i can have both knobs and keystrokes, so 
+               that is why im doing that (but maybe qmk has knob support, i'll see when i get to that part) for now,
+             </p>
+             <p>the things i need to get/design/program are:</p>
+             <ul>
+               <li><strike>teensy lc</strike></li>
+               <li><strike>keyboard switches</strike></li>
+               <li><strike>encoders</strike></li>
+               <li><strike>wires</strike></li>
+               <li>3d printed case</li>
+               <li>3d printed encoder knobs</li>
+               <li>firmware that isnt qmk (expert)</li>
+               <li>an electrical engeneering degree</li>
+             </ul>
+             <p>so i guess this makes the first thing i should do the case design, but im actually gunna hook up the
+               encoders to an arduino to make sure they work, i don't wanna waste my time designing a case for 
+               rotary encoders that don't work
+             </p>
+             <p>i found some  <a target="_blank" href="https://domoticx.com/sensor-lpd3806-optical-rotary-encoder/">documentation</a> about my optical rotary encoder,
+            which gave me the necessary wiring info: </p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/1.png" width="500px">
+              <p>then i found a quick <a target="_blank" href="https://www.seeedstudio.com/blog/2020/01/19/rotary-encoders-how-it-works-how-to-use-with-arduino/">code example</a>
+              to test the encoder with, here is the code:</p>
+              <pre><code>
+                  #include ﹤Encoder.h﹥
+
+                  Encoder myEnc(5, 6);
+                  
+                  
+                  void setup() {
+                    Serial.begin(9600);
+                    Serial.println("Basic Encoder Test:");
+                  }
+                  
+                  long oldPosition  = -999;
+                  
+                  void loop() {
+                    long newPosition = myEnc.read();
+                    if (newPosition != oldPosition) {
+                      oldPosition = newPosition;
+                      Serial.println(newPosition);
+                    }
+                  }
+                           </code>
+                           </pre>
+              <p>and after i wired it up (with a nano for testing), it worked perfectly:</p>
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/1.jpeg" width="500px">
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/2.png" width="500px">
+
+              <p>so seeing that it works, i guess 3d modelling is the next important step, so should probably start brainstorming that.
+                im no designer but i did a quick sketch of some basic measurements:
+              </p>
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/3.png" width="500px">
+
+              <p>it is also worth keeping in mind that the back side is going to be alot heavier than the front, i'm going to be some weights
+                in case i need them to balance the box. after some research i realized i can use an arduino pro micro instead, so before i attempt to design it,
+                im going to wire a test version and get the software working
+              </p>
+              <p>so i did the code for the encoders using the Encoder and Mouse libraries. games like k-shoot mania and 
+                sound voltex have the encoders act as vertical and horizontal mouse movements each, so that is all i had to program.
+                my initial idea was to scan for every value of the encoder and if the current value is greater than the previous then move one direction, and 
+                if it is less than then move the other. this almost worked, but there was a bit of oscillation on the readouts when i did a quick turn, as seen in this movement
+                (it was just a quick turn, but it oscillated for about twenty values): 
+              </p>
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/4.png" width="150px">
+              <p>to fix this i just had a counter that counted every time the loop ran (because i don't know the speed
+                at which the chip executes the loop) and after a bit of guess and check found 50 to be a good number to 
+                run my code on. so every 50 loops the code checks for a change in position, which seems like it would miss alot of values, but as seen below,
+                every value is still perserved in a change in direction, almost perfectly:
+              </p>
+
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/5.png" width="150px">
+
+
+
+              <p>after also learning that i can use analog pins for the encoders, the working code for them is: </p>
+              <pre><code>
+                  #include ﹤Encoder.h﹥
+                  #include ﹤Mouse.h﹥
+                  
+                  Encoder encOne(A2, A3);
+                  Encoder encTwo(A0, A1);
+                  
+                  
+                  void setup()
+                  {
+                    Serial.begin(9600);
+                    Serial.println("Basic Encoder Test:");
+                  }
+                  
+                  long oldPosition1  = -999;
+                  long oldPosition2  = -999;
+                  int count = 0; 
+                  int sped = 2; // controls speed of mouse movement
+                  
+                  void loop() 
+                  {
+                    long newPosition1 = encOne.read();
+                    long newPosition2 = encTwo.read();
+                    if (count == 50) // slows scan rate (a debounce of sorts)
+                    {
+                      if (newPosition1 != oldPosition1)
+                      {
+                        if (newPosition1 ﹤ (oldPosition1)) 
+                        {
+                          Mouse.move(0, sped, 0);
+                        }
+                        else if ((newPosition1) ﹥ oldPosition1)
+                        {
+                          Mouse.move(0, -sped, 0);
+                        }
+                    
+                        oldPosition1 = newPosition1;
+                         
+                        Serial.println(newPosition1);
+                      }
+                      if (newPosition2 != oldPosition2)
+                      {
+                        if (newPosition2 ﹤ (oldPosition2))
+                        {
+                          Mouse.move(sped, 0, 0);
+                        }
+                        else if ((newPosition2) ﹥ oldPosition2)
+                        {
+                          Mouse.move(-sped, 0, 0);
+                        }
+                    
+                        oldPosition2 = newPosition2;
+                         
+                        Serial.println(newPosition2);
+                      }
+                      count = 0;
+                    }
+                    count++;
+                  }
+                  
+                  
+                           </code>
+                           </pre>
+             <p>okay so its modelling time now, first things first, i designed the holes for keycaps and stabilizers:</p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/6.png" width="500px">
+            <p>wait a minute... i hate stabilizers</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/7.png" width="500px">
+            <p>that's better, then i intersected it with a box with holes for the encoders:</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/8.png" width="500px">
+            <p>quick made it into a full case:</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/9.png" width="500px">
+            <p>ehhh that is kinda ugly, so i edited it a bit:</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/10.png" width="500px">
+            <p>that's better, now adding a port, fixing the top holes:</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/11.png" width="500px">
+            <p>and some holes:</p>
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/12.png" width="500px">
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/13.png" width="500px">
+            <p>tada!~ that took longer than i made it seem but still alot faster than i thought it would. turns out practicing modelling
+              helped me model. crazy i know. the printer is still occupied so i can't print these yet, and assuredly something 
+              will go wrong and i will have to remake them, but pretty good for now
+            </p>
+            <p>well i was planning on procrastinating the matrix code, but then i wrote it.
+              this *should* work, though i'll have to wait till its built to test it: </p>
+            <pre><code>
+                #include ﹤Encoder.h﹥
+                #include ﹤Mouse.h﹥
+                #include ﹤Keyboard.h﹥
+                #include ﹤TimerOne.h﹥
+                
+                Encoder encOne(A2, A3);
+                Encoder encTwo(A0, A1);
+                
+                byte inputs[] = {6,7,8};          //declaring inputs and outputs
+                const int inCount = sizeof(inputs)/sizeof(inputs[0]);
+                byte outputs[] = {2,3,4};
+                const int outCount = sizeof(outputs)/sizeof(outputs[0]);
+                
+                char layout[3][4] = {               //layout grid for characters
+                  {'l',']','=','/'},
+                  {'7','8','9','*'},
+                  {'4','5','6','-'}
+                };
+                
+                int keyDown[3][4];
+                bool keyLong[3][4];
+                
+                
+                int longPressDelay = 350;           //customizable encoderValues
+                int spamSpeed = 15;
+                 
+                void setup()
+                {
+                  for(int i=0; i﹤outCount; i++){    //declaring all the outputs and setting them high
+                    pinMode(outputs[i],OUTPUT);
+                    digitalWrite(outputs[i],HIGH);
+                  }
+                  for(int i=0; i﹤inCount; i++){   
+                    pinMode(inputs[i],INPUT_PULLUP);
+                  }
+                  
+                  Serial.begin(9600);               //establishing Serial link and initializing keyboard
+                  Serial.println("Connected");
+                  Keyboard.begin();
+                }
+                
+                long oldPosition1  = -999;
+                long oldPosition2  = -999;
+                int count = 0; 
+                int sped = 2; // controls speed of mouse movement
+                
+                void loop() 
+                {
+                  for (int i=0; i﹤4; i++)
+                  {    
+                    digitalWrite(outputs[i],LOW);   //setting one row low
+                    delayMicroseconds(5);           //giving electronics time to settle down
+                    
+                    for(int j=0; j﹤4; j++)
+                    {
+                      if(digitalRead(inputs[j]) == LOW)
+                      {
+                        keyPressed(i,j);           
+                      }
+                      else if(keyDown[i][j] != 0)   
+                      {  
+                        resetKey(i,j);
+                      }
+                    }
+                    
+                    digitalWrite(outputs[i],HIGH);
+                    delayMicroseconds(500);      
+                  }
+                  long newPosition1 = encOne.read();
+                  long newPosition2 = encTwo.read();
+                  if (count == 50) 
+                  {
+                    if (newPosition1 != oldPosition1)
+                    {
+                      if (newPosition1 ﹤ (oldPosition1)) 
+                      {
+                        Mouse.move(0, sped, 0);
+                      }
+                      else if ((newPosition1) ﹥ oldPosition1)
+                      {
+                        Mouse.move(0, -sped, 0);
+                      }
+                  
+                      oldPosition1 = newPosition1;
+                       
+                      Serial.println(newPosition1);
+                    }
+                    if (newPosition2 != oldPosition2)
+                    {
+                      if (newPosition2 ﹤ (oldPosition2))
+                      {
+                        Mouse.move(sped, 0, 0);
+                      }
+                      else if ((newPosition2) ﹥ oldPosition2)
+                      {
+                        Mouse.move(-sped, 0, 0);
+                      }
+                  
+                      oldPosition2 = newPosition2;
+                       
+                      Serial.println(newPosition2);
+                    }
+                    count = 0;
+                  }
+                  count++;
+                }
+                
+                void keyPressed(int row, int col){
+                  Serial.print("Output: "); 
+                  Serial.print(row);
+                  Serial.print(" Input: ");
+                  Serial.print(col);
+                  Serial.print(" ");
+                  Serial.println(layout[row][col]);
+                
+                  if(keyDown[row][col]==0){         
+                    Keyboard.write(layout[row][col]);
+                  }
+                  else if(keyLong[row][col] && keyDown[row][col] ﹥ spamSpeed){ 
+                    Keyboard.write(layout[row][col]);
+                    keyDown[row][col] = 1;
+                  }
+                  else if(keyDown[row][col] ﹥ longPressDelay){ 
+                    keyLong[row][col] = true;
+                  }
+                
+                  keyDown[row][col]++;
+                }
+                
+                void resetKey(int row, int col){
+                  keyDown[row][col] = 0;
+                  keyLong[row][col] = false;
+                }
+                
+                         </code>
+                         </pre>
+             <p>can you believe this log was called "Preparations"? even tho this was the first day i've worked on this,
+               i got everything done that i can until i have access to my printer, pretty proud ngl
+             </p>
+                           <br>
+   <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
+   <p>┈ ren ​♡</p>
+
+
+  </div></div>
+  </body>
+
+</html>
