@@ -34,14 +34,44 @@
             <h2>PortaVoltex</h2>
             <p>—「0X://Explanation」<br>
               a portable controller to play k-shoot mania/sound voltex type games, inspired by the pocket voltex, but made by someone not as smart┈
-              well it might not be as loud or clunky as a regular one at least...
+              this was my first time really diving into a project i didn't understand, and developing the skills to make it possible along the way, though
+              its not perfect. well at least it's not as loud or clunky as a regular one... but that one at least had lights
 							
             </p>
               <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
         
-              <img src="" width="500px">
-        
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/9.jpeg" width="500px">
+            <h1>Overview</h1>
+            <p>normally these just track the process of me learning, but this one is so long and convaluded, here is a quick overview in case you want to
+              make this yourself. this is a mini version of one of these controllers:
+            </p>
             
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/15.png" width="400px">
+            <p>meant for playing sound voltex, k-shootmania, or similar games. i have (the less cool looking) one of these,
+              but i find it too loud to play on speaker and too big to play conveniently. this (and seeing the pocket voltex)
+              inspired me to try fully designing and programming one of these myself.
+            </p>
+            <p>things i used (links to specific ones): </p>
+            <ul>
+              <li>arduino pro micro</li>
+              <li><a target="_blank" href="https://pastebin.com/03DZvKTi">arduino code</a></li>
+              <li>8x mx keyboard switches</li>
+              <li>8x keycaps - (6x 1u, other 2 are up to you, but i used 1.75u)</li>
+              <li><a target="_blank" href="https://www.thingiverse.com/thing:4700454">3d printed case and knobs i designed</a></li>
+              <li><a target="_blank" href="https://www.amazon.com/gp/product/B01IYWTCWW/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1">4x threaded inserts</a></li>
+              <li>4x m3 6mm screws</li>
+              <li><a target="_blank" href="https://www.aliexpress.com/item/33003162419.html?spm=a2g0s.9042311.0.0.2a4f4c4d2vDXi5">2x 360pr optical encoders</a></li>
+              <li>8x diodes</li>
+              <li>wire</li>
+              <li>soldering iron, solder, wire cutter, etc</li>
+            </ul>
+            <p>outlining assembly is a little difficult, this kinda assuming you know how to wire things together. i mean 
+              considering someone as dumb as me could design it, i bet you could build it. reference the logs below for 
+              any help, sorry that's all i'm willing to do as of now. if you would like to read about the struggles and process of
+              designing this just have a look below:
+            </p>
+            
+
               <h1>Log 1: Preparations</h1>
              <p>i have a general plan for what this is gunna look like, but im not entirely about the firmware, since i'd have to make it myself,
                rather than using qmk or someone's arduino script. as far as i know a teensy lc is the only way i can have both knobs and keystrokes, so 
@@ -205,77 +235,93 @@
             <p>well i was planning on procrastinating the matrix code, but then i wrote it.
               this *should* work, though i'll have to wait till its built to test it: </p>
             <pre><code>
-                #include ﹤Encoder.h﹥
-                #include ﹤Mouse.h﹥
-                #include ﹤Keyboard.h﹥
-                #include ﹤TimerOne.h﹥
+              《CODE REDACTED》
+              (since it doesn't end up working i thought i'd just remove this to save the page from being too long)
                 
-                Encoder encOne(A2, A3);
-                Encoder encTwo(A0, A1);
-                
-                byte inputs[] = {6,7,8};          //declaring inputs and outputs
-                const int inCount = sizeof(inputs)/sizeof(inputs[0]);
-                byte outputs[] = {2,3,4};
-                const int outCount = sizeof(outputs)/sizeof(outputs[0]);
-                
-                char layout[3][4] = {               //layout grid for characters
-                  {'l',']','=','/'},
-                  {'7','8','9','*'},
-                  {'4','5','6','-'}
-                };
-                
-                int keyDown[3][4];
-                bool keyLong[3][4];
-                
-                
-                int longPressDelay = 350;           //customizable encoderValues
-                int spamSpeed = 15;
-                 
-                void setup()
-                {
-                  for(int i=0; i﹤outCount; i++){    //declaring all the outputs and setting them high
-                    pinMode(outputs[i],OUTPUT);
-                    digitalWrite(outputs[i],HIGH);
-                  }
-                  for(int i=0; i﹤inCount; i++){   
-                    pinMode(inputs[i],INPUT_PULLUP);
-                  }
-                  
-                  Serial.begin(9600);               //establishing Serial link and initializing keyboard
-                  Serial.println("Connected");
-                  Keyboard.begin();
-                }
-                
-                long oldPosition1  = -999;
-                long oldPosition2  = -999;
-                int count = 0; 
-                int sped = 2; // controls speed of mouse movement
-                
-                void loop() 
-                {
-                  for (int i=0; i﹤4; i++)
-                  {    
-                    digitalWrite(outputs[i],LOW);   //setting one row low
-                    delayMicroseconds(5);           //giving electronics time to settle down
-                    
-                    for(int j=0; j﹤4; j++)
-                    {
-                      if(digitalRead(inputs[j]) == LOW)
-                      {
-                        keyPressed(i,j);           
-                      }
-                      else if(keyDown[i][j] != 0)   
-                      {  
-                        resetKey(i,j);
-                      }
-                    }
-                    
-                    digitalWrite(outputs[i],HIGH);
-                    delayMicroseconds(500);      
-                  }
+                         </code>
+                         </pre>
+             <p>can you believe this log was called "Preparations"? even tho this was the first day i've worked on this,
+               i got everything done that i can until i have access to my printer, pretty proud ngl
+             </p>
+
+             <h1>Log 2: The Rest</h1>
+             <p>so my printer was occupied while i did the first log, but its free now, so i started with printing the models i made.
+               the moment of truth came, time to test how the pieces fit: 
+             </p>
+             
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/2.jpeg" width="300px">
+            <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/3.jpeg" width="300px">
+             <p>and these fit perfectly! but sadly the arduino did not fit perfectly, however i did not reprint it cuz i was able to jam it in,
+               but the final model will include an adjusted version. i do not have access to an area to paint the case at the moment (its -5°F outside right now),
+               so i did the next best thing, went into photoshop and designed a sticker (here is the exact file i printed, designed for a 8.5x11in of paper):
+             </p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/sticker.png" width="500px">
+             <p>and an exacto knife and like 10 minutes resulted in:</p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/5.jpeg" width="500px">
+             <p>with it having a slightly more appealling look now, it is about time to wire it up. i first wired up the optical encoders,
+               because i have the least experience with those, and wanted to make sure it worked. 
+             </p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/7.jpeg" width="500px">
+             <p>after flashing a slightly changed version of the code from earlier, it did not work at all. after a bit of panicking
+               i concluded that i 'bricked' the arduino some how and soldered and flashed a new one. after alot of frustration i found this helpful comment online:
+             </p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/13.5.png" width="500px">
+             <p>for some reason the way i had set up the delay code (which is not what i needed to do anyway, i was just testing the keyboard matrix)
+               caused the arduino to get stuck??? so after shorting it (twice in succession) and reflashing it (with better code) i got it to work again, phew.
+               then i wired up the keyboard matrix:
+             </p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/8.jpeg" width="400px">
+             <p>and proceeded to get increasingly frustrated with the matrix code. after successfully proving that each key works,
+               i needed to get them to send keystrokes. my code became a jumbled mess of combining things i had found, full of test serial print
+               statements and things i didn't think i needed but taking them out made it break. sadly i haven't fully gotten the code how i want it,
+               luckily i can just rebind them in game for now. (if someone happens to know what is wrong please send me a message, i'll still keep trying to
+               figure it out though). anyway here is the awful terrible (but functional {kinda}) code:
+             </p>
+             <pre><code>
+              
+              #include ﹤Keypad.h﹥
+              #include ﹤Keyboard.h﹥
+              #include ﹤Encoder.h﹥
+              #include ﹤Mouse.h﹥
+              
+              Encoder encTwo(A3, A2);
+              Encoder encOne(A1, A0);
+              
+              
+              const byte ROWS = 3; //four rows
+              const byte COLS = 3; //three columns
+              char keys[ROWS][COLS] = {
+              {'1','2','3'},
+              {'4','5','6'},
+              {'7','8','9'}
+              };
+              char knees[9]= {97,98,99,100,101,102,103,104,105};
+              byte rowPins[ROWS] = {4, 3, 2}; //connect to the row pinouts of the kpd
+              byte colPins[COLS] = {8, 7, 6}; //connect to the column pinouts of the kpd
+              
+              Keypad kpd = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
+              
+              unsigned long loopCount;
+              unsigned long startTime;
+              String msg;
+              int bbb;
+              
+              void setup() {
+                  Serial.begin(9600);
+                  loopCount = 0;d
+                  startTime = millis();
+                  msg = "";
+              }
+              
+              long oldPosition1  = -999;
+              long oldPosition2  = -999;
+              int count = 0; 
+              int sped = 1; // controls speed of mouse movement
+              
+              void loop() {
                   long newPosition1 = encOne.read();
                   long newPosition2 = encTwo.read();
-                  if (count == 50) 
+                  if (count == 50) // slows scan rate (a debounce of sorts)
                   {
                     if (newPosition1 != oldPosition1)
                     {
@@ -310,40 +356,53 @@
                     count = 0;
                   }
                   count++;
-                }
-                
-                void keyPressed(int row, int col){
-                  Serial.print("Output: "); 
-                  Serial.print(row);
-                  Serial.print(" Input: ");
-                  Serial.print(col);
-                  Serial.print(" ");
-                  Serial.println(layout[row][col]);
-                
-                  if(keyDown[row][col]==0){         
-                    Keyboard.write(layout[row][col]);
+                  loopCount++;
+                  if ( (millis()-startTime)>5000 ) {
+                      Serial.print("Average loops per second = ");
+                      Serial.println(loopCount/5);
+                      startTime = millis();
+                      loopCount = 0;
                   }
-                  else if(keyLong[row][col] && keyDown[row][col] ﹥ spamSpeed){ 
-                    Keyboard.write(layout[row][col]);
-                    keyDown[row][col] = 1;
+              
+                  // Fills kpd.key[ ] array with up-to 10 active keys.
+                  // Returns true if there are ANY active keys.
+                  if (kpd.getKeys())
+                  {
+                      for (int i=0; i﹤LIST_MAX; i++)   // Scan the whole key list.
+                      {
+                          if ( kpd.key[i].stateChanged )   // Only find keys that have changed state.
+                          {
+                              switch (kpd.key[i].kstate) {  // Report active key state : IDLE, PRESSED, HOLD, or RELEASED
+                                  case PRESSED:
+                                  Serial.print(kpd.key[i].kchar);
+                                  Keyboard.press(kpd.key[i].kchar+92);
+                                  msg = " PRESSED.";
+                              break;
+                                  case HOLD:
+                                  Serial.print(kpd.key[i].kchar);
+                                  msg = " HOLD.";
+                              break;
+                                  case RELEASED:
+                                  Keyboard.release(kpd.key[i].kchar+92);
+                                  msg = " RELEASED.";
+                              break;
+                                  case IDLE:
+                                  Serial.print(kpd.key[i].kchar);
+                                  msg = " IDLE.";
+                              }
+                              Serial.print(kpd.key[i].kchar);
+                              Serial.print("Key ");
+                              Serial.print(kpd.key[i].kchar);
+                              Serial.println(msg);
+                          }
+                      }
                   }
-                  else if(keyDown[row][col] ﹥ longPressDelay){ 
-                    keyLong[row][col] = true;
-                  }
-                
-                  keyDown[row][col]++;
-                }
-                
-                void resetKey(int row, int col){
-                  keyDown[row][col] = 0;
-                  keyLong[row][col] = false;
-                }
-                
-                         </code>
-                         </pre>
-             <p>can you believe this log was called "Preparations"? even tho this was the first day i've worked on this,
-               i got everything done that i can until i have access to my printer, pretty proud ngl
-             </p>
+              }  // End loop
+                       </code>
+                       </pre>
+              <p>then i just had to design some knobs, (took 4 tries to get the tolerances right), and it is all done:</p>
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/portavoltex/9.jpeg" width="500px">
+              <p>thanks for reading if you did <3</p>
                            <br>
    <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
    <p>┈ ren ​♡</p>
