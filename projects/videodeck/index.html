@@ -39,12 +39,12 @@
             </p>
               <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
         
-              <img src="" width="500px">
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/0.jpeg" width="500px">
         
             
               <h1>Log 1: Preparations</h1>
-             <p>this is highly inspired by Zach Freedman's <a target="_blank" href="https://github.com/ZackFreedman/Big-Wheel">Big Wheel Project</a>
-              and may even heavily utilize his open source info, but maybe i'll redesign it to suit my needs. for now,
+             <p>this is will utilize Zach Freedman's <a target="_blank" href="https://github.com/ZackFreedman/Big-Wheel">Big Wheel Project</a>,
+            thanks for open source info, but maybe i'll redesign it to suit my needs. for now:
              </p>
              <p>the things i need to get/design/program are:</p>
              <ul>
@@ -62,7 +62,42 @@
              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/1.png" width="500px">
              <p>here is the whole model, looks good for now:</p>
              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/2.png" width="500px">
-<br>
+
+             <h1>Log 2: Hardware</h1>
+             <p>okay so i printed all of the models from the Big Wheel project, and each of them didn't work for me in a different way.
+               they added an extra screw hole on the case, which seems helpful for support, but literally blocks you from putting in the teensy.
+               maybe i made some other mistake with what parts i picked but the waffle plate just came in contact with the switches and encoders i had put in.
+               and finally the big wheel didnt fit on the <a target="_blank" href="https://www.amazon.com/gp/product/B08728K3YB/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">encoders</a> i bought, but that is entirely my fault for not measuring. so i "fixed" all the
+               models to fit my needs (also making the case taller to make wiring easy, but i ended up having plenty of space anyway) and the new
+               models can be downloaded <a target="_blank" href="https://www.thingiverse.com/thing:4702814">here</a>.
+             </p>
+             <p>using the new now working model, i put in the switches and encoders (and apparently took super overexposed pictures?):</p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/1.jpg" width="500px">
+             <p>wired all of the diodes (besides the one for the encoder that blocks the teensy port):</p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/2.jpg" width="500px">
+             <p>wired all of rows (again except for the one encoder):</p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/3.jpg" width="500px">
+             <p>then i soldered color coded wires to the teensy:</p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/4.jpg" width="500px">
+             <p>and wired it all together!</p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/5.jpg" width="500px">
+             <p>simple as that</p>
+             <h1>Log 3: Software</h1>
+             <p>reworking the software took longer than it should've, because the original creator had wired their diodes
+               backwards, and i wasn't sure what to change to fix it (it was just flipping the pins) so those adjustments
+              have been made in my version. you can download the original files in the original project or mine here:</p>
+              <ul>
+                <li><a target="_blank" href="https://pastebin.com/TQvFzrdr">Big_Wheel_Macro_pad_Firmware_Edit</a></li>
+                <li><a target="_blank" href="https://pastebin.com/jhYyUpjy">actions.h</a></li>
+                <li><a target="_blank" href="https://pastebin.com/Smk7R5Je">pins.h</a></li>
+              </ul>
+              <p>here are what my keybindings do:</p>
+             <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/3.png" width="650px">
+              <p>some extra final pictures:</p>
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/8.jpg" width="500px">
+              <img src="https://vibrant-hodgkin-c6365a.netlify.app/project/videodeck/7.jpg" width="500px">
+              <p>thanks for reading!</p>
+             <br>
    <p><a id="back" href="https://relivesight.com/ongoing/">back a page</a></p>
    <p>┈ ren ​♡</p>
 
