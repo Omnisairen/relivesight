@@ -50,14 +50,16 @@
 }
 a, a:hover {
     text-decoration: none;
+    text-decoration: underline;
 }
 
 a {
-    color: gray;
+    color: white;
+    text-decoration: underline;
 }
 
 a:hover {
-    color: white;
+  color: rgb(255, 173, 228);
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -224,7 +226,7 @@ box-shadow: 0 0 4px 4px #555555;
 
 a:link {
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:visited {
@@ -345,7 +347,7 @@ th {
 }
 
 table{
-  margin:3% 15% 3% 15%;
+  margin:1% 15% 2% 15%;
 }
 
 
