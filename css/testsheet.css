@@ -1,0 +1,157 @@
+/*myfont*/
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/FUDGED.ttf);
+}
+@font-face {
+  font-family: myfont2;
+  src: url(../fonts/Archistico_Simple.ttf);
+}
+@font-face {
+  font-family: myfont4;
+  src: url(../fonts/manbowlines.ttf);
+}
+
+/* width */
+::-webkit-scrollbar {
+		width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+		background: #222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+		background: #111;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+		background: #555;
+}
+
+body {
+  background-color: black;
+	cursor:url(../images/nav/rsz_hover.png), auto;
+}
+a {
+	cursor:url(../images/nav/rsz_hoverreal.png), auto;
+}
+body {
+background-image:url(../images/home/111.webp);
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment:fixed;
+  color:#fff5e0;
+  margin:0;
+  line-height:1.7;
+}
+
+body,h1,h2,h3,p{margin-top:0;letter-spacing:.01em;}
+
+h1{margin-bottom:7px;text-align:center;}
+h2,h3,p{margin-bottom:15px;}
+h1,h2{font-family:'myfont4',courier,monospace;font-weight:normal;line-height:1.4;}
+h3{font-family:'myfont4',courier,monospace;font-weight:normal;line-height:1.4;}
+h1,h3{color:#cc66ff;}
+h2,b,strong,i,em{color:white;}
+body,p{font-family:'myfont2',courier,monospace;font-size:20px;}
+
+/*the side bar links and stuff*/
+a, a:active{color:white;text-decoration:none;font-weight:normal;font-family:'myfont2',courier,monospace;}
+a:hover,a:focus{color: white;}
+a{transition: all 0.4s ease;}
+.text-center{text-align:center;}
+
+
+/*top left image*/
+.img-center{display:block;margin-left:auto;margin-right:auto;height:100px;}
+@media (min-width: 768px){.img-title{max-width:100%;height:auto;}}
+
+
+
+/*left column*/
+.contentLeft{padding:15px !important;background-image:url(../images/home/rr.webp);}/*hr.png for mobile */
+/* md lg */ @media (min-width: 768px){.contentLeft{min-height:800px;border-radius:0 3px 3px 0;}}
+/* IE6-9 */background-size: 100% auto, cover;background-position:bottom center;background-repeat: no-repeat;}}
+/* sm */ @media (max-width: 767px){.contentLeft{border-radius:3px 3px 0 0;background:#3B2631;}}
+
+/*right column*/
+.contentRight{padding:25px !important;background-image:url(../images/home/tenor.png);}
+/* md lg */ @media (min-width: 768px){.contentRight{min-height:800px;border-radius:0 3px 3px 0;}}
+/* sm */ @media (max-width: 767px){.contentRight{border-radius:0 0 3px 3px;}}
+
+/*bonus column*/
+.contentBonus{padding:0px !important;background-image:url();}
+/* md lg */ @media (min-width: 768px){.contentLeft{min-height:800px;border-radius:0 0px 0px 0;}}
+/* IE6-9 */background-size: 100% auto, cover;background-position:bottom center;background-repeat: no-repeat;}}
+/* sm */ @media (max-width: 767px){.contentLeft{border-radius:0px 0px 0 0;background:#3B2631;}}
+
+/*bonus collumn images*/
+.img-new{width:130px;}
+
+/*bonus collumn images*/
+.img-neww{width:130px;}
+
+
+/*bonus columns*/
+.col-md-5,.row.cols-md-5>*{max-width:25%;flex-basis:25%}
+.col-sm-5,.row.cols-sm-5>*{max-width:25%;flex-basis:25%}
+.col-md-5,.row.cols-md-5>*{max-width:16.66667%;flex-basis:16.66667%}
+ 
+/*bonus columns r*/
+.col-md-55,.row.cols-md-55>*{max-width:25%;flex-basis:25%}
+.col-sm-55,.row.cols-sm-55>*{max-width:25%;flex-basis:25%}
+.col-md-55,.row.cols-md-55>*{max-width:16.66667%;flex-basis:16.66667%}
+ 
+
+
+/*flower icons*/
+.navi {display:block; margin-bottom:3px;}
+.navi img {width:15px;height:auto;vertical-align:-10%;margin-right:10px;margin-left:3px;}
+
+
+/*banners*/
+@media (min-width: 768px){
+.naviBanners{width:100%;height:auto;}}
+
+
+/*above */
+
+.row{justify-content:center;box-sizing:border-box;display:flex;flex:0 1 auto;/*flex-flow:row wrap;*/}
+.row2{justify-content:center;box-sizing:border-box;display:flex;flex:0 1 auto;flex-flow:row wrap;}
+
+.rowRowFightThePower{max-width:820px;margin-left:auto;margin-right:auto;padding:30px;}
+/*.rowRowFightThePower{max-width:820px;margin-left:auto;margin-right:auto;padding:30px;border-radius:3px;}*/
+
+col-sm,[class^='col-sm-'],[class^='col-sm-offset-'],
+.row[class*='cols-sm-']>*{box-sizing:border-box;flex:0 0 auto;padding:0px;}
+
+
+
+
+/*both columns - but mostly the inside of the right for some reason*/
+.col-sm-12,.row.cols-sm-12>*{max-width:100%;flex-basis:100%}
+
+
+/*left column*/
+.col-md-3,.row.cols-md-3>*{max-width:25%;flex-basis:25%}
+ 
+/*right column*/
+.col-md-9,.row.cols-md-9>*{max-width:75%;flex-basis:75%}
+
+/*inside right column*/
+.col-sm-3,.row.cols-sm-3>*{max-width:25%;flex-basis:25%}
+.col-md-2,.row.cols-md-2>*{max-width:16.66667%;flex-basis:16.66667%}
+.col-sm-9,.row.cols-sm-9>*{max-width:75%;flex-basis:75%}
+.col-md-offset-1{margin-left:8.33333%}
+
+
+.nnnn {
+  text-align: center;
+  align: center;
+}
