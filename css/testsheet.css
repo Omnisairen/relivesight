@@ -95,7 +95,7 @@ a{transition: all 0.4s ease;}
 .img-new{width:130px;}
 
 /*bonus collumn images*/
-.img-neww{width:130px;margin-bottom:0px;margin-top:0px;padding:0px;}
+.img-neww{width:130px;vertical-align:bottom}
 
 
 /* sign handling */
