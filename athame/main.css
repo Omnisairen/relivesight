@@ -1,4 +1,5 @@
 /*myfont*/
+/*
 @font-face {
   font-family: myfont;
   src: url(../fonts/FUDGED.ttf);
@@ -11,6 +12,7 @@
   font-family: myfont4;
   src: url(../fonts/manbowlines.ttf);
 }
+*/
 
 /* width */
 ::-webkit-scrollbar {
@@ -32,34 +34,42 @@
 		background: #555;
 }
 
+
 body {
-  background-color: black;
-	cursor:url(../images/nav/rsz_hover.png), auto;
-}
-a {
-	cursor:url(../images/nav/rsz_hoverreal.png), auto;
-}
-body {
-background-image:url(../images/home/111.webp);
--webkit-background-size: cover;
+  /*background-image:url(1.jpg);*/
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-attachment:fixed;
-  color:#fff5e0;
+  background-color:black;
+  color:#fff2e1;
   margin:0;
-  line-height:1.7;
+  padding:0;
+  line-height:0;
+}
+.logo{
+  box-shadow: 5px 1px 3px 2px rgba(0, 0, 0, 0.2);
+  margin-top:5px; /* 5px if pline-heigh is 0*/
+  margin-bottom:5px;
 }
 
-body,h1,h2,h3,p{margin-top:0;letter-spacing:.01em;}
+p,h1,h2,h3{font-family:'Times New Roman';
+}
+p{line-height:1.25;}
 
-h1{margin-bottom:7px;text-align:center;}
+
+/*
+
+body,h1,h2,h3,p{margin-top:0;letter-spacing:.01em;
+
 h2,h3,p{margin-bottom:15px;}
 h1,h2{font-family:'myfont4',courier,monospace;font-weight:normal;line-height:1.4;}
 h3{font-family:'myfont4',courier,monospace;font-weight:normal;line-height:1.4;}
 h1,h3{color:#cc66ff;}
 h2,b,strong,i,em{color:white;}
-body,p{font-family:'myfont2',courier,monospace;font-size:20px;}
+
+*/
 
 /*the side bar links and stuff*/
 a, a:active{color:white;text-decoration:none;font-weight:normal;font-family:'myfont2',courier,monospace;}
@@ -75,13 +85,14 @@ a{transition: all 0.4s ease;}
 
 
 /*left column*/
-.contentLeft{padding:15px !important;background-image:url(../images/home/rr.webp);}/*hr.png for mobile */
+.contentLeft{padding:15px !important;background-color:rgb(6, 6, 6)}/*hr.png for mobile */
 /* md lg */ @media (min-width: 768px){.contentLeft{min-height:800px;border-radius:0 3px 3px 0;}}
 /* IE6-9 */background-size: 100% auto, cover;background-position:bottom center;background-repeat: no-repeat;}}
 /* sm */ @media (max-width: 767px){.contentLeft{border-radius:3px 3px 0 0;background:#3B2631;}}
 
 /*right column*/
-.contentRight{padding:25px !important;background-image:url(../images/home/tenor.png);}
+.contentRight{padding:25px !important;background-color: rgb(8, 8, 8);
+  background-size: 10px;}
 /* md lg */ @media (min-width: 768px){.contentRight{min-height:800px;border-radius:0 3px 3px 0;}}
 /* sm */ @media (max-width: 767px){.contentRight{border-radius:0 0 3px 3px;}}
 
@@ -98,11 +109,11 @@ a{transition: all 0.4s ease;}
 .img-neww{width:130px;vertical-align:bottom}
 
 
-/* sign handling */
-.sign:hover{
+/* logo handling */
+/*.logo:hover{
   filter: hue-rotate(-75deg);
 }
-
+*/
 
 
 /*bonus columns*/
@@ -118,7 +129,7 @@ a{transition: all 0.4s ease;}
 
 
 /*flower icons*/
-.navi {display:block; margin-bottom:3px;}
+.navi {display:block;}
 .navi img {width:15px;height:auto;vertical-align:-10%;margin-right:10px;margin-left:3px;}
 
 
@@ -142,14 +153,15 @@ col-sm,[class^='col-sm-'],[class^='col-sm-offset-'],
 
 
 /*both columns - but mostly the inside of the right for some reason*/
-.col-sm-12,.row.cols-sm-12>*{max-width:100%;flex-basis:100%}
+.col-sm-12,.row.cols-sm-12>*{max-width:100%;flex-basis:100%;}
+.col-sm-13,.row.cols-sm-13>*{max-width:100%;flex-basis:100%}
 
 
 /*left column*/
 .col-md-3,.row.cols-md-3>*{max-width:25%;flex-basis:25%}
  
 /*right column*/
-.col-md-9,.row.cols-md-9>*{max-width:75%;flex-basis:75%}
+.col-md-9,.row.cols-md-9>*{max-width:110%;flex-basis:110%}
 
 /*inside right column*/
 .col-sm-3,.row.cols-sm-3>*{max-width:25%;flex-basis:25%}
