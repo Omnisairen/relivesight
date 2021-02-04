@@ -104,7 +104,6 @@ a{transition: all 0.4s ease;}
 }
 
 
-
 /*bonus columns*/
 .col-md-5,.row.cols-md-5>*{max-width:25%;flex-basis:25%}
 .col-sm-5,.row.cols-sm-5>*{max-width:25%;flex-basis:25%}
