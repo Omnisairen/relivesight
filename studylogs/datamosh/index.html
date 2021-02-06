@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta charset="UTF-8">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/text-page.css" rel="stylesheet" type="text/css" media="all">
+    <title>「ｒｅ：Ｌｉｖｅ」</title>
+    <link rel="icon" type="image/png" href="../../images/home/1.png" sizes="1000x1000" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-123647555-2');
+    </script>
+    <script src="../../re/w3.js"></script>
+  </head><body>
+
+    <div class="row rowRowFightThePower">
+
+      <div class="harry">   
+      <div class="col-sm-12 col-md-4 contentLeft">     
+      <div w3-include-html="https://relivesight.com/re/side.html"></div>
+      <script>
+        w3.includeHTML();
+        </script>
+          </div>
+        </div>  
+      
+          <div class="col-sm-12 col-md-15 contentRight">
+
+            <h2>Datamoshing</h2>
+            <p>—「0X://Explanation」<br>
+              less of a process and more of a tutorial. should give anyone full tools to datamosh. 
+              here's some tests/projets i've done with datamoshing: 
+              <a target="_blank" href="https://www.youtube.com/watch?v=8MY1HfwdbrY&t=41s">1975 music video test</a>,
+              <a target="_blank" href="https://www.youtube.com/watch?v=5ITNWOwuyhU">stock footage test</a>, and
+              <a target="_blank" href="https://www.youtube.com/watch?v=7SUcfcZ_rUg">the middle of this edit</a>
+            </p>
+              <p><a id="back" href="https://relivesight.com/studylogs/">back a page</a></p>
+        
+              <img src="" width="500px">
+        
+            
+              <h1>Pt. 1: Basics</h1>
+             <p>i'm gunna start by just trying to explain the gist of what even happens when datamoshing, 
+               well at least this specific type, because knowing what actually happens will give you better 
+               intuition to pick good clips and understand how they work together. at its core, datamoshing is
+              a process of manipulating the data of (usually) video files to achieve certain visual/auditory 
+              effects when decoded. this reason this is possible is because of how video compression works. 
+              ever wonder why two videos with the same length can be vastly different sizes? it's because each 
+              frame of video isn't actually being saved, but most frames are saved as the difference from the last frame. 
+              this is what we are going to be targeting.
+            </p>
+            <p>
+              the frames that save every pixel of a picture are called i-frames (intra-coded), these are able to 
+              be displaeyd on their own, and without reliance from other information, since its literally a whole picture.
+              the other type of frames are p-frames (predictive) and b-frames (bi-predictive). these do not store full
+              pictures, but instead describe the differences between this frame and the last one, meaning that they cant be dispayed 
+              properly without the original full picture. 
+            </p>
+            <p>this is where datamoshing comes in. assuming you've seen an example or watched any of my work with them 
+              (though i always give them a ton of post processing effects so its less stark sorry), you'll see that it 
+              appears as if the previous image is being stretched and fancily mapped onto the current video (when done right).
+              this is because all that datamoshing is is [wow english is cool] the deletion of i-frames, causing the p-frames and b-frames
+              to utilize the wrong reference, creating the mosh effect.
+            </p>
+            <h1>Pt. 2: The Rest</h1>
+            <p>to achieve this specific effect, we will use Avidemux, specifically <a target="_blank" href="https://sourceforge.net/projects/avidemux/files/avidemux/2.5.6/">version 2.5.6</a>,
+            because newer version will likely view what we are trying to do as an error. well launch the software and then [open]
+            the video you want to mosh.
+          </p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/4.png" width="400px">
+          <p>next, avidemux might show some "errors" just click [no] to all of them</p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/5.png" width="400px">
+          <p>again, [no]</p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/6.png" width="400px">
+          <p>now we need to copy the video under a new codec, so select [mpeg-4 asp (xvid)]</p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/7.png" width="400px">
+          <p>next we need to make sure our video will playback when we are done. change [maximum i-frame interval:] to [99999999].
+            this will ensure the video can be played back, even if there is only one i-frame every 99999999 frames (you know since we are deleting basically all the i-frames)
+          </p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/8.png" width="400px">
+          <p>next just [save] the video, no need to add a .mp4 extension as avidemux will be able to open the file regardless</p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/9.png" width="400px">
+          <p>now just wait for it to do its thing...</p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/10.png" width="400px">
+          <p>now i'm hoping i can trust you to re[open] the video and say [no] to the errors without pictures. after
+            opening the video, select [copy] instead of [mpeg-4 asp (xvid)] since we dont need to change it this time.
+          </p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/11.png" width="400px">
+          <p>now its i-frames time. some controls you need to know (after clicking down on the bottom bar)
+            <br>[up arrow] - advance one i-frame
+            <br>[down arrow] - retreat one i-frame
+            <br>[right arrow] - advance one frame
+            <br>[left arrow] - retreat one frame
+            <br>using those controls, locate the first i-frame (should be the start of the video). we must keep the first i-frame or there would be no starting point,
+            so advance one i-frame [up arrow]. now here click the [A] button (on the bottom bar, not your keyboard), to start a selection at this frame.
+          </p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/12.png" width="400px">
+          <p>now advance one frame [right arrow] and hit the [B] button (again, on the bottom bar), to wrap the selection on the other side.
+          </p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/13.png" width="400px">
+          <p>now just click the delete key [del] and that i-frame has been removed. you can advance and retreat to see it won't
+            find that frame any more. just repeat this steps for as many i-frames as you want (except the first one) and your 
+            video will be moshed in no time. now just hit [save]
+          </p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/14.png" width="400px">
+          <p>make sure to include the .mp4 extension this time</p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/15.png" width="400px">
+          <p>select [no] to anything avidemux asks, specifically making a smart copy </p>
+          <img src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/studylogs/datamosh/16.png" width="400px">
+          <p>and that's it, open your video file (some programs might not be able to open it now) and view 
+            your beautiful creation. if you wanna post it or smth, i'd recommend running it through a video
+            editing program and exporting it as a healthy, no longer damaged, file. 
+          </p>
+          <p></p>
+          <p>
+            a last little note, you want clips with slow(ish) movement and relatively related darkness/brightness,
+            if it's too fast, the moshing will have already returned to the original image (as lots of p-frames and b-frames were apparently
+            present) and if the brigthness is too widly different between clips, there will be soooooo many p-frames and b-frames that
+            its basically an i-frame at that point and you won't be able to see any moshing. also if you're trying to sync this up with music,
+            it can get really frusturating as the amount of time lost doesn't feel conistent to me (like it doesn't seem like just the amount of frames i took out??)
+            but maybe you'll have better luck that i did~ <br> 
+             hope you learned something and are now able to make something cool!
+          </p>
+
+
+<br>
+   <p><a id="back" href="https://relivesight.com/studylogs/">back a page</a></p>
+   <p>┈ ren ​♡</p>
+
+
+  </div></div>
+  </body>
+
+</html>
