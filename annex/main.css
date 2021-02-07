@@ -36,14 +36,11 @@
 
 
 body {
-  /*background-image:url(1.jpg);*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment:fixed;
-  background-color:black;
-  color:#fff2e1;
+  background-image:url(https://raw.githubusercontent.com/Omnisairen/relivepics/main/annex/0.jpg);
+  background-repeat: repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  color:#ffffff;
   margin:0;
   padding:0;
   line-height:0;
@@ -54,7 +51,7 @@ body {
   margin-bottom:5px;
 }
 
-p,h1,h2,h3{font-family:'Times New Roman';
+p,h1,h2,h3,figcaption{font-family:'Times New Roman';
 }
 p{line-height:1.25;}
 
@@ -85,11 +82,11 @@ a{transition: all 0.4s ease;}
 
 
 /*left column*/
-.contentLeft{padding:15px !important;background-color:rgb(6, 6, 6)}/*hr.png for mobile */
+.contentLeft{padding:15px !important;background-color:rgb(0, 0, 0)}/*hr.png for mobile */
 /* md lg */ @media (min-width: 768px){.contentLeft{min-height:800px;border-radius:0 3px 3px 0;}}
 
 /*right column*/
-.contentRight{padding:25px !important;background-color: rgb(8, 8, 8);
+.contentRight{padding:25px !important;background-color: rgb(0,0,0);
   background-size: 10px;}
 /* md lg */ @media (min-width: 768px){.contentRight{min-height:800px;border-radius:0 3px 3px 0;}}
 
@@ -153,7 +150,7 @@ col-sm,[class^='col-sm-'],[class^='col-sm-offset-'],
 
 
 /*left column*/
-.col-md-3,.row.cols-md-3>*{max-width:25%;flex-basis:25%}
+.col-md-3,.row.cols-md-3>*{max-width:20%;flex-basis:20%}
  
 /*right column*/
 .col-md-9,.row.cols-md-9>*{max-width:110%;flex-basis:110%}
@@ -170,3 +167,34 @@ col-sm,[class^='col-sm-'],[class^='col-sm-offset-'],
   align: center;
 }
 
+.topmargin{
+  margin: 2%;
+}
+
+.alignleft{
+  float: left;
+}
+
+.alignright{
+  float: right;
+}
+
+figcaption{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+table td {
+    border-top: none !important;
+    padding-left:6px;
+    padding-right:6px;
+}
+
+th .img-responsive{
+  max-width:250px !important;
+}
+
+hr{
+  margin-left: 10%;
+  margin-right: 10%
+}
