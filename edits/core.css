@@ -16,8 +16,9 @@
     src: url(../../fonts/manbowlines.ttf);
   }
   body{
-      background-image:url(https://raw.githubusercontent.com/Omnisairen/relivepics/main/edits/Edits.jpg);
-      background-size: auto;
+    background-color: #272727;
+    background-image: url(../images/img/1.gif);
+    background-size: 10px;
       text-shadow: -0.09em 0 0.5px rgba(255, 176, 219, 0.9);
   }
   
