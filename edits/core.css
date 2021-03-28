@@ -16,13 +16,17 @@
     src: url(../../fonts/manbowlines.ttf);
   }
   body{
+    font-weight: bold;
     background-color: #272727;
     background-image: url(../images/img/1.gif);
     background-size: 10px;
       text-shadow: -0.09em 0 0.5px rgba(255, 176, 219, 0.9);
   }
   
-
+  @font-face {
+    font-family: myfont6;
+    src: url(../fonts/times-new-roman-bold.ttf);
+  }
   
   
   
@@ -123,7 +127,7 @@
       text-align: center;
       text-transform: uppercase;
   
-      color: #CAD1D1;
+      color: #f7ffff;
   }
   
   .label2 p {
@@ -161,7 +165,7 @@
   
   body {
       background-color: #000;
-      color: #e7f6f8;
+      color: #ffffff;
       font-family: TimesNewRoman, monospace;
       font-size: 62.5%;
   }
@@ -217,7 +221,7 @@
   
   h1, h2, h3, h4 {
       font-weight: normal;
-      font-family: myfont4, serif;
+      font-family: myfont6, serif;
       color: white;
       text-transform: uppercase;
       margin: 0;
@@ -375,7 +379,7 @@
   }
   
   .label p {
-      font-family: myfont4, serif;
+      font-family: myfont6, serif;
       letter-spacing: 4px;
       font-size: 3.4em;
       line-height: 0.75em
