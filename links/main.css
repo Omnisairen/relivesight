@@ -19,21 +19,21 @@ body {
   background-color: #272727;
   background-image: url(../images/img/1.gif);
   background-size: 10px;
-  color: rgb(255, 145, 178);
+  color: #f5c6f5;
   font-family: "Times New Roman";
   animation: fade-in 2s;
   text-shadow: -0.09em 0 0.5px rgba(255, 176, 219, 0.9);
 }
 a:visited, a:link, a:active {
-  color: #cccfb5;
+  color: #fffefb;
   text-decoration: none;
   transition: ease-in-out 0.2s;
-  text-shadow: 0.09em 0 0.5px rgba(255, 176, 219, 0.9);
+  text-shadow: 0.09em 0 0.5px #f5c6f5;
 }
 
 a:hover {
-  color: rgb(255, 145, 178);
-  text-shadow: -0.09em 0 0.5px rgba(255, 176, 219, 0.9);
+  color: #f5c6f5;
+  text-shadow: -0.09em 0 0.5px #f5c6f5;
 }
 
 /* width */
@@ -120,9 +120,10 @@ h2 {
   display: block;
   width: 100%;
   margin: 0 auto 10px;
-  color: #cccfb5;
-  border: 2px solid rgb(75, 118, 146);
-  background-color: rgb(75, 118, 146);
+  
+  color: #fffefb;
+  border: 2px solid #a996c2;
+  background-color: #a996c2;
   text-align: center;
   text-decoration: none;
   padding: 15px 0;

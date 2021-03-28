@@ -11,7 +11,18 @@
   font-family: myfont4;
   src: url(../fonts/manbowlines.ttf);
 }
-
+@font-face {
+  font-family: myfont5;
+  src: url(TimesNewRomanMTStd-Cond.otf);
+}
+@font-face {
+  font-family: myfont6;
+  src: url(../fonts/times-new-roman-bold.ttf);
+}
+@font-face {
+  font-family: myfont7;
+  src: "Consolas", "Andale Mono", "Lucida Console", monospace;
+} 
 /* width */
 ::-webkit-scrollbar {
 		width: 10px;
@@ -34,37 +45,50 @@
 
 body {
   background-color: black;
-	cursor:url(../images/nav/rsz_hover.png), auto;
+	cursor:url(../images/nav/rsz_hover1.png), auto;
 }
 a {
-	cursor:url(../images/nav/rsz_hoverreal.png), auto;
+	cursor:url(../images/nav/rsz_hoverreal1.png), auto;
 }
 body {
-background-image:url(../images/home/111.webp);
+background-image:url(../images/home/113.webp);
 -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-attachment:fixed;
-  color:#fff5e0;
+  color:#fffefb;
   margin:0;
   line-height:1.7;
+  text-shadow: -0.09em 0 0.5px rgba(255, 176, 219, 0.9);
 }
 
 body,h1,h2,h3,p{margin-top:0;letter-spacing:.01em;}
 
 h1{margin-bottom:7px;text-align:center;}
 h2,h3,p{margin-bottom:15px;}
-h1,h2{font-family:'myfont4',courier,monospace;font-weight:normal;line-height:1.4;}
-h3{font-family:'myfont4',courier,monospace;font-weight:normal;line-height:1.4;}
-h1,h3{color:#cc66ff;}
+h1,h2{font-family:'myfont5';line-height:1.4;}
+h3{font-family:'myfont6';line-height:1.4;}
+h1,h3{color:#f5c6f5;}
 h2,b,strong,i,em{color:white;}
-body,p{font-family:'myfont2',courier,monospace;font-size:20px;}
+body,p{font-family:'myfont6';font-size:20px;}
 
+
+a:visited, a:link, a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+  text-shadow: 0.09em 0 0.5px #f5c6f5;
+}
+
+a:hover {
+  color: #f5c6f5;
+  text-shadow: -0.09em 0 0.5px #f5c6f5;
+}
 /*the side bar links and stuff*/
-a, a:active{color:white;text-decoration:none;font-weight:normal;font-family:'myfont2',courier,monospace;}
+/*a, a:active{color:white;text-decoration:none;font-family:'myfont5';}
 a:hover,a:focus{color: white;}
-a{transition: all 0.4s ease;}
+a{transition: all 0.4s ease;}*/
 .text-center{text-align:center;}
 
 
@@ -100,7 +124,7 @@ a{transition: all 0.4s ease;}
 
 /* sign handling */
 .sign:hover{
-  filter: hue-rotate(-75deg);
+  filter: hue-rotate(45deg);
 }
 
 
