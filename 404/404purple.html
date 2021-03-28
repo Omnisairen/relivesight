@@ -22,20 +22,20 @@
 
   ::-moz-selection {
     color: black;
-    background-color: #f5c6f5;
+    background-color: #c0dc67;
   }
 
   ::selection {
     color: black;
-    background-color: #f5c6f5;
+    background-color: #c0dc67;
   }
 
   html, body {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    background-color: #111111;
-    color: #f5c6f5;
+    background-color: #250035;
+    color: #c414b5;
     font-size: calc(6.4px + 0.8125vw);
   }
 
@@ -52,7 +52,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #181818;
+    background-color: #5a0084;
     mix-blend-mode: overlay;
     z-index: 1;
   }
@@ -76,6 +76,8 @@
     width: 100%;
     height: 100%;
     z-index: 0;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
     mix-blend-mode: luminosity;
   }
   .error-body .message {
@@ -92,7 +94,9 @@
     width: 100%;
     font-size: 10em;
     margin: 0;
-    text-shadow: 0 0 0.07em #f5c6f5, -0.2em 0 2em rgba(131, 131, 131, 0.3), 0.2em 0 2em rgba(132, 0, 114, 0.3);
+    -webkit-animation: shake 600ms ease-in-out infinite alternate;
+            animation: shake 600ms ease-in-out infinite alternate;
+    text-shadow: 0 0 0.07em #c414b5, -0.2em 0 2em rgba(132, 0, 103, 0.3), 0.2em 0 2em rgba(132, 0, 114, 0.3);
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -102,6 +106,8 @@
     content: attr(t);
     position: absolute;
     left: 50%;
+    -webkit-transform: translate(-50%, 0.34em);
+            transform: translate(-50%, 0.34em);
     height: .1em;
     line-height: .5em;
     width: 100%;
@@ -133,20 +139,20 @@
   }
   .error-body .message p, .error-body .message a {
     font-size: 2em;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 0 0 5px #757575;
+    font-family: monospace;
+    text-shadow: 0 0 5px #5a0084;
     -webkit-filter: blur(0.8px);
             filter: blur(0.8px);
   }
   .error-body .message a {
     position: relative;
-    color: #f5c6f5;
+    color: #c414b5;;
     text-decoration: none;
     font-weight: 700;
-    border: 2px solid #f5c6f5;
+    border: 2px solid #c414b5;;
     text-transform: uppercase;
     padding: 5px 30px;
-    box-shadow: inset 0 0 0 0 rgba(121, 121, 121, 0.2);
+    box-shadow: inset 0 0 0 0 rgba(132, 0, 121, 0.2);
     transition: 25ms ease-in-out all 0ms;
     overflow: hidden;
     -webkit-animation: attn 3s ease-in-out infinite;
@@ -169,7 +175,7 @@
             transform: translate(-50%, 0) scale(1, 1);
     -webkit-transform-origin: center;
             transform-origin: center;
-    background-color: #f5c6f5;
+    background-color: #c414b5;
     width: 90%;
     height: 5px;
     transition: 225ms ease-in-out all;
