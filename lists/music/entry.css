@@ -18,7 +18,10 @@
   font-family: myfont4;
   src: url(../../fonts/manbowlines.ttf);
 }
-
+@font-face {
+  font-family: myfont6;
+  src: url(../fonts/times-new-roman-bold.ttf);
+}
 /* Content Two for Return to home page screen */
 
 .label2 {
@@ -50,16 +53,14 @@
 }
 a, a:hover {
     text-decoration: none;
-    text-decoration: underline;
 }
 
 a {
-    color: white;
-    text-decoration: underline;
+    color: gray;
 }
 
 a:hover {
-  color: rgb(255, 173, 228);
+    color: white;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -81,7 +82,7 @@ font-family: 'Lobster', cursive;
 font-family: 'Major Mono Display', monospace;
 */
 h2 {
-  font-family:'myfont4';
+  font-family:'myfont6';
   color:white;
   font-size: 50px;
 }
@@ -156,7 +157,8 @@ html {
 }
 
 h1 {
-  font-family: 'myfont4';
+  font-family: 'myfont6';
+  text-transform:uppercase;
   color:white;
   font-size: 30px;
   text-align: center;
@@ -226,7 +228,7 @@ box-shadow: 0 0 4px 4px #555555;
 
 a:link {
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:visited {
