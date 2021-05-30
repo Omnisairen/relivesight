@@ -12,6 +12,10 @@ h2 {
   white-space: nowrap;
 }
 
+h1 {
+  line-height: 1em;
+}
+
 a {
   white-space: nowrap;
 } 
