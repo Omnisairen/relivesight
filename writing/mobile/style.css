@@ -93,7 +93,7 @@ a:hover {
 
 #content {
   position: relative;
-  width: 25em;
+  width: 22em;
   top: 0em;
 }
 
@@ -113,7 +113,7 @@ a:hover {
 
 #content img.auditorium
 {
-    max-width: 7em;
+    max-width: 6em;
     float: left;
     margin: .3em .1em .1em .1em;
 }
@@ -127,6 +127,6 @@ a:hover {
 }
 .rr {
   margin-left:7em;
-  font-size: 1.2em;
+  font-size: 1em;
 
 }
