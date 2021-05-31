@@ -107,7 +107,7 @@ a:hover {
 
 #content img {
   
-  margin: 8em auto;
+  margin: 0em auto;
   display: block;
 }
 
@@ -126,7 +126,7 @@ a:hover {
   line-height: 0.75em
 }
 .rr {
-  margin-left:11em;
+  margin-left:7em;
   font-size: 1.2em;
 
 }
