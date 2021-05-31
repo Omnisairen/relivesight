@@ -1,0 +1,147 @@
+body {
+
+  font-family: "Times New Roman";
+  animation: fade-in 2s;
+}
+h1 {
+color:rgb(87, 85, 76);
+}
+.title {
+  color:rgb(87, 85, 76);
+  font-size:2.6em;
+  }
+  
+
+h2 {
+  color:rgb(94, 90, 72);
+  font-weight: normal;
+  font-size:2.1em;
+  padding-left: .2em;
+}
+
+
+h3 {
+  color:rgb(94, 90, 72);
+  font-weight: normal;
+  font-size:1.6em;
+  text-align: center;  
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.h {
+  white-space: nowrap;
+}
+
+a {
+  white-space: nowrap;
+} 
+
+a:visited, a:link, a:active {
+  font-family: "Times New Roman";
+  color:rgb(63, 63, 63);
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+  text-shadow: -0.09em 0 0.5px #f7f6ed;
+}
+
+a:hover {
+  color:rgb(0, 0, 0);
+  text-shadow: 0.09em 0 0.5px #cacaca;
+}
+.right {
+  text-align: right;
+  color: white;
+}
+.ttyl {
+  text-indent: 10px;
+}
+.abar {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.fade {
+  position: relative;
+  text-align: center;
+}
+
+.fade span {
+  position: absolute;
+  transform: translateX(-50%);
+  transition: ease-in-out .5s;
+}
+
+.fade span:nth-child(2) {
+  opacity: 0;
+}
+
+.fade span:nth-child(1) {
+  opacity: 1;
+}
+
+.fade:hover span:nth-child(2) {
+  opacity: 1;
+}
+
+.fade:hover span:nth-child(1) {
+  opacity: 0;
+}
+  
+
+
+#content {
+  position: relative;
+  width: 664px;
+  top: 0px;
+}
+
+#content {
+  background-color:rgb(255, 255, 254);
+
+  border: 2px double #616161;
+
+  -webkit-box-shadow: 0 8px 4px 1px white;
+  -moz-box-shadow: 0 8px 4px 1px white;
+  box-shadow: 0 0 4px 1px white;
+
+  padding: 4px 4px;
+}
+
+#content img {
+  
+  margin: 8px auto;
+  display: block;
+}
+
+#content img.auditorium
+{
+    max-width: 170px;
+    float: left;
+    margin: 10px 8px 8px 12px;
+}
+
+.label {
+  
+  margin: 6px 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 16px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #CAD1D1;
+}
+
+.label p {
+  letter-spacing: 4px;
+  font-size: 1.6em;
+  line-height: 0.75em
+}
+.rr {
+  margin-left:11em;
+  font-size: 1.2em;
+
+}

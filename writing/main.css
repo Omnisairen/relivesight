@@ -34,15 +34,22 @@
 		background: #555;
 }
 
+@media screen and (max-device-width: 600px) {
+  .harry {
+    display: none;
+  }
+}
 
 body {
-  background-color: #272727;
-  background-image:url(../../blog/img/1.gif);
-  background-size: 10px;
-  background-attachment:fixed;
+    background-color: #272727;
+    background-image:url(../blog/img/1.gif);
+    background-size: 10px;
+    background-attachment:fixed;
+    font-family: "Times New Roman";
+    color:rgb(63, 63, 63);
   margin:0;
   padding:0;
-  line-height:0;
+  line-height:1;
 }
 .logo{
   box-shadow: 5px 1px 3px 2px rgba(0, 0, 0, 0.2);
@@ -50,9 +57,9 @@ body {
   margin-bottom:5px;
 }
 
-p,h1,h2,h3{font-family:'Times New Roman';
+p,h1,h2,h3,figcaption{font-family:'Times New Roman';
 }
-p{line-height:1.8;}
+p{line-height:1.25;}
 
 
 /*
@@ -68,8 +75,7 @@ h2,b,strong,i,em{color:white;}
 */
 
 /*the side bar links and stuff*/
-a, a:active{color:white;text-decoration:none;font-weight:normal;font-family:'myfont2',courier,monospace;}
-a:hover,a:focus{color: white;}
+
 a{transition: all 0.4s ease;}
 .text-center{text-align:center;}
 
@@ -81,29 +87,19 @@ a{transition: all 0.4s ease;}
 
 
 /*left column*/
-.contentLeft{padding:15px !important;background-color:rgb(6, 6, 6)}/*hr.png for mobile */
+.contentLeft{padding:25px !important;background-color:rgb(255, 255, 253);}
 /* md lg */ @media (min-width: 768px){.contentLeft{min-height:800px;border-radius:0 3px 3px 0;}}
 
-/*top column*/
-.contentTop2{padding:25px !important;background-color:rgb(255, 255, 253); color:rgb(63, 63, 63);
-  background-size: cover; }
-
-
-
-/*top column*/
-.contentTop{padding:25px !important;background-image:url(https://raw.githubusercontent.com/Omnisairen/relivepics/main/reviews/paprika/image.jpg); color:white;
-  background-size: cover;box-shadow: inset 0px -480px 200px rgb(50,50,50, .49);}
-
+.harry{background-color:rgb(255, 255, 253);}
 
 /*right column*/
-.contentRight{padding:75px !important;background-color: rgb(255, 255, 250);color:rgb(61, 61, 55);
-  background-size: 10px; box-shadow:  1px 0px 8px rgb(50,50,50);}
-/* md lg */ @media (min-width: 768px){.contentRight{min-height:800px;border-radius:4px 4px 4px 4px;}}
-
+.contentRight{padding:25px !important;background-color: rgb(255, 255, 253);;
+  background-size: 10px;}
+/* md lg */ @media (min-width: 768px){.contentRight{border-left: 1px solid rgb(56, 56, 56);border-radius:0 3px 3px 0;min-height:800px;border-radius:0 3px 3px 0;}}
 
 /*bonus column*/
 .contentBonus{padding:0px !important;background-image:url();margin-bottom:0px;margin-top:0px;}
-/* md lg */ @media (min-width: 768px){.contentLeft{min-height:800px;border-radius:0 0px 0px 0;}}
+/* md lg */ @media (min-width: 768px){.contentBonus{min-height:800px;border-radius:0 0px 0px 0;}}
 
 /*bonus collumn images*/
 .img-new{width:130px;}
@@ -164,7 +160,7 @@ col-sm,[class^='col-sm-'],[class^='col-sm-offset-'],
 .col-md-3,.row.cols-md-3>*{max-width:25%;flex-basis:25%}
  
 /*right column*/
-.col-md-9,.row.cols-md-9>*{max-width:110%;flex-basis:110%}
+.col-md-9,.row.cols-md-9>*{max-width:95%;flex-basis:95%}
 
 /*inside right column*/
 .col-sm-3,.row.cols-sm-3>*{max-width:25%;flex-basis:25%}
@@ -175,5 +171,42 @@ col-sm,[class^='col-sm-'],[class^='col-sm-offset-'],
 
 .nnnn {
   text-align: center;
+  align: center;
 }
+
+.topmargin{
+  margin: 2%;
+}
+
+.alignleft{
+  float: left;
+}
+
+.alignright{
+  float: right;
+}
+
+figcaption{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+table td {
+    border-top: none !important;
+    padding-left:6px;
+    padding-right:6px;
+}
+
+th .img-responsive{
+  max-width:250px !important;
+}
+
+hr{
+  margin-left: 10%;
+  margin-right: 10%
+}
+
+
+
+
 
