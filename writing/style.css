@@ -93,7 +93,7 @@ a:hover {
 
 #content {
   position: relative;
-  width: 664px;
+  width: 41em;
   top: 0px;
 }
 
@@ -101,10 +101,6 @@ a:hover {
   background-color:rgb(255, 255, 254);
 
   border: 2px double #616161;
-
-  -webkit-box-shadow: 0 8px 4px 1px white;
-  -moz-box-shadow: 0 8px 4px 1px white;
-  box-shadow: 0 0 4px 1px white;
 
   padding: 4px 4px;
 }
