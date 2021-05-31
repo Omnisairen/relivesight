@@ -23,7 +23,7 @@ h2 {
 h3 {
   color:rgb(94, 90, 72);
   font-weight: normal;
-  font-size:1.6em;
+  font-size:1.4em;
   text-align: center;  
   margin-top: 0em;
   margin-bottom: 0em;
@@ -93,7 +93,7 @@ a:hover {
 
 #content {
   position: relative;
-  width: 30em;
+  width: 25em;
   top: 0em;
 }
 
@@ -113,9 +113,9 @@ a:hover {
 
 #content img.auditorium
 {
-    max-width: 10em;
+    max-width: 7em;
     float: left;
-    margin: .8em .6em .6em .8em;
+    margin: .3em .1em .1em .1em;
 }
 
 
