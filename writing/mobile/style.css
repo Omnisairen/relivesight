@@ -94,7 +94,7 @@ a:hover {
 #content {
   position: relative;
   width: 30em;
-  top: 0px;
+  top: 0em;
 }
 
 #content {
@@ -107,29 +107,18 @@ a:hover {
 
 #content img {
   
-  margin: 8px auto;
+  margin: 8em auto;
   display: block;
 }
 
 #content img.auditorium
 {
-    max-width: 170px;
+    max-width: 10em;
     float: left;
-    margin: 10px 8px 8px 12px;
+    margin: .8em .6em .6em .8em;
 }
 
-.label {
-  
-  margin: 6px 0;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  padding: 2px 16px;
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
 
-  color: #CAD1D1;
-}
 
 .label p {
   letter-spacing: 4px;
