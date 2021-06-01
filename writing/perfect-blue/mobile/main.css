@@ -37,13 +37,12 @@
 
 body {
   background-color: #272727;
-  background-image:url(../../blog/img/1.gif);
+  background-image:url(../../../blog/img/1.gif);
   background-size: 10px;
   background-attachment:fixed;
   margin:0;
   padding:0;
   line-height:0;
-  text-shadow: -0.09em 0 0.5px rgba(228, 228, 228, 0.9);
 }
 .logo{
   box-shadow: 5px 1px 3px 2px rgba(0, 0, 0, 0.2);
@@ -93,11 +92,11 @@ a{transition: all 0.4s ease;}
 
 /*top column*/
 .contentTop{padding:25px !important;background-image:url(https://raw.githubusercontent.com/Omnisairen/relivepics/main/reviews/paprika/image.jpg); color:white;
-  background-size: cover;box-shadow: inset 0px -480px 200px rgb(50,50,50, .49);}
+  background-size: cover;box-shadow: inset 0px -150px 200px rgb(50,50,50, .69);}
 
 
 /*right column*/
-.contentRight{padding:75px !important;background-color: rgb(255, 255, 250);color:rgb(61, 61, 55);
+.contentRight{padding:2em !important;background-color: rgb(255, 255, 250);color:rgb(61, 61, 55);
   background-size: 10px; box-shadow:  1px 0px 8px rgb(50,50,50);}
 /* md lg */ @media (min-width: 768px){.contentRight{min-height:800px;border-radius:4px 4px 4px 4px;}}
 
