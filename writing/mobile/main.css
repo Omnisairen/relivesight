@@ -160,7 +160,7 @@ col-sm,[class^='col-sm-'],[class^='col-sm-offset-'],
 .col-md-3,.row.cols-md-3>*{max-width:25%;flex-basis:25%}
  
 /*right column*/
-.col-md-9,.row.cols-md-9>*{max-width:125%;flex-basis:125%}
+.col-md-9,.row.cols-md-9>*{max-width:115%;flex-basis:115%}
 
 /*inside right column*/
 .col-sm-3,.row.cols-sm-3>*{max-width:25%;flex-basis:25%}
