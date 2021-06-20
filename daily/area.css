@@ -1815,12 +1815,24 @@ pre code {
   margin-left: auto
   
 }
+@media (min-width:1px) {
+  .container {
+    width: 465px
+  }
+}
+@media (min-width:800px) {
+  .container {
+    width: 970px
+  }
+}
 
+/*old just web version:
 @media (min-width:1px) {
   .container {
     width: 970px
   }
 }
+*/
 
 /*
 @media (min-width:868px) {
