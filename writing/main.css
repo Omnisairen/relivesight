@@ -88,13 +88,13 @@ a{transition: all 0.4s ease;}
 
 
 /*left column*/
-.contentLeft{padding:25px !important;background-color:rgb(255, 255, 253);}
+.contentLeft{padding:25px !important;background-color:rgb(255, 255, 251);}
 /* md lg */ @media (min-width: 768px){.contentLeft{min-height:800px;border-radius:0 3px 3px 0;}}
 
-.harry{background-color:rgb(255, 255, 253);}
+.harry{background-color:rgb(255, 255, 251);}
 
 /*right column*/
-.contentRight{padding:25px !important;background-color: rgb(255, 255, 253);
+.contentRight{padding:25px !important;background-color: rgb(255, 255, 251);
   background-size: 10px;}
 /* md lg */ @media (min-width: 768px){.contentRight{border-left: 1px solid rgb(56, 56, 56);border-radius:0 3px 3px 0;min-height:800px;border-radius:0 3px 3px 0;}}
 

@@ -42,11 +42,11 @@
 #baguetteBox-overlay .full-image img {
   margin-top:-100px;
   display: inline-block;
-  width: auto;
+  width:auto;
   height: 550px;
-  max-height: 100%;
+  /*max-height: 100%;
   max-width: 100%;
-  vertical-align: middle;
+  */vertical-align: middle;
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .6);
   box-shadow: 0 0 8px rgba(0, 0, 0, .6)
 }

@@ -1820,7 +1820,7 @@ pre code {
     width: 465px
   }
 }
-@media (min-width:800px) {
+@media (min-width:950px) {
   .container {
     width: 970px
   }

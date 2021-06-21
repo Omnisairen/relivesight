@@ -97,7 +97,7 @@ a{transition: all 0.4s ease;}
 
 
 /*right column*/
-.contentRight{padding:75px !important;background-color: rgb(255, 255, 250);color:rgb(61, 61, 55);
+.contentRight{padding:75px !important;background-color: rgb(255, 255, 251);color:rgb(61, 61, 55);
   background-size: 10px; box-shadow:  1px 0px 8px rgb(50,50,50);}
 /* md lg */ @media (min-width: 768px){.contentRight{min-height:800px;border-radius:4px 4px 4px 4px;}}
 
