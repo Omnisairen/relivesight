@@ -40,7 +40,7 @@
 }
 
 
-@media screen and (max-device-width: 800px) {
+@media screen and (min-width: 801px) {
   #baguetteBox-overlay .full-image img {
     margin-top:-100px;
     display: inline-block;
@@ -54,7 +54,7 @@
     box-shadow: 0 0 8px rgba(0, 0, 0, .6)
   }
 }
-@media screen and (min-width: 801px) {
+@media screen and (max-device-width: 800px) {
   #baguetteBox-overlay .full-image img {
     margin-top:-100px;
     display: inline-block;
