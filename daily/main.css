@@ -160,3 +160,16 @@ p {
       padding: 0;
   }
 }
+
+
+
+@media screen and (max-device-width: 800px) {
+  .harry {
+    display: none;
+  }
+}
+@media screen and (min-width: 801px) {
+  .larry {
+    display: none;
+  }
+}

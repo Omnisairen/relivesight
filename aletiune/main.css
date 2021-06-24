@@ -1,0 +1,139 @@
+/*myfont*/
+/*
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/FUDGED.ttf);
+}
+@font-face {
+  font-family: myfont2;
+  src: url(../fonts/Archistico_Simple.ttf);
+}
+@font-face {
+  font-family: myfont4;
+  src: url(../fonts/manbowlines.ttf);
+}
+*/
+p,h1,h2,h3,a{font-family:'Times New Roman';
+}
+h2{
+  text-shadow: -0.09em 0 0.5px #c7d3b4;
+}
+body {
+  background-color: #272727;
+  background-image: url(../images/img/1.gif);
+  background-size: 10px;
+  color: #fff5e0;
+  font-family: "Times New Roman";
+  animation: fade-in 2s;
+  text-shadow: -0.09em 0 0.5px #a9b498;
+}
+a:visited, a:link, a:active {
+  color: #fffefb;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+  text-shadow: 0.09em 0 0.5px #a9b498;
+}
+
+a:hover {
+  color: #fff5e0;
+  text-shadow: -0.09em 0 0.5px #a9b498;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  font-family: 'Oswald', Arial, Helvetica;
+  letter-spacing: 0.075em;
+  text-align: center;
+}
+
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 20px auto -10px;
+}
+
+.image-cropper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+h1,
+h2,
+h2 a {
+  color: rgb(206, 206, 206);
+  font-size: 1rem;
+  font-weight: 200;
+  border-color: transparent;
+  line-height: 1.25;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+h1 {
+  color: #000;
+  font-size: 1.25rem;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+.links {
+  width: 100%;
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.links .link {
+  display: block;
+  width: 100%;
+  margin: 0 auto 10px;
+  
+  color: #fffefb;
+  border: 2px solid #a9b498;
+  background-color: #a9b498;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0;
+ }
+
+.links .link:hover {
+  transition: all .2s ease-in-out;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}

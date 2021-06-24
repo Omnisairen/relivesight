@@ -46,9 +46,14 @@
   height: 550px;
   /*max-height: 100%;
   max-width: 100%;
-  */vertical-align: middle;
+  */
+  vertical-align: middle;
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .6);
   box-shadow: 0 0 8px rgba(0, 0, 0, .6)
+}
+
+figure {
+  text-align:center;
 }
 
 #baguetteBox-overlay .full-image figcaption {
