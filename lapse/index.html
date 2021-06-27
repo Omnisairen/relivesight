@@ -25,6 +25,8 @@
 <script>
   w3.includeHTML();
   </script>
+
+
     </div>
   </div>  
 
@@ -33,7 +35,9 @@
       
       <h2>Lapse</h2>
       <p>—「0X://Explanation」<br>
-        this is a 
+        /this is a page where i can write about literally ANYTHING i want and nobody can stop me.
+        /i might go into a five page rant about a single webpage i found, or i might write two words
+        about confusing code! click each for the full story!~ 
       </p>
         <p><a id="back" href="https://relivesight.com/">back home</a></p>
 
@@ -72,7 +76,14 @@
             fjdkls;a 
             fjdksa; fdssafd sa
           </p>
-        
+          <img class="lazy"  data-src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/daily/art/010.a.png">
+          <img class="lazy" data-src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/daily/art/010.png">
+          <img class="lazy" data-src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/daily/art/009.jpg">
+          <img class="lazy" data-src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/daily/art/008.png">
+          
+          
+          
+          
           <p>Send To</p>
           </div>
       </div>
@@ -135,8 +146,60 @@
 
   <br>
 </div></div>
-    
   </body>
+<!-- the lazy loading the intersection oberver-->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyloadImages;    
+  
+    if ("IntersectionObserver" in window) {
+      lazyloadImages = document.querySelectorAll(".lazy");
+      var imageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var image = entry.target;
+            image.src = image.dataset.src;
+            image.classList.remove("lazy");
+            imageObserver.unobserve(image);
+          }
+        });
+      });
+  
+      lazyloadImages.forEach(function(image) {
+        imageObserver.observe(image);
+      });
+    } else {  
+      var lazyloadThrottleTimeout;
+      lazyloadImages = document.querySelectorAll(".lazy");
+      
+      function lazyload () {
+        if(lazyloadThrottleTimeout) {
+          clearTimeout(lazyloadThrottleTimeout);
+        }    
+  
+        lazyloadThrottleTimeout = setTimeout(function() {
+          var scrollTop = window.pageYOffset;
+          lazyloadImages.forEach(function(img) {
+              if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+              }
+          });
+          if(lazyloadImages.length == 0) { 
+            document.removeEventListener("scroll", lazyload);
+            window.removeEventListener("resize", lazyload);
+            window.removeEventListener("orientationChange", lazyload);
+          }
+        }, 20);
+      }
+  
+      document.addEventListener("scroll", lazyload);
+      window.addEventListener("resize", lazyload);
+      window.addEventListener("orientationChange", lazyload);
+    }
+  })
+</script>
+
   <script>
     // Get the modal
     var a = document.getElementById('a');

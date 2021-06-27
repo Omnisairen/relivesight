@@ -120,18 +120,6 @@ h2 {
   to { opacity: 1; }
 }
 
-@media (max-aspect-ratio: 7/8) {
-  body {
-    background-image: url(../images/img/d1.png);
-    background-size: 8px;
-  }
-  .zine-images {
-    flex-direction: column;
-  }
-  .fade {
-      padding-bottom: 2em;
-  }
-}
 @media screen and (max-device-width: 600px) {
   .harry {
     display: none;
@@ -229,7 +217,7 @@ html {
 .w3-modal {
   z-index: 3;
   display: none;
-  padding-top: 100px;
+  padding-top: 90px;
   position: fixed;
   left: 0;
   top: 0;
@@ -248,7 +236,9 @@ html {
   outline: 0;
   width: 600px
 }
-
+img {
+  max-width: 548px
+}
 
 
 /* width stuff */
@@ -259,6 +249,10 @@ html {
   }
   .w3-modal {
       padding-top: 50px
+  }
+  /*52px padding*/
+  img {
+    max-width: 448px
   }
 }
 
@@ -272,6 +266,9 @@ html {
   .w3-sidebar.w3-collapse {
       display: block!important
   }
+  img {
+    max-width: 698px
+  }
 }
 @media (max-width:1205px) {
   .w3-auto {
@@ -280,6 +277,9 @@ html {
 }
 
 @media (max-width:600px) {
+  img {
+    max-width: 448px
+  }
   .w3-modal-content {
       margin: 0 10px;
       width: auto!important
@@ -303,6 +303,7 @@ html {
   .w3-dropdown-hover.w3-mobile, .w3-dropdown-hover.w3-mobile .w3-btn, .w3-dropdown-hover.w3-mobile .w3-button, .w3-dropdown-click.w3-mobile, .w3-dropdown-click.w3-mobile .w3-btn, .w3-dropdown-click.w3-mobile .w3-button {
       width: 100%
   }
+
 }
 
 
