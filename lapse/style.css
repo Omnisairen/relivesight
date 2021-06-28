@@ -362,6 +362,7 @@ img {
 }
 
 .l-button {
+  margin-top:-10px;
   background-color: #181818;
   /*background-image: url(../images/img/1.gif);
   background-size: 10px;
@@ -376,6 +377,8 @@ img {
   transition-duration: 0.2s;
   border: solid 1px #cbbadd;
   box-shadow: 2px 3px 0 0 #f5c6f5;
+  margin-bottom:10px;
+  z-index:2;
 
   /*text*/
   color: #fffefb;
@@ -392,6 +395,34 @@ img {
   -webkit-transform: translateY(-1px);
 	transform: translateY(-1px);
   transition-duration: 0.3s;
+}
+
+/* for bg images*/
+.imagetime {
+  background-color: #181818;
+  /*background-image: url(../images/img/1.gif);
+  background-size: 10px;
+  */border: none;
+  color: white;
+  
+  padding-bottom:-5px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  /*width: 75%;*/
+  font-size: 16px;
+  transition-duration: 0.2s;
+  border: solid 1px #cbbadd;
+  box-shadow: 2px 3px 0 0 #f5c6f5;
+  margin-bottom: -10px;
+  z-index:1;
+
+  /*text*/
+  color: #fffefb;
+  text-shadow: -0.09em 0 0.5px rgba(255, 176, 219, 0.9);
+}
+.imagetime img {
+  width: 500px;
 }
 
 
