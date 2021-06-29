@@ -217,7 +217,8 @@ html {
 .w3-modal {
   z-index: 3;
   display: none;
-  padding-top: 90px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   position: fixed;
   left: 0;
   top: 0;
@@ -456,4 +457,25 @@ h3 {
   padding-bottom:1px;
   font-size:1.4em;
   padding-top:1px;
+}
+
+
+
+
+/*more text*/
+.quotey {
+  color: rgb(255,254,251,0.7);
+  text-shadow: -0.09em 0 0.5px rgba(255, 176, 219, 0.4);
+}
+
+.rightright {
+  text-align:right;
+}
+
+.leftleft {
+  text-align:left;
+}
+
+.centercenter {
+  text-align:center;
 }
