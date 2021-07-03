@@ -57,6 +57,24 @@ p {
   padding-right: 4em;
 }
 
+.yoyo {
+  margin-left: -4em;
+}
+
+
+
+a:visited, a:link, a:active {
+  color: #e9e0cc;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+  text-shadow: 0.09em 0 0.3px #f1f1f1;
+}
+
+a:hover {
+  color: #f8ffee;
+  text-shadow: -0.09em 0 0.3px #f1f1f1;
+}
+
 
 .container.gallery-container {
   /*background-color: #ffffff;
