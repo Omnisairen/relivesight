@@ -1,0 +1,111 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="area.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">-->
+    <link rel="stylesheet" href="box.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="../pnglogobig.png" sizes="1000x1000" />
+   
+    <title>「ｒｅ：𝖆𝖑𝖊𝖙𝖎𝖚𝖓𝖊 」</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-123647555-2');
+    </script>
+    <script src="../../re/w3.js"></script>
+</head>
+<body>
+
+<div class="container gallery-container">
+    <h1><div class="carry"><img style="width:300px; margin-bottom:15px;" src="../cherry-save.png" >
+    <a href="https://relivesight.com/cherry">PORTFOLIO</a>
+    <a href="https://relivesight.com/cherry/daily">DAILY</a>
+    <a href="https://relivesight.com/cherry/contact">CONTACT</a>
+    <a href="https://relivesight.com/cherry/shop">SHOP</a>
+    </div></h1>
+
+    
+
+    <h2>[Shop]</h2>
+    <p class="page-description text-center">
+   / learn to live / <a href="https://relivesight.com/">relivesight.com</a> / 
+   <h1>coming soon . . .</h1>
+</p><br>
+  
+ <p class="page-description"><a class="yoyo" href="https://relivesight.com/">/return.main/</a>
+        <br><br>
+        </p>  
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.js"></script>-->
+
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+<!-- the lazy loading the intersection oberver-->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var lazyloadImages;    
+    
+      if ("IntersectionObserver" in window) {
+        lazyloadImages = document.querySelectorAll(".lazy");
+        var imageObserver = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              var image = entry.target;
+              image.src = image.dataset.src;
+              image.classList.remove("lazy");
+              imageObserver.unobserve(image);
+            }
+          });
+        });
+    
+        lazyloadImages.forEach(function(image) {
+          imageObserver.observe(image);
+        });
+      } else {  
+        var lazyloadThrottleTimeout;
+        lazyloadImages = document.querySelectorAll(".lazy");
+        
+        function lazyload () {
+          if(lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+          }    
+    
+          lazyloadThrottleTimeout = setTimeout(function() {
+            var scrollTop = window.pageYOffset;
+            lazyloadImages.forEach(function(img) {
+                if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                  img.src = img.dataset.src;
+                  img.classList.remove('lazy');
+                }
+            });
+            if(lazyloadImages.length == 0) { 
+              document.removeEventListener("scroll", lazyload);
+              window.removeEventListener("resize", lazyload);
+              window.removeEventListener("orientationChange", lazyload);
+            }
+          }, 20);
+        }
+    
+        document.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+      }
+    })
+  </script>
+</body>
+</html>
