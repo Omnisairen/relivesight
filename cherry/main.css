@@ -197,8 +197,9 @@ a:hover {
 .dw {
   box-sizing: border-box;
   -moz-column-gap: 0;
+  -webkit-column-gap:0;
+  -o-column-gap:0;
        column-gap: 0;
-  position: relative;
 }
 .dw * {
   box-sizing: border-box;
@@ -218,6 +219,8 @@ a:hover {
 @media (min-width: 950px) {
   .dw {
     -moz-column-count: 3;
+    -webkit-column-count:3;
+    -o-column-count:3;
          column-count: 3;
   }
 }
@@ -249,10 +252,15 @@ a:hover {
   margin-right: 15px;
   margin-left: 5px;
   margin-bottom: 10px;
+  -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
 }
 @media (min-width: 768px) {
   .dw-pnl {
     -moz-column-break-inside: avoid;
+    -webkit-column-break-inside:avoid;
+    -o-column-break-inside:avoid;
          break-inside: avoid;
   }
 }
@@ -271,6 +279,8 @@ a:hover {
 }
 .dw-flp__pnl {
   -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility:hidden;
+  -o-backface-visibility:hidden;
           backface-visibility: hidden;
   border-radius: 10px;
   height: 100%;
