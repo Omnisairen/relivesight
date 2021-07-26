@@ -216,7 +216,7 @@ hr{
   
 #content {
   position: relative;
-  width: 22em;
+  width: 18em;
   top: 0em;
 }
 
@@ -247,7 +247,7 @@ hr{
   line-height: 0.75em
 }
 .rr {
-  margin-left:7em;
+  margin-left:.3em;
   font-size: 1em;
 
 }
