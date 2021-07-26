@@ -7,21 +7,16 @@ h2 {
   text-shadow: -0.06em 0 0.5px rgba(201, 201, 201, 0.9);
   font-weight: normal;}
 
-h1 {
-color:rgb(87, 85, 76);
-font-weight: normal;
-font-size:2.4em;
-}
-h3 {
-  color:rgb(94, 90, 72);
+
+
+
+
+h4 {
+  color:rgb(87, 85, 76);
   font-weight: normal;
-  font-size:1.8em;
-  text-align: center;  
-  margin-top: 0em;
-  margin-bottom: 0em;
+  font-size:2.4em;
+  line-height:1em;
 }
-
-
 
 h6 {
   color:rgb(211, 211, 211);
@@ -29,10 +24,6 @@ h6 {
   text-align:center;
   }
 
-.bodystuff{
-  font-size:1.3em;
-  line-height: 2;
-}
 
 .h {
   white-space: nowrap;

@@ -178,3 +178,48 @@ col-sm,[class^='col-sm-'],[class^='col-sm-offset-'],
   text-align: center;
 }
 
+@media screen and (max-device-width: 800px) {
+  .harry {
+    display: none;
+  }
+  .bodystuff{
+    font-size:1.1em;
+    line-height: 2;
+  }
+  h1 {
+    color:rgb(87, 85, 76);
+    font-weight: normal;
+    font-size:2.0em;
+    line-height:1em;
+    }
+    h3 {
+      color:rgb(94, 90, 72);
+      font-weight: normal;
+      font-size:1.6em;
+      text-align: center;  
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+}
+@media screen and (min-width: 801px) {
+  .larry {
+    display: none;
+  }
+  .bodystuff{
+    font-size:1.3em;
+    line-height: 2;
+  }  
+  h1 {
+    color:rgb(87, 85, 76);
+    font-weight: normal;
+    font-size:2.4em;
+    }
+    h3 {
+      color:rgb(94, 90, 72);
+      font-weight: normal;
+      font-size:1.8em;
+      text-align: center;  
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+}
