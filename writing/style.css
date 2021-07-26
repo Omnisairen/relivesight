@@ -92,27 +92,3 @@ a:hover {
 
 
 
-
-.label {
-  
-  margin: 6px 0;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  padding: 2px 16px;
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #CAD1D1;
-}
-
-.label p {
-  letter-spacing: 4px;
-  font-size: 1.6em;
-  line-height: 0.75em
-}
-.rr {
-  margin-left:11em;
-  font-size: 1.2em;
-
-}

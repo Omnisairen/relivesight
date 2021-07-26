@@ -241,6 +241,17 @@ hr{
     margin: .3em .1em .1em .1em;
 }
 
+.label p {
+  letter-spacing: 4px;
+  font-size: 1.6em;
+  line-height: 0.75em
+}
+.rr {
+  margin-left:7em;
+  font-size: 1em;
+
+}
+
 }
 @media screen and (min-width: 801px) {
   .larry {
@@ -272,5 +283,29 @@ hr{
       float: left;
       margin: 10px 8px 8px 12px;
   }
+  
+.label {
+  
+  margin: 6px 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 16px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #CAD1D1;
+}
+
+.label p {
+  letter-spacing: 4px;
+  font-size: 1.6em;
+  line-height: 0.75em
+}
+.rr {
+  margin-left:11em;
+  font-size: 1.2em;
+
+}
 }
 
