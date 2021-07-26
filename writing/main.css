@@ -209,5 +209,68 @@ hr{
 
 
 
+@media screen and (max-device-width: 800px) {
+  .harry {
+    display: none;
+  }
+  
+#content {
+  position: relative;
+  width: 22em;
+  top: 0em;
+}
 
+#content {
+  background-color:rgb(255, 255, 254);
+
+  border: 2px double #616161;
+
+  padding: 4px 4px;
+}
+
+#content img {
+  
+  margin: 0em auto;
+  display: block;
+}
+
+#content img.auditorium
+{
+    max-width: 6em;
+    float: left;
+    margin: .3em .1em .1em .1em;
+}
+
+}
+@media screen and (min-width: 801px) {
+  .larry {
+    display: none;
+  }
+  #content {
+    position: relative;
+    width: 41em;
+    top: 0px;
+  }
+  
+  #content {
+    background-color:rgb(255, 255, 253);
+  
+    border: 2px double #616161;
+  
+    padding: 4px 4px;
+  }
+  
+  #content img {
+    
+    margin: 8px auto;
+    display: block;
+  }
+  
+  #content img.auditorium
+  {
+      max-width: 170px;
+      float: left;
+      margin: 10px 8px 8px 12px;
+  }
+}
 

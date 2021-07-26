@@ -91,33 +91,6 @@ a:hover {
   
 
 
-#content {
-  position: relative;
-  width: 22em;
-  top: 0em;
-}
-
-#content {
-  background-color:rgb(255, 255, 254);
-
-  border: 2px double #616161;
-
-  padding: 4px 4px;
-}
-
-#content img {
-  
-  margin: 0em auto;
-  display: block;
-}
-
-#content img.auditorium
-{
-    max-width: 6em;
-    float: left;
-    margin: .3em .1em .1em .1em;
-}
-
 
 
 .label p {
