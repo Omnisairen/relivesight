@@ -34,11 +34,12 @@
     <a id="l10" href="https://relivesight.com/cherry/shop">SHOP</a>
     </div></h1>
 
-    
+    <input type="button" class="button1" value="Light Mode" id="myButton1" onclick="myFunction()"></input>
+
 
     <h2>[Contact]</h2>
     <p class="page-description text-center">
-   / contact me / <a id="l9" href="https://relivesight.com/">relivesight.com</a> / cherry / <a id="l8" href="https://relivesight.com/">return home</a> /
+   / contact me / <a id="l9" href="https://relivesight.com/">relivesight.com</a> / <a id="l14" href="https://relivesight.com/cherry/">cherry</a> / <a id="l8" href="https://relivesight.com/">return home</a> /
    <br><br>
    [discord]: 𝖆𝖑𝖊𝖙𝖎𝖚𝖓𝖊#3865
    <br>
@@ -79,17 +80,13 @@
       document.getElementsByClassName('button1')[0].style['background-color'] = 'white';
       document.getElementsByClassName('button1')[0].style['color'] = 'black';
       var lemth="l1"
-      for(let i = 1; i < 14; i++)
+      for(let i = 1; i < 15; i++)
       {
           lemth="l" +i
           document.getElementById(lemth).style['color'] = 'white';
       } 
       document.getElementById('logo').style['filter'] = 'invert(1)';
-      for(let i = 0; i < 32; i++)
-      {
-          document.getElementsByClassName('bd--white')[i].style['border'] = '4px solid white';
-          document.getElementsByClassName('tx--white')[i].style['color'] = 'white';
-      }
+      
   }
   function docWhite() {
       document.body.style.backgroundColor= "white";
@@ -98,17 +95,13 @@
       document.getElementsByClassName('button1')[0].style['background-color'] = 'black';
       document.getElementsByClassName('button1')[0].style['color'] = 'white';
       var lemth="l1"
-      for(let i = 1; i < 14; i++)
+      for(let i = 1; i < 15; i++)
       {
           lemth="l" +i
           document.getElementById(lemth).style['color'] = 'black';
       }  
       document.getElementById('logo').style['filter'] = 'invert(0)';
-      for(let i = 0; i < 32; i++)
-      {
-          document.getElementsByClassName('bd--white')[i].style['border'] = '4px solid black';
-          document.getElementsByClassName('tx--white')[i].style['color'] = 'black';
-      }
+     
   }
   
   /*window.onload = () => {*/
