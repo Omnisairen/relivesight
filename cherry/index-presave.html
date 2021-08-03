@@ -23,118 +23,23 @@
       gtag('config', 'UA-123647555-2');
     </script>
     <script src="../../re/w3.js"></script>
-    <script>
-        
-        var next_state=1;
-        
-        function funce() {
-            var current_state =localStorage.getItem("currentState");
-            if(current_state == null)
-            {
-                localStorage.setItem("currentState",1);
-                current_state=1; 
+    <!--FADE IN-->
+    <style>
+        body {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
             }
-            if(current_state == 1)
-            {
-                document.body.style.backgroundColor= "black";
-                document.getElementsByClassName('container')[0].style['background-color'] = 'black';
-                document.getElementsByClassName('container')[0].style['color'] = 'white';
-                document.getElementsByClassName('button1')[0].style['background-color'] = 'white';
-                document.getElementsByClassName('button1')[0].style['color'] = 'black';
-                var lemth="l1"
-                for(let i = 1; i < 39; i++)
-                {
-                    lemth="l" +i
-                    document.getElementById(lemth).style['color'] = 'white';
-                } 
-                document.getElementById('logo').style['filter'] = 'invert(1)';
-                for(let i = 0; i < 32; i++)
-                {
-                    document.getElementsByClassName('bd--white')[i].style['border'] = '4px solid white';
-                    document.getElementsByClassName('tx--white')[i].style['color'] = 'white';
-                }
-                next_state=2;
-            } 
-            else
-            {
-                document.body.style.backgroundColor= "white";
-                document.getElementsByClassName('container')[0].style['background-color'] = 'white';
-                document.getElementsByClassName('container')[0].style['color'] = 'black';
-                document.getElementsByClassName('button1')[0].style['background-color'] = 'black';
-                document.getElementsByClassName('button1')[0].style['color'] = 'white';
-                var lemth="l1"
-                for(let i = 1; i < 39; i++)
-                {
-                    lemth="l" +i
-                    document.getElementById(lemth).style['color'] = 'black';
-                }  
-                document.getElementById('logo').style['filter'] = 'invert(0)';
-                for(let i = 0; i < 32; i++)
-                {
-                    document.getElementsByClassName('bd--white')[i].style['border'] = '4px solid black';
-                    document.getElementsByClassName('tx--white')[i].style['color'] = 'black';
-                }
-                next_state=1;
-                break;
+            100% {
+                opacity: 1;
             }
         }
-        funce()
-
-        
-        var state=1;
-        function myFunction()
-        {
-            var elem = document.getElementById("myButton1");
-            if (elem.value=="Dark Mode") elem.value = "Light Mode";
-            else elem.value = "Dark Mode";
-            switch(state)
-            {
-                case 1:
-                    document.body.style.backgroundColor= "black";
-                    document.getElementsByClassName('container')[0].style['background-color'] = 'black';
-                    document.getElementsByClassName('container')[0].style['color'] = 'white';
-                    document.getElementsByClassName('button1')[0].style['background-color'] = 'white';
-                    document.getElementsByClassName('button1')[0].style['color'] = 'black';
-                    var lemth="l1"
-                    for(let i = 1; i < 39; i++)
-                    {
-                        lemth="l" +i
-                        document.getElementById(lemth).style['color'] = 'white';
-                    } 
-                    document.getElementById('logo').style['filter'] = 'invert(1)';
-                    for(let i = 0; i < 32; i++)
-                    {
-                        document.getElementsByClassName('bd--white')[i].style['border'] = '4px solid white';
-                        document.getElementsByClassName('tx--white')[i].style['color'] = 'white';
-                    }
-                    state=2;
-                    break;
-                case 2:
-                    document.body.style.backgroundColor= "white";
-                    document.getElementsByClassName('container')[0].style['background-color'] = 'white';
-                    document.getElementsByClassName('container')[0].style['color'] = 'black';
-                    document.getElementsByClassName('button1')[0].style['background-color'] = 'black';
-                    document.getElementsByClassName('button1')[0].style['color'] = 'white';
-                    var lemth="l1"
-                    for(let i = 1; i < 39; i++)
-                    {
-                        lemth="l" +i
-                        document.getElementById(lemth).style['color'] = 'black';
-                    }  
-                    document.getElementById('logo').style['filter'] = 'invert(0)';
-                    for(let i = 0; i < 32; i++)
-                    {
-                        document.getElementsByClassName('bd--white')[i].style['border'] = '4px solid black';
-                        document.getElementsByClassName('tx--white')[i].style['color'] = 'black';
-                    }
-                    state=1;
-                    break;
-            }
-        }
-        
-        
-        
-        </script>
+    </style>
+    <!--FADE IN END-->
 </head>
 <body>
 
@@ -147,7 +52,7 @@
     </div></h1>
 
     
-    <input type="button" class="button1" value="Dark Mode" id="myButton1" onclick="myFunction()"></input>
+    <input type="button" class="button1" value="Light Mode" id="myButton1" onclick="myFunction()"></input>
 
     
     <h2>[Portfolio]</h2>  
@@ -164,6 +69,9 @@
 
    <br><br>
     </p>
+
+
+    
 
     <div class="tz-gallery">
         <div class="dw">
@@ -371,10 +279,109 @@
 
       <br> <br>
 
- <p class="page-description"><a class="yoyo" href="https://relivesight.com/">/return.main/</a>
+ <p class="page-description"><a id="l39" class="yoyo" href="https://relivesight.com/">/return.main/</a>
         <br><br>
         </p>  
 </div>
+
+<!--MODE SCRIPT -->
+<script>
+    var state=1; // should get overridden
+
+    function docBlack() {
+        document.body.style.backgroundColor= "black";
+        document.getElementsByClassName('container')[0].style['background-color'] = 'black';
+        document.getElementsByClassName('container')[0].style['color'] = 'white';
+        document.getElementsByClassName('button1')[0].style['background-color'] = 'white';
+        document.getElementsByClassName('button1')[0].style['color'] = 'black';
+        var lemth="l1"
+        for(let i = 1; i < 40; i++)
+        {
+            lemth="l" +i
+            document.getElementById(lemth).style['color'] = 'white';
+        } 
+        document.getElementById('logo').style['filter'] = 'invert(1)';
+        for(let i = 0; i < 32; i++)
+        {
+            document.getElementsByClassName('bd--white')[i].style['border'] = '4px solid white';
+            document.getElementsByClassName('tx--white')[i].style['color'] = 'white';
+        }
+    }
+    function docWhite() {
+        document.body.style.backgroundColor= "white";
+        document.getElementsByClassName('container')[0].style['background-color'] = 'white';
+        document.getElementsByClassName('container')[0].style['color'] = 'black';
+        document.getElementsByClassName('button1')[0].style['background-color'] = 'black';
+        document.getElementsByClassName('button1')[0].style['color'] = 'white';
+        var lemth="l1"
+        for(let i = 1; i < 40; i++)
+        {
+            lemth="l" +i
+            document.getElementById(lemth).style['color'] = 'black';
+        }  
+        document.getElementById('logo').style['filter'] = 'invert(0)';
+        for(let i = 0; i < 32; i++)
+        {
+            document.getElementsByClassName('bd--white')[i].style['border'] = '4px solid black';
+            document.getElementsByClassName('tx--white')[i].style['color'] = 'black';
+        }
+    }
+    
+    /*window.onload = () => {*/
+    var current_state =localStorage.getItem("currentState");
+    if(current_state == null)
+    {
+        //console.log("we shouldnt be here");
+        localStorage.setItem("currentState",1);
+        current_state=localStorage.getItem("currentState"); 
+    }
+    if(current_state==1)
+    {
+        //console.log("doc black was supposed to happen");
+        docBlack();
+        var elem = document.getElementById("myButton1");
+        elem.value = "Light Mode";
+        state=2;
+    }
+    if(current_state==2)
+    {
+        //console.log("doc white was supposed to happen");
+        docWhite();
+        var elem = document.getElementById("myButton1");
+        elem.value = "Dark Mode";
+        state=1;
+    }
+    else
+    {
+        docBlack();
+        var elem = document.getElementById("myButton1");
+        elem.value = "Light Mode";
+        state=2;
+    }
+    /*}*/
+    
+    function myFunction()
+    {
+        var elem = document.getElementById("myButton1");
+        if (elem.value=="Dark Mode") elem.value = "Light Mode";
+        else elem.value = "Dark Mode";
+        switch(state)
+        {
+            case 1:
+                docBlack();
+                localStorage.setItem("currentState",1);
+                state=2;
+                break;
+            case 2:
+                docWhite();
+                localStorage.setItem("currentState",2);
+                state=1;
+                break;
+        }
+    }
+    
+    
+</script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
