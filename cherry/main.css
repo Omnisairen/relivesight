@@ -59,6 +59,9 @@ span {
   .gallery {
     margin-left: 5px;
   }
+  span {
+    font-size: 1.1em;
+  }
 }
 
 .gallery a {

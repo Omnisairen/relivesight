@@ -1,0 +1,226 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../p/area.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">-->
+    <link rel="stylesheet" href="../p/box.css">
+    <link rel="stylesheet" href="../p/main.css">
+    <link rel="icon" type="image/png" href="../pnglogobig.png" sizes="1000x1000" />
+   
+    <title>「ｒｅ：BRIEF 」 </title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123647555-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-123647555-2');
+    </script>
+    <script src="../../re/w3.js"></script>
+        <!--FADE IN-->
+        <style>
+          body {
+              animation: fadeInAnimation ease 3s;
+              animation-iteration-count: 1;
+              animation-fill-mode: forwards;
+          }
+          @keyframes fadeInAnimation {
+              0% {
+                  opacity: 0;
+              }
+              100% {
+                  opacity: 1;
+              }
+          }
+      </style>
+      <!--FADE IN END-->
+</head>
+<body>
+
+<div class="container gallery-container">
+    <h1><div class="carry"><img id="logo" style="width:300px; margin-bottom:15px;" src="../cherry-save.png" >
+    <a id="l5" href="https://relivesight.com/cherry">PORTFOLIO</a>
+    <a id="l4" href="https://relivesight.com/cherry/daily">DAILY</a>
+    <a id="l3" href="https://relivesight.com/cherry/contact">CONTACT</a>
+    <a id="l2" href="https://relivesight.com/cherry/shop">SHOP</a>
+    </div></h1>
+
+    <input type="button" class="button1" value="Light Mode" id="myButton1" onclick="myFunction()"></input>
+
+
+    <h2>[Brief Despite]</h2>
+    <p class="page-description text-center">
+   / <a id="l7" href="https://relivesight.com/">relivesight.com</a> / <a id="l6" href="https://relivesight.com/cherry/">cherry</a> / <a id="l8" href="https://relivesight.com/">return home</a> /
+   <br><br>
+   [TYPE]: - art, featured
+   <br>
+   [DATE]: - ??/??/2020
+   <br><br>
+   [INFO]: - Part of my previous work.
+   <br><br><img class="lazy" data-src="https://raw.githubusercontent.com/Omnisairen/relivepics/main/cherry/portfolio/b.png">
+   <br>
+  </p><br>
+  
+ <p class="page-description"><a id="l1" class="yoyo" href="https://relivesight.com/cherry/">/return.portfolio/</a>
+        <br><br>
+        </p>  
+</div>
+
+<!--MODE SCRIPT -->
+<script>
+  var state=1; // should get overridden
+
+  function docBlack() {
+      document.body.style.backgroundColor= "black";
+      document.getElementsByClassName('container')[0].style['background-color'] = 'black';
+      document.getElementsByClassName('container')[0].style['color'] = 'white';
+      document.getElementsByClassName('button1')[0].style['background-color'] = 'white';
+      document.getElementsByClassName('button1')[0].style['color'] = 'black';
+      var lemth="l1"
+      for(let i = 1; i < 9; i++)
+      {
+          lemth="l" +i
+          document.getElementById(lemth).style['color'] = 'white';
+      } 
+      document.getElementById('logo').style['filter'] = 'invert(1)';
+      
+  }
+  function docWhite() {
+      document.body.style.backgroundColor= "white";
+      document.getElementsByClassName('container')[0].style['background-color'] = 'white';
+      document.getElementsByClassName('container')[0].style['color'] = 'black';
+      document.getElementsByClassName('button1')[0].style['background-color'] = 'black';
+      document.getElementsByClassName('button1')[0].style['color'] = 'white';
+      var lemth="l1"
+      for(let i = 1; i < 9; i++)
+      {
+          lemth="l" +i
+          document.getElementById(lemth).style['color'] = 'black';
+      }  
+      document.getElementById('logo').style['filter'] = 'invert(0)';
+     
+  }
+  
+  /*window.onload = () => {*/
+  var current_state =localStorage.getItem("currentState");
+  if(current_state == null)
+  {
+      //console.log("we shouldnt be here");
+      localStorage.setItem("currentState",1);
+      current_state=localStorage.getItem("currentState"); 
+  }
+  if(current_state==1)
+  {
+      //console.log("doc black was supposed to happen");
+      docBlack();
+      var elem = document.getElementById("myButton1");
+      elem.value = "Light Mode";
+      state=2;
+  }
+  if(current_state==2)
+  {
+      //console.log("doc white was supposed to happen");
+      docWhite();
+      var elem = document.getElementById("myButton1");
+      elem.value = "Dark Mode";
+      state=1;
+  }
+  else
+  {
+      docBlack();
+      var elem = document.getElementById("myButton1");
+      elem.value = "Light Mode";
+      state=2;
+  }
+  /*}*/
+  
+  function myFunction()
+  {
+      var elem = document.getElementById("myButton1");
+      if (elem.value=="Dark Mode") elem.value = "Light Mode";
+      else elem.value = "Dark Mode";
+      switch(state)
+      {
+          case 1:
+              docBlack();
+              localStorage.setItem("currentState",1);
+              state=2;
+              break;
+          case 2:
+              docWhite();
+              localStorage.setItem("currentState",2);
+              state=1;
+              break;
+      }
+  }
+  
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.js"></script>-->
+
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+<!-- the lazy loading the intersection oberver-->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var lazyloadImages;    
+    
+      if ("IntersectionObserver" in window) {
+        lazyloadImages = document.querySelectorAll(".lazy");
+        var imageObserver = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              var image = entry.target;
+              image.src = image.dataset.src;
+              image.classList.remove("lazy");
+              imageObserver.unobserve(image);
+            }
+          });
+        });
+    
+        lazyloadImages.forEach(function(image) {
+          imageObserver.observe(image);
+        });
+      } else {  
+        var lazyloadThrottleTimeout;
+        lazyloadImages = document.querySelectorAll(".lazy");
+        
+        function lazyload () {
+          if(lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+          }    
+    
+          lazyloadThrottleTimeout = setTimeout(function() {
+            var scrollTop = window.pageYOffset;
+            lazyloadImages.forEach(function(img) {
+                if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                  img.src = img.dataset.src;
+                  img.classList.remove('lazy');
+                }
+            });
+            if(lazyloadImages.length == 0) { 
+              document.removeEventListener("scroll", lazyload);
+              window.removeEventListener("resize", lazyload);
+              window.removeEventListener("orientationChange", lazyload);
+            }
+          }, 20);
+        }
+    
+        document.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+      }
+    })
+  </script>
+</body>
+</html>
